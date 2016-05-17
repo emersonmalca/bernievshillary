@@ -1,0 +1,458 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+\margl1440\margr1440\vieww16680\viewh12380\viewkind0
+\deftab720
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \{\
+  "questions": [\
+    \{\
+      "_id": "56845de08a277a03004d5a32",\
+      "sortOrder": 0,\
+      "question": "Do you support marriage equality for gay and lesbian couples?",\
+      "__v": 0,\
+      "bernieSandersPosition": 1,\
+      "bernieSandersPositionText": "<p>Currently&nbsp;<a href=\\"http:\\/\\/www.sanders.senate.gov\\/newsroom\\/press-releases\\/sanders-on-gay-marriage-time-for-supreme-court-to-catch-up-to-the-american-people\\" target=\\"_blank\\">supports<\\/a> gay marriage and advocated for the national legalization of gay marriage by the Supreme Court.<\\/p>",\
+      "bernieSandersRecord": 1,\
+      "bernieSandersRecordText": "<p><a href=\\"http:\\/\\/www.politifact.com\\/punditfact\\/statements\\/2015\\/sep\\/29\\/chuck-todd\\/nbcs-chuck-todd-bernie-sanders-there-same-sex-marr\\/\\" target=\\"_blank\\">Voted<\\/a>&nbsp;against the Defense of Marriage Act while in the House of Representatives in 1996.<\\/p>",\
+      "category": "5678e35cec700f3b3843cbd0",\
+      "hillaryClintonPosition": 1,\
+      "hillaryClintonPositionText": "<p>In a 2013 statement, Clinton&nbsp;<a href=\\"http:\\/\\/www.politico.com\\/story\\/2013\\/03\\/hillary-clinton-gay-marriage-support-088988\\" target=\\"_blank\\">reversed<\\/a> her previous position on gay marriage, saying: \\"I support gay marriage personally and as a law.\\"<\\/p>",\
+      "hillaryClintonRecord": 0,\
+      "hillaryClintonRecordText": "<p>As First Lady, Clinton&nbsp;<a href=\\"http:\\/\\/www.ontheissues.org\\/2016\\/Hillary_Clinton_Civil_Rights.htm\\" target=\\"_blank\\">supported<\\/a> the Defense of Marriage Act, which opposed the legalization of same-sex marriage.<\\/p>",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "568449718a277a03004d5a23",\
+      "sortOrder": 1,\
+      "question": "Do you support the Patriot Act, which permits the secret surveillance of US citizens without court oversight?",\
+      "__v": 0,\
+      "bernieSandersPosition": 0,\
+      "bernieSandersPositionText": "<p>Sanders reaffirmed his opposition to the Patriot Act in 2015, <a href=\\"http:\\/\\/time.com\\/3850839\\/bernie-sanders-usa-patriot-act\\/\\" target=\\"_blank\\">writing<\\/a> that we must \\"protect the American people from the very real danger of terrorist attacks without undermining the constitutional rights that make us a free country.\\"<\\/p>",\
+      "bernieSandersRecord": 0,\
+      "bernieSandersRecordText": "<p><a href=\\"https:\\/\\/www.govtrack.us\\/congress\\/votes\\/107-2001\\/h398\\" target=\\"_blank\\">Voted<\\/a>&nbsp;against the Patriot Act in 2001.<\\/p>",\
+      "category": "5678e300ec700f3b3843cbcc",\
+      "hillaryClintonPosition": 1,\
+      "hillaryClintonPositionText": "<p>Clinton stood by her decision on the Patriot Act in 2015, <a href=\\"http:\\/\\/www.nytimes.com\\/2015\\/10\\/14\\/us\\/politics\\/democratic-debate-transcript.html\\" target=\\"_blank\\">saying:<\\/a> \\"I think that it was necessary to make sure that we were able after 9\\/11 to put in place the security that we needed.\\"<\\/p>",\
+      "hillaryClintonRecord": 1,\
+      "hillaryClintonRecordText": "<p><a href=\\"https:\\/\\/www.govtrack.us\\/congress\\/votes\\/107-2001\\/s313\\" target=\\"_blank\\">Voted<\\/a>&nbsp;in favor of the Patriot Act in 2001.<\\/p>",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "56844ced8a277a03004d5a28",\
+      "sortOrder": 2,\
+      "question": "Do you believe that marijuana should be decriminalized at the federal level?",\
+      "__v": 0,\
+      "bernieSandersPosition": 1,\
+      "bernieSandersPositionText": "<p>In 2015, Sanders <a href=\\"http:\\/\\/www.huffingtonpost.com\\/entry\\/bernie-sanders-marijuana-ban_563a3e21e4b0b24aee4858ae\\" target=\\"_new\\">introduced<\\/a>&nbsp;a bill to end the federal prohibition of marijuana, <a href=\\"https:\\/\\/www.washingtonpost.com\\/news\\/wonk\\/wp\\/2015\\/10\\/28\\/why-bernie-sanders-marijuana-proposal-would-be-a-big-deal\\/\\" target=\\"_blank\\">saying:<\\/a> &ldquo;Too many Americans have seen their lives destroyed because they have criminal records as a result of marijuana use. That&rsquo;s wrong.\\"<\\/p>",\
+      "bernieSandersRecord": -1,\
+      "bernieSandersRecordText": "<p>Because the debate was limited to medical marijuana until recently, neither candidate has a substantial record on this issue.<\\/p>",\
+      "category": "5678e282ec700f3b3843cbc9",\
+      "hillaryClintonPosition": 0,\
+      "hillaryClintonPositionText": "<p>Clinton <a href=\\"http:\\/\\/www.msnbc.com\\/msnbc\\/hillary-clinton-calls-easing-restrictions-marijuana\\" target=\\"_blank\\">does not support<\\/a>&nbsp;federal decriminalization, but does support a more relaxed policy toward medical marijuana. She suggested in 2015 that she would reclassify marijuana as a Schedule II controlled substance instead of the most severe category, Schedule I, in order to promote research into the drug's medical uses.<\\/p>",\
+      "hillaryClintonRecord": -1,\
+      "hillaryClintonRecordText": "<p>Because the debate was limited to medical marijuana until recently, neither candidate has a substantial record on this issue.<\\/p>",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "568454068a277a03004d5a2f",\
+      "sortOrder": 3,\
+      "question": "Do you support the Keystone XL Pipeline, which would carry emissions-heavy oil from Canada to US refineries?",\
+      "__v": 0,\
+      "bernieSandersPosition": 0,\
+      "bernieSandersPositionText": "<p>In a 2015 <a href=\\"http:\\/\\/www.nbcnews.com\\/meet-the-press\\/meet-press-transcript-october-11-2015-n442476\\" target=\\"_blank\\">interview<\\/a>&nbsp;with Chuck Todd on Meet the Press, Sanders said: \\"From day one, I opposed the Keystone Pipeline because I believe that if you're serious about climate change, you don't encourage the excavation and transportation of very dirty oil.\\"<\\/p>",\
+      "bernieSandersRecord": 0,\
+      "bernieSandersRecordText": "<p>In a 2013 panel discussion, Sanders <a href=\\"https:\\/\\/www.youtube.com\\/watch?v=area3THJTFc\\" target=\\"_blank\\">said<\\/a>&nbsp;that renewable energy technology \\"is the future, not oil, and that's why the Keystone Pipeline should be defeated.\\"<\\/p>",\
+      "category": "5678e25aec700f3b3843cbc8",\
+      "hillaryClintonPosition": 0,\
+      "hillaryClintonPositionText": "<p><a href=\\"http:\\/\\/www.cnn.com\\/2015\\/09\\/22\\/politics\\/hillary-clinton-opposes-keystone-xl-pipeline\\/\\" target=\\"_blank\\">Announced<\\/a>&nbsp;in September 2015 that she was against the pipeline.<\\/p>",\
+      "hillaryClintonRecord": 1,\
+      "hillaryClintonRecordText": "<p>As Secretary of State, Clinton&nbsp;<a href=\\"http:\\/\\/www.forbes.com\\/sites\\/tomzeller\\/2015\\/04\\/17\\/from-fracking-to-keystone-xl-green-groups-face-a-hillary-clinton-problem\\/\\" target=\\"_blank\\">said<\\/a> she was &ldquo;inclined&rdquo; to sign-off on the pipeline, saying:&nbsp;\\"we&rsquo;re either going to be dependent on dirty oil from the Gulf, or dirty oil from Canada.\\"<\\/p>",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "56845f188a277a03004d5a33",\
+      "sortOrder": 4,\
+      "question": "Do you believe that women should have a legal right to equal pay for equal work?",\
+      "__v": 0,\
+      "bernieSandersPosition": 1,\
+      "bernieSandersPositionText": "<p>The Sanders campaign platform <a href=\\"https:\\/\\/berniesanders.com\\/issues\\/fighting-for-womens-rights\\/\\" target=\\"_blank\\">states<\\/a>: \\"It is a national disgrace that women only earn 78 cents for every dollar a man earns. As President, Senator Sanders will sign the Paycheck Fairness Act into law...\\"<\\/p>",\
+      "bernieSandersRecord": 1,\
+      "bernieSandersRecordText": "<p><a href=\\"https:\\/\\/www.congress.gov\\/bill\\/110th-congress\\/senate-bill\\/766\\/\\" target=\\"_blank\\">Co-sponsored<\\/a>&nbsp;the Paycheck Fairness Act in 2007, which would enforce prohibitions against sex discrimination in the payment of wages.<\\/p>",\
+      "category": "5678e35cec700f3b3843cbd0",\
+      "hillaryClintonPosition": 1,\
+      "hillaryClintonPositionText": "<p><a href=\\"https:\\/\\/www.washingtonpost.com\\/politics\\/hillary-clinton-previews-2016-says-its-time-to-crack-every-last-glass-ceiling\\/2015\\/02\\/24\\/c5d262c2-bc45-11e4-8668-4e7ba8439ca6_story.html\\" target=\\"_blank\\">Speaking<\\/a>&nbsp;at a campaign stop in San Francisco in 2015, Clinton said: &ldquo;It&rsquo;s time to have wage equality once and for all.&rdquo;<\\/p>",\
+      "hillaryClintonRecord": 1,\
+      "hillaryClintonRecordText": "<p>Co-sponsored the&nbsp;<a href=\\"https:\\/\\/www.govtrack.us\\/congress\\/bills\\/109\\/s841\\" target=\\"_blank\\">Paycheck Fairness Act<\\/a> while in the Senate in 2005 and&nbsp;<a href=\\"http:\\/\\/www.cnn.com\\/2008\\/POLITICS\\/01\\/21\\/debate.transcript3\\/\\" target=\\"_blank\\">promoted<\\/a> equal pay legislation while running for president in 2008.<\\/p>",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "56844e9d8a277a03004d5a2a",\
+      "sortOrder": 5,\
+      "question": "Do you believe in a European-style (single-payer) healthcare system that would guarantee universal coverage for all Americans?",\
+      "__v": 0,\
+      "bernieSandersPosition": 1,\
+      "bernieSandersPositionText": "<p>At a 2015 rally, Sanders <a href=\\"https:\\/\\/www.washingtonpost.com\\/news\\/post-politics\\/wp\\/2015\\/07\\/30\\/sanders-advocates-for-single-payer-health-care-system-on-medicare-anniversary\\/\\" target=\\"_blank\\">said<\\/a>: \\"We need to expand Medicare to cover every man, woman and child as a single-payer national healthcare program.\\"<\\/p>",\
+      "bernieSandersRecord": 1,\
+      "bernieSandersRecordText": "<p>Sanders, a longtime advocate of universal healthcare, was also the first Senator to <a href=\\"http:\\/\\/www.sanders.senate.gov\\/download\\/american-health-security-act-of-2013?inline=file\\" target=\\"_blank\\">introduce<\\/a>&nbsp;a national single-payer system into the senate in 2013.<\\/p>",\
+      "category": "5678e320ec700f3b3843cbcd",\
+      "hillaryClintonPosition": 0,\
+      "hillaryClintonPositionText": "<p>In the second Democratic debate, Clinton <a href=\\"http:\\/\\/www.cbsnews.com\\/news\\/democratic-debate-transcript-clinton-sanders-omalley-in-iowa\\/\\" target=\\"_blank\\">said<\\/a>&nbsp;that instead of instituting a single-payer system, we should \\"support the Affordable Care Act, improve it, and make it the model that we know it can be.\\"<\\/p>",\
+      "hillaryClintonRecord": 0,\
+      "hillaryClintonRecordText": "<p>In a 2008 interview, Clinton <a href=\\"http:\\/\\/www.pnhp.org\\/news\\/2008\\/march\\/hillary_clinton_on_s.php\\" target=\\"_blank\\">said<\\/a>: \\"I have thought about this, as you might guess, for 15 years and I never seriously considered a single-payer system.\\"<\\/p>",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "568450728a277a03004d5a2c",\
+      "sortOrder": 6,\
+      "question": "Do you think that work should be <a href=\\"http:\\/\\/www.nytimes.com\\/2011\\/08\\/20\\/business\\/questioning-the-dogma-of-lower-taxes-on-capital-gains.html\\" target=\\"_new\\">taxed at a higher rate<\\/a> than investment?",\
+      "__v": 0,\
+      "bernieSandersPositionText": "<p>Sanders' most recent<a href=\\"http:\\/\\/www.sanders.senate.gov\\/newsroom\\/press-releases\\/sanders-details-tax-plan\\" target=\\"_blank\\"> capital gains tax plan<\\/a> would \\"tax capital gains and dividends the same as work... Taxing capital gains and dividends the same way that we tax work would raise more than $500 billion over the next decade.\\"<\\/p>",\
+      "bernieSandersRecordText": "<p><a href=\\"http:\\/\\/www.ontheissues.org\\/2016\\/Bernie_Sanders_Tax_Reform.htm\\" target=\\"_blank\\">Voted<\\/a>&nbsp;against upholding reduced taxes on capital gains &amp; dividends in 2005, calling the tax cuts an \\"example of President Bush and the Republican leadership leaning over backwards to help people who really don&rsquo;t need any help.\\"<\\/p>",\
+      "hillaryClintonPositionText": "<p>Clinton has taken a middle ground <a href=\\"http:\\/\\/taxfoundation.org\\/blog\\/details-hillary-clinton-s-capital-gains-tax-proposal\\" target=\\"_blank\\">position<\\/a> here and unveiled a plan to tax short-term capital gains the same as income from labor, while keeping the long-term capital gains tax at the lower 23.8% rate.<\\/p>",\
+      "hillaryClintonRecordText": "<p>In a 2008 debate, Clinton <a href=\\"http:\\/\\/www.ontheissues.org\\/2016\\/Hillary_Clinton_Tax_Reform.htm\\" target=\\"_blank\\">said<\\/a>:&nbsp;\\"I wouldn&rsquo;t raise it [the capital gains investment tax] above 20% if I raised it at all. I would not raise it above what it was during the Clinton administration.\\"<\\/p>",\
+      "category": "5678e233ec700f3b3843cbc7",\
+      "bernieSandersPosition": 0,\
+      "bernieSandersRecord": 0,\
+      "hillaryClintonPosition": -1,\
+      "hillaryClintonRecord": 1,\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "56733bf0bd57f7da014bbd30",\
+      "__v": 0,\
+      "bernieSandersPosition": 0,\
+      "bernieSandersPositionSupports": 0,\
+      "bernieSandersPositionText": "<p>\\"I don't think any sensible person would disagree that the invasion of Iraq led to the massive level of instability we are seeing right now,\\" Sanders <a href=\\"http:\\/\\/ontheissues.org\\/2016\\/Bernie_Sanders_War_+_Peace.htm\\" target=\\"_blank\\">said<\\/a> in a recent debate.<\\/p>",\
+      "bernieSandersRecord": 0,\
+      "bernieSandersRecordSupports": 1,\
+      "bernieSandersRecordText": "<p><a href=\\"http:\\/\\/ontheissues.org\\/2016\\/Bernie_Sanders_War_+_Peace.htm\\" target=\\"_blank\\">Voted<\\/a> against authorization to launch the Iraq War in 2002, <a href=\\"https:\\/\\/www.youtube.com\\/watch?v=Rpm4rjejFgQ\\" target=\\"_blank\\">stating<\\/a>:&nbsp;\\"War must be the last recourse international relations, not the first... Who will govern Iraq once Saddam Hussein is removed? And what role will the US play in an ensuing civil war that could develop in that country?\\"<\\/p>",\
+      "category": "567338db10fcb34e01659a57",\
+      "hillaryClintonPosition": 0,\
+      "hillaryClintonPositionSupports": 0,\
+      "hillaryClintonPositionText": "<p>In her 2014 book, Hard Choices, Clinton <a href=\\"https:\\/\\/www.washingtonpost.com\\/news\\/post-politics\\/wp\\/2014\\/06\\/05\\/hillary-clinton-on-iraq-vote-i-still-got-it-wrong-plain-and-simple\\/\\" target=\\"_blank\\">said<\\/a> that her vote was a mistake. She wrote: \\"Many Senators came to wish they had voted against the resolution. I was one of them.\\"<\\/p>",\
+      "hillaryClintonRecord": 1,\
+      "hillaryClintonRecordSupports": 1,\
+      "hillaryClintonRecordText": "<p><a href=\\"http:\\/\\/ontheissues.org\\/2016\\/Hillary_Clinton_War_+_Peace.htm#Iraq_War\\" target=\\"_blank\\">Voted<\\/a> to authorize the Iraq War in 2002. Clinton <a href=\\"https:\\/\\/www.youtube.com\\/watch?v=Rpm4rjejFgQ\\" target=\\"_blank\\">said<\\/a> at the time: \\"Any vote that might lead to war should be hard, but I cast it with conviction.&rdquo; Defended her vote when running against Obama in 2008.<\\/p>",\
+      "question": "Do you agree with Congress's 2002 decision to authorize the Iraq War?",\
+      "sortOrder": 7,\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "56845cf98a277a03004d5a31",\
+      "sortOrder": 8,\
+      "question": " Do you support offshore drilling for oil in the Arctic and the Gulf of Mexico?",\
+      "__v": 0,\
+      "bernieSandersPosition": 0,\
+      "bernieSandersPositionText": "<p>Recently <a href=\\"http:\\/\\/www.motherjones.com\\/environment\\/2015\\/11\\/bernie-sanders-drilling-climate-federal-lands-ban\\" target=\\"_blank\\">co-sponsored<\\/a> the Keep It In the Ground Act, a bill that would \\"ban offshore drilling for oil and gas in the Arctic and the Atlantic and would stop new leases for offshore drilling in the Pacific and the Gulf of Mexico.\\"<\\/p>",\
+      "bernieSandersRecord": 0,\
+      "bernieSandersRecordText": "<p><a href=\\"http:\\/\\/www.sanders.senate.gov\\/newsroom\\/press-releases\\/release-sanders-proposes-drilling-ban-and-stronger-fuel-efficiency-standards\\" target=\\"_blank\\">Introduced<\\/a>&nbsp;legislation in 2010 to ban offshore drilling in the Pacific and Atlantic oceans and along Florida&rsquo;s gulf coastline.<\\/p>",\
+      "category": "5678e25aec700f3b3843cbc8",\
+      "hillaryClintonPosition": 0,\
+      "hillaryClintonPositionText": "<p><a href=\\"https:\\/\\/www.washingtonpost.com\\/news\\/energy-environment\\/wp\\/2015\\/08\\/18\\/hillary-clinton-breaks-with-obama-to-oppose-arctic-drilling\\/\\">Opposes<\\/a>&nbsp;Obama's plan to conduct drilling in the Arctic, but has not come out against offshore drilling in general.<\\/p>",\
+      "hillaryClintonRecord": 1,\
+      "hillaryClintonRecordText": "<p><a href=\\"http:\\/\\/scorecard.lcv.org\\/roll-call-vote\\/2006-219-offshore-drilling\\" target=\\"_blank\\">Voted<\\/a> for the Gulf of Mexico Energy Security Act in 2006, which opened an additional 8 million acres of the Gulf of Mexico to oil and gas drilling.<\\/p>",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "567987a4ee3a130504613a90",\
+      "__v": 0,\
+      "bernieSandersPosition": 1,\
+      "bernieSandersPositionText": "<p>Speaking about Glass Steagall in 2015,&nbsp;<a href=\\"http:\\/\\/www.sanders.senate.gov\\/newsroom\\/press-releases\\/sanders-backs-21st-century-glass-steagall-act\\" target=\\"_blank\\">Sanders said<\\/a>:&nbsp;\\"We not only must reinstate this important law, but we also have to break up the too-big-to-fail financial institutions in this country. If an institution is too big to fail, it is too big to exist.\\"<\\/p>",\
+      "bernieSandersRecord": 1,\
+      "bernieSandersRecordText": "<p><a href=\\"https:\\/\\/www.congress.gov\\/bill\\/106th-congress\\/senate-bill\\/900\\/actions\\" target=\\"_blank\\">Voted<\\/a> against the Financial Services Modernization Act of 1999, which repealed Glass-Steagall and allowed large financial institutions to consolidate.<\\/p>",\
+      "category": "5678e20fec700f3b3843cbc6",\
+      "hillaryClintonPosition": 0,\
+      "hillaryClintonPositionText": "<p>In a 2015 campaign stop, Clinton <a href=\\"http:\\/\\/www.cnn.com\\/2015\\/10\\/06\\/politics\\/hillary-clinton-glass-steagall-act-martin-omalley\\/\\" target=\\"_blank\\">said<\\/a> that she would not reinstate Glass-Steagall as president.<\\/p>",\
+      "hillaryClintonRecord": -1,\
+      "hillaryClintonRecordText": "<p>No record of having taken a position on this issue before the 2016 presidential campaign.<\\/p>",\
+      "question": "Do you support reinstating the <a href=\\"http:\\/\\/dealbook.nytimes.com\\/2013\\/07\\/11\\/senators-introduce-bill-to-separate-trading-activities-from-big-banks\\/?ref=topics\\" target=\\"_new\\">Glass-Steagall Act<\\/a>, which would prevent high-risk trading with consumer bank deposits?",\
+      "sortOrder": 9,\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "56844c2c8a277a03004d5a27",\
+      "sortOrder": 10,\
+      "question": "Do you support the No Child Left Behind Act, signed into law by President George Bush in 2002, which ties school funding to performance on national standardized tests?",\
+      "__v": 0,\
+      "bernieSandersPosition": 0,\
+      "bernieSandersPositionText": "<p>In 2015 Sanders <a href=\\"https:\\/\\/www.washingtonpost.com\\/news\\/answer-sheet\\/wp\\/2015\\/07\\/19\\/how-clinton-sanders-omalley-answer-unions-questions-about-education\\/\\" target=\\"_blank\\">wrote<\\/a>:&nbsp;&ldquo;I voted against No Child Left Behind in 2001, and continue to oppose the bill&rsquo;s reliance on high-stakes standardized testing to direct draconian interventions. In my view, No Child Left Behind ignores several important factors in a student&rsquo;s academic performance, specifically the impact of poverty, access to adequate health care, mental health, nutrition, and a wide variety of supports that children in poverty should have access to.\\"<\\/p>",\
+      "bernieSandersRecord": 0,\
+      "bernieSandersRecordText": "<p>Sanders <a href=\\"https:\\/\\/votesmart.org\\/bill\\/votes\\/8584#.VoF2ZjY9ZEw\\" target=\\"_blank\\">voted<\\/a>&nbsp;against the final version of the bill in 2001.<\\/p>",\
+      "category": "5678e350ec700f3b3843cbcf",\
+      "hillaryClintonPosition": 0,\
+      "hillaryClintonPositionText": "<p>In 2015 Clinton <a href=\\"https:\\/\\/www.washingtonpost.com\\/news\\/answer-sheet\\/wp\\/2015\\/07\\/19\\/how-clinton-sanders-omalley-answer-unions-questions-about-education\\/\\" target=\\"_blank\\">wrote<\\/a>:&nbsp;\\"When the No Child Left Behind Act was enacted, I viewed it as a historic promise between the federal government and educators. I hoped that it would lead to a greater sense of shared responsibility for our schools&rsquo; success. Unfortunately, that promise was largely broken because schools struggled to meet the mandates imposed by the law and the implementation at the federal level was problematic.\\"<\\/p>",\
+      "hillaryClintonRecord": 1,\
+      "hillaryClintonRecordText": "<p>Clinton <a href=\\"https:\\/\\/votesmart.org\\/bill\\/votes\\/8426#.VoF3vzY9ZEw\\" target=\\"_blank\\">voted<\\/a>&nbsp;in favor of the final version of the bill in 2001.<\\/p>",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "568442e08a277a03004d5a1b",\
+      "sortOrder": 11,\
+      "question": "Do you believe the United States should build a fence along its border with Mexico to insulate itself from illegal immigration?",\
+      "__v": 0,\
+      "bernieSandersPosition": 0,\
+      "bernieSandersPositionText": "<p>In 2015 speech, Sanders <a href=\\"http:\\/\\/www.latintimes.com\\/bernie-sanders-immigration-read-full-speech-presidential-candidates-address-naleo-324484\\" target=\\"_blank\\">said<\\/a> that he stood by his earlier immigration policy that opposes \\"tying immigration reform to the building of a border fence.\\"<\\/p>",\
+      "bernieSandersRecord": 0,\
+      "bernieSandersRecordText": "<p><a href=\\"https:\\/\\/www.govtrack.us\\/congress\\/bills\\/109\\/hr6061\\" target=\\"_blank\\">Voted<\\/a> against building a fence along the Mexican border in 2006.<\\/p>",\
+      "category": "5678e296ec700f3b3843cbca",\
+      "hillaryClintonPosition": 1,\
+      "hillaryClintonPositionText": "<p>When asked in 2015 what she would do about securing the Mexican border from illegal immigration, Clinton <a href=\\"https:\\/\\/www.youtube.com\\/watch?v=-wjbil4MAfM\\" target=\\"_blank\\">said<\\/a>:&nbsp;\\"I voted numerous times when I was a senator to spend money to build a barrier to try to prevent illegal immigrants from coming in, and I do think you have to control your borders.&rdquo;<\\/p>",\
+      "hillaryClintonRecord": 1,\
+      "hillaryClintonRecordText": "<p><a href=\\"https:\\/\\/www.govtrack.us\\/congress\\/bills\\/109\\/hr6061\\" target=\\"_blank\\">Voted<\\/a> to build a fence along the Mexican border in 2006.<\\/p>",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "568447be8a277a03004d5a21",\
+      "sortOrder": 12,\
+      "question": "Do you believe that the death penalty should be abolished?",\
+      "__v": 0,\
+      "bernieSandersPosition": 1,\
+      "bernieSandersPositionText": "<p>Has <a href=\\"http:\\/\\/www.huffingtonpost.com\\/entry\\/bernie-sanders-death-penalty_56326622e4b00aa54a4d48ff\\" target=\\"_blank\\">called<\\/a>, as recently as October, for abolishing the death penalty on the federal level.<\\/p>",\
+      "bernieSandersRecord": 1,\
+      "bernieSandersRecordText": "<p>Has consistently v<a href=\\"http:\\/\\/www.ontheissues.org\\/2016\\/Bernie_Sanders_Crime.htm\\" target=\\"_blank\\">oted<\\/a> against the death penalty throughout his career.<\\/p>",\
+      "hillaryClintonPosition": 0,\
+      "hillaryClintonPositionText": "<p>Continues to <a href=\\"http:\\/\\/www.huffingtonpost.com\\/entry\\/hillary-clinton-death-penalty_56310eb4e4b00aa54a4c48c9\\" target=\\"_blank\\">support<\\/a> the death penalty.<\\/p>",\
+      "hillaryClintonRecord": 0,\
+      "hillaryClintonRecordText": "<p>Has consistently v<a href=\\"http:\\/\\/www.ontheissues.org\\/2016\\/Hillary_Clinton_Crime.htm\\" target=\\"_blank\\">oted<\\/a> in favor of the death penalty throughout her career.<\\/p>",\
+      "category": "5678e2b4ec700f3b3843cbcb",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "567988a6ee3a130504613a92",\
+      "__v": 0,\
+      "bernieSandersPosition": 0,\
+      "bernieSandersPositionText": "<p>In a 2015 <a href=\\"http:\\/\\/www.sanders.senate.gov\\/stop-the-tpp\\" target=\\"_blank\\">petition<\\/a>, Sanders wrote: \\"The Trans-Pacific Partnership is a disastrous trade agreement designed to protect the interests of the largest multi-national corporations at the expense of workers, consumers, the environment and the foundations of American democracy.\\"<\\/p>",\
+      "bernieSandersRecord": 0,\
+      "bernieSandersRecordText": "<p>Sanders has been an <a href=\\"https:\\/\\/www.youtube.com\\/watch?v=nPIjriHMYYk\\" target=\\"_blank\\">opponent<\\/a> of the Trans-Pacific Partnership since its introduction into Congress.<\\/p>",\
+      "category": "5678e20fec700f3b3843cbc6",\
+      "hillaryClintonPosition": 0,\
+      "hillaryClintonPositionText": "<p>In an October 2015 <a href=\\"http:\\/\\/www.pbs.org\\/newshour\\/rundown\\/hillary-clinton-says-she-does-not-support-trans-pacific-partnership\\/\\" target=\\"_blank\\">interview<\\/a>, Clinton said that she no longer supports the Trans-Pacific Partnership.<\\/p>",\
+      "hillaryClintonRecord": 1,\
+      "hillaryClintonRecordText": "<p>Clinton has <a href=\\"http:\\/\\/www.cnn.com\\/2015\\/06\\/15\\/politics\\/45-times-secretary-clinton-pushed-the-trade-bill-she-now-opposes\\/\\" target=\\"_blank\\">advocated<\\/a> for the Trans-Pacific Partnership on at least forty occasions in the last two years.<\\/p>",\
+      "question": "Do you support the <a href=\\"http:\\/\\/www.huffingtonpost.com\\/entry\\/trade-deal-confirms-advocates-worst-fears_563b9061e4b0411d306ff765\\"  target=\\"_new\\">Trans-Pacific Partnership<\\/a>, which lowers trade barriers, but weakens regulation of multi-national corporations?",\
+      "sortOrder": 13,\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "56844b998a277a03004d5a26",\
+      "sortOrder": 14,\
+      "question": "Do you believe that tuition for public colleges should be free?",\
+      "__v": 0,\
+      "bernieSandersPosition": 1,\
+      "bernieSandersPositionText": "<p>Sanders <a href=\\"http:\\/\\/www.sanders.senate.gov\\/download\\/collegeforallsummary\\/?inline=file\\" target=\\"_blank\\">introduced<\\/a>&nbsp;the College for All Act in the Senate in 2015, which would eliminate undergraduate tuition at 4-year public colleges and universities.<\\/p>",\
+      "bernieSandersRecord": -1,\
+      "bernieSandersRecordText": "<p>Neither candidate had taken a position on this issue before the 2016 campaign.<\\/p>",\
+      "category": "5678e350ec700f3b3843cbcf",\
+      "hillaryClintonPosition": 0,\
+      "hillaryClintonPositionText": "<p>In August 2015, Clinton <a href=\\"http:\\/\\/blogs.wsj.com\\/washwire\\/2015\\/08\\/10\\/5-things-about-hillary-clintons-debt-free-college-plan\\/\\" target=\\"_blank\\">proposed<\\/a>&nbsp;a plan that would help students at public colleges gradudate debt-free, but would still require family financial contribution and student employment.<\\/p>",\
+      "hillaryClintonRecord": -1,\
+      "hillaryClintonRecordText": "<p>Neither candidate had taken a position on this issue before the 2016 campaign.<\\/p>",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "56844a338a277a03004d5a24",\
+      "sortOrder": 15,\
+      "question": "Do you believe in a federal ban on assault weapons?",\
+      "__v": 0,\
+      "bernieSandersPosition": 1,\
+      "bernieSandersPositionText": "<p><a href=\\"http:\\/\\/www.sanders.senate.gov\\/newsroom\\/press-releases\\/sanders-votes-for-background-checks-assault-weapons-ban\\" target=\\"_blank\\">Voted<\\/a>&nbsp;in April 2013 for a ban on assault weapons and expanded background checks on gun buyers.<\\/p>",\
+      "bernieSandersRecord": 1,\
+      "bernieSandersRecordText": "<p><a href=\\"https:\\/\\/www.congress.gov\\/bill\\/103rd-congress\\/house-bill\\/4296\\/summary\\/00\\" target=\\"_blank\\">Voted<\\/a>&nbsp;in 1993 to ban semi-automatic assault weapons.<\\/p>",\
+      "category": "5678e345ec700f3b3843cbce",\
+      "hillaryClintonPosition": 1,\
+      "hillaryClintonPositionText": "<p>According to her campaign <a href=\\"https:\\/\\/www.hillaryclinton.com\\/issues\\/gun-violence-prevention\\/\\" target=\\"_blank\\">website<\\/a>, Clinton \\"supports reinstating the assault weapons ban.\\"<\\/p>",\
+      "hillaryClintonRecord": 1,\
+      "hillaryClintonRecordText": "<p><a href=\\"https:\\/\\/www.congress.gov\\/bill\\/108th-congress\\/senate-bill\\/1034\\/cosponsors\\" target=\\"_blank\\">Co-sponsored<\\/a>&nbsp;a 2003 bill in the Senate to renew the 1993 assault weapons ban.<\\/p>",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "568448c08a277a03004d5a22",\
+      "sortOrder": 16,\
+      "question": "Do you believe that the prison at Guantanamo Bay should be closed and its detainees transported to US prisons?",\
+      "__v": 0,\
+      "bernieSandersPosition": 1,\
+      "bernieSandersPositionText": "<p>Sanders still supports closing Guantanamo and <a href=\\"http:\\/\\/www.huffingtonpost.com\\/entry\\/senate-ndaa-closing-guantanamo_56421b7ee4b0307f2caf060e\\">voted<\\/a>&nbsp;against the National Defense Authorization Act in 2015, which blocked the transfer of prisoners to the U.S.<\\/p>",\
+      "bernieSandersRecord": 1,\
+      "bernieSandersRecordText": "<p><a href=\\"http:\\/\\/www.nytimes.com\\/2015\\/05\\/28\\/upshot\\/the-senate-votes-that-divided-hillary-clinton-and-bernie-sanders.html?_r=2\\" target=\\"_blank\\">Voted<\\/a> to allow the transfer of Guantanamo detainees to America in 2007.<\\/p>",\
+      "category": "5678e300ec700f3b3843cbcc",\
+      "hillaryClintonPosition": 1,\
+      "hillaryClintonPositionText": "<p>In a <a href=\\"http:\\/\\/www.huffingtonpost.com\\/entry\\/hillary-clinton-guantanamo-memo_5654cc40e4b0258edb33537b\\" target=\\"_blank\\">2013 memo<\\/a>&nbsp;written just before her resignation as Secretary of State, Clinton advocated for closing Guantanamo and initiating detainee transfers for \\"pre-trial detention, trial, and sentences.\\"<\\/p>",\
+      "hillaryClintonRecord": 0,\
+      "hillaryClintonRecordText": "<p><a href=\\"http:\\/\\/www.nytimes.com\\/2015\\/05\\/28\\/upshot\\/the-senate-votes-that-divided-hillary-clinton-and-bernie-sanders.html?_r=2\\" target=\\"_blank\\">Voted<\\/a> to block the transfer of Guantanamo detainees to America in 2007.<\\/p>",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "56798809ee3a130504613a91",\
+      "__v": 0,\
+      "bernieSandersPosition": 1,\
+      "bernieSandersPositionText": "<p><a href=\\"http:\\/\\/www.sanders.senate.gov\\/newsroom\\/press-releases\\/sanders-introduces-bill-for-15-an-hour-minimum-wage\\" target=\\"_blank\\">Introduced legislation<\\/a>&nbsp;in 2015 to raise the federal minimum wage to&nbsp;$15. In the second democratic debate, he<a href=\\"http:\\/\\/www.huffingtonpost.com\\/entry\\/bernie-sanders-minimum-wage_5647f38fe4b045bf3def7357\\" target=\\"_blank\\"> said<\\/a>:&nbsp;&ldquo;You have no disposable income when you are make 10, 12 bucks an hour. When we put money into the hands of working people, they're going to go out and buy goods, they're going to buy services and they're going to create jobs...&rdquo;<\\/p>",\
+      "bernieSandersRecord": -1,\
+      "bernieSandersRecordText": "<p>Neither candidate had taken a position on this issue before the 2016 campaign.<\\/p>",\
+      "category": "5678e233ec700f3b3843cbc7",\
+      "hillaryClintonPosition": 0,\
+      "hillaryClintonPositionText": "<p><a href=\\"http:\\/\\/www.msnbc.com\\/msnbc\\/hillary-clinton-i-favor-12-hour-minimum-wage\\" target=\\"_blank\\">Supports<\\/a> a $12 minimum wage at the federal level, saying that while some localities can choose to go higher, \\"what you can do in L.A. or in New York may not work in other places.\\"<\\/p>",\
+      "hillaryClintonRecord": -1,\
+      "hillaryClintonRecordText": "<p>Neither candidate had taken a position on this issue before the 2016 campaign.<\\/p>",\
+      "question": "Do you support raising the federal minimum wage to $12 or $15 an hour?",\
+      "sortOrder": 17,\
+      "responseBLabel": "$12",\
+      "responseALabel": "$15"\
+    \},\
+    \{\
+      "_id": "5684510d8a277a03004d5a2d",\
+      "sortOrder": 18,\
+      "question": "Do you support federal funding for family planning and contraceptives?",\
+      "__v": 0,\
+      "bernieSandersPosition": 1,\
+      "bernieSandersPositionText": "<p>Sanders' campaign <a href=\\"https:\\/\\/berniesanders.com\\/issues\\/fighting-for-womens-rights\\/\\" target=\\"_blank\\">platform<\\/a> states that he would \\"expand, not cut, funding for Planned Parenthood, the Title X family planning program, and other initiatives that protect women&rsquo;s health, access to contraception, and the availability of a safe and legal abortion.\\"<\\/p>",\
+      "bernieSandersRecord": 1,\
+      "bernieSandersRecordText": "<p><a href=\\"https:\\/\\/www.govtrack.us\\/congress\\/bills\\/111\\/s21\\" target=\\"_blank\\">Co-sponsored<\\/a>&nbsp;the Prevention First Act in 2009, which aimed to increase access to women's health care.<\\/p>",\
+      "category": "5678e320ec700f3b3843cbcd",\
+      "hillaryClintonPosition": 1,\
+      "hillaryClintonPositionText": "<p>Clinton's campaign <a href=\\"https:\\/\\/www.hillaryclinton.com\\/issues\\/womens-rights-and-opportunity\\/\\" target=\\"_blank\\">platform<\\/a> states that she would \\"stand up to Republican attempts to defund Planned Parenthood, which would restrict access to critical health care services, like cancer screenings, contraception, and safe, legal abortion.\\"<\\/p>",\
+      "hillaryClintonRecord": 1,\
+      "hillaryClintonRecordText": "<p><a href=\\"https:\\/\\/www.govtrack.us\\/congress\\/bills\\/111\\/s21\\" target=\\"_blank\\">Co-sponsored<\\/a>&nbsp;the Prevention First Act in 2009, which aimed to increase access to women's health care.<\\/p>",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "5679872dee3a130504613a8f",\
+      "__v": 0,\
+      "bernieSandersPosition": 0,\
+      "bernieSandersPositionText": "<p>In a recent <a href=\\"https:\\/\\/www.washingtonpost.com\\/news\\/post-politics\\/wp\\/2015\\/10\\/03\\/bernie-sanders-sides-with-obama-and-against-clinton-on-no-fly-zone-in-syria\\/\\" target=\\"_blank\\">statement<\\/a> to the Washington Post, Sanders said: &ldquo;I oppose, at this point, a unilateral American no-fly-zone in Syria, which could get us more deeply involved in that horrible civil war and lead to a never-ending U.S. entanglement in that region.&rdquo;<\\/p>",\
+      "bernieSandersRecord": -1,\
+      "bernieSandersRecordText": "<p>While Sanders <a href=\\"https:\\/\\/www.youtube.com\\/watch?v=ynEU9dIDNJw\\" target=\\"_blank\\">expressed<\\/a> \\"serious concerns\\" about deepening American involvement in Syria in 2013, he did not take a clear position on a no-fly-zone at the time.<\\/p>",\
+      "category": "567338db10fcb34e01659a57",\
+      "hillaryClintonPosition": 1,\
+      "hillaryClintonPositionText": "<p>Clinton <a href=\\"http:\\/\\/foreignpolicy.com\\/2015\\/10\\/28\\/democrats-arent-on-board-with-hillarys-no-fly-zone-plan\\/\\" target=\\"_blank\\">supports<\\/a> increased military involvement&nbsp;in Syria, including the establishment of a no-fly-zone.<\\/p>",\
+      "hillaryClintonRecord": -1,\
+      "hillaryClintonRecordText": "<p>While Clinton <a href=\\"http:\\/\\/www.theguardian.com\\/world\\/2012\\/aug\\/11\\/syria-us-turkey-no-fly-zones\\" target=\\"_blank\\">considered<\\/a> the idea of a no-fly-zone as Secretary of State, her position on the issue was not&nbsp;<a href=\\"http:\\/\\/www.msnbc.com\\/msnbc\\/hillary-clinton-calls-no-fly-zones-syria\\" target=\\"_blank\\">reported<\\/a> until recently.<\\/p>",\
+      "question": "Do you believe that the United States should escalate its involvement in the Syrian conflict by instituting a no-fly-zone?",\
+      "sortOrder": 19,\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "567485f995587fde1200d602",\
+      "__v": 0,\
+      "bernieSandersPositionText": "<p>In a 2015 <a href=\\"http:\\/\\/www.latintimes.com\\/bernie-sanders-immigration-read-full-speech-presidential-candidates-address-naleo-324484\\">speech<\\/a>, Sanders said that he \\"continue[s] to be a strong supporter of the DREAM Act, which would offer the opportunity of permanent residency and eventual citizenship to young people who were brought to the United States as children.\\"<\\/p>",\
+      "bernieSandersRecordText": "<p><a href=\\"https:\\/\\/www.congress.gov\\/bill\\/110th-congress\\/senate-bill\\/2205\\" target=\\"_blank\\">Voted<\\/a>&nbsp;for the DREAM Act while in the Senate in 2007.<\\/p>",\
+      "category": "5678e296ec700f3b3843cbca",\
+      "hillaryClintonPositionText": "<p>Clinton's campaign platform <a href=\\"https:\\/\\/www.hillaryclinton.com\\/issues\\/immigration-reform\\/\\" target=\\"_blank\\">states<\\/a>&nbsp;her continued support for the DREAM Act and for \\"comprehensive immigration reform that provides a full and equal path to citizenship.\\"<\\/p>",\
+      "hillaryClintonRecordText": "<p><a href=\\"https:\\/\\/www.congress.gov\\/bill\\/108th-congress\\/senate-bill\\/1545\\" target=\\"_blank\\">Co-sponsored<\\/a>&nbsp;the DREAM Act while in the Senate in 2003.<\\/p>",\
+      "question": "Do you support the DREAM Act, which would offer a path to citizenship for undocumented immigrants who arrived in the US as minors?",\
+      "sortOrder": 20,\
+      "bernieSandersPosition": 1,\
+      "bernieSandersRecord": 1,\
+      "hillaryClintonPosition": 1,\
+      "hillaryClintonRecord": 1,\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "56844acb8a277a03004d5a25",\
+      "sortOrder": 21,\
+      "question": "Do you believe in federally mandated background checks for individuals who want to purchase firearms?",\
+      "__v": 0,\
+      "bernieSandersPosition": 1,\
+      "bernieSandersPositionText": "<p>When asked in a 2015 interview what should be done about gun control, Sanders <a href=\\"http:\\/\\/www.ontheissues.org\\/2016\\/Bernie_Sanders_Gun_Control.htm\\" target=\\"_new\\">said<\\/a>: \\"For a start, universal instant background checks. Nobody should have a gun who has a criminal background.\\"<\\/p>",\
+      "bernieSandersRecord": 0,\
+      "bernieSandersRecordText": "<p><a href=\\"http:\\/\\/clerk.house.gov\\/evs\\/1993\\/roll614.xml\\" target=\\"_blank\\">Voted<\\/a>&nbsp;against the Brady Bill in 1993, saying instead that states should individually set background-check policies.<\\/p>",\
+      "category": "5678e345ec700f3b3843cbce",\
+      "hillaryClintonPosition": 1,\
+      "hillaryClintonPositionText": "<p>Clinton's campaign platform <a href=\\"https:\\/\\/www.hillaryclinton.com\\/briefing\\/factsheets\\/2015\\/10\\/04\\/clinton-believes-its-time-to-tackle-gun-violence\\/\\" target=\\"_blank\\">states<\\/a> that she would \\"advocate for comprehensive federal background check legislation\\" and \\"reduce unlawful gun transfers to dangerous individuals\\" as President.<\\/p>",\
+      "hillaryClintonRecord": 1,\
+      "hillaryClintonRecordText": "<p>Clinton has been a longtime <a href=\\"https:\\/\\/www.hillaryclinton.com\\/issues\\/gun-violence-prevention\\/\\" target=\\"_blank\\">supporter<\\/a>&nbsp;of the Brady Bill, which imposes a five-day waiting period on background checks for firearm purchases.<\\/p>",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "568455918a277a03004d5a30",\
+      "sortOrder": 22,\
+      "question": "Do you support <a href=\\"https:\\/\\/www.youtube.com\\/watch?v=Uti2niW2BRA\\" target=\\"_new\\">fracking<\\/a> techniques used to extract natural gas from the earth?",\
+      "__v": 0,\
+      "bernieSandersPosition": 0,\
+      "bernieSandersPositionText": "<p>Sanders continues to <a href=\\"https:\\/\\/www.youtube.com\\/watch?v=2qYzwDbBHZM\\" target=\\"_blank\\">oppose<\\/a> fracking. His climate change policy proposal states: \\"Fracking threatens our air and water... We have clean energy solutions to climate change, and fracking is not one of them.\\"<\\/p>",\
+      "bernieSandersRecord": 0,\
+      "bernieSandersRecordText": "<p>Sanders&nbsp;<a href=\\"https:\\/\\/www.govtrack.us\\/congress\\/bills\\/113\\/s332\\" target=\\"_blank\\">advocated<\\/a> for restrictions on fracking as part of The Climate Protection Act that he sponsored in 2013.<\\/p>",\
+      "category": "5678e25aec700f3b3843cbc8",\
+      "hillaryClintonPosition": 0,\
+      "hillaryClintonPositionText": "<p>Since July 2015, Clinton has <a href=\\"http:\\/\\/www.huffingtonpost.com\\/entry\\/hillary-clinton-fracking_55a7fdc8e4b04740a3df4b75\\" target=\\"_blank\\">supported<\\/a> phasing out fracking on public lands with some exceptions, but noted that the U.S. needs to balance its aspiration to be an energy superpower with the need to address climate change.<\\/p>",\
+      "hillaryClintonRecord": 1,\
+      "hillaryClintonRecordText": "<p>Clinton <a href=\\"http:\\/\\/grist.org\\/climate-energy\\/where-does-hillary-clinton-stand-on-fracking\\/\\" target=\\"_blank\\">supported<\\/a> fracking in Bulgaria and other European countries&nbsp;while Secretary of State.<\\/p>",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "56844da68a277a03004d5a29",\
+      "sortOrder": 23,\
+      "question": "Do you believe that mandatory minimum sentences should be ended for non-violent drug offenses?",\
+      "__v": 0,\
+      "bernieSandersPosition": 1,\
+      "bernieSandersPositionText": "<p>Sanders' campaign platform <a href=\\"https:\\/\\/berniesanders.com\\/issues\\/racial-justice\\/\\" target=\\"_blank\\">states<\\/a>: \\"We need to turn back from the failed 'War on Drugs' and eliminate mandatory minimums which result in sentencing disparities between black and white people.\\"<\\/p>",\
+      "bernieSandersRecord": 1,\
+      "bernieSandersRecordText": "<p><a href=\\"https:\\/\\/www.leahy.senate.gov\\/press\\/leahy-praises-senate-passage-of-historic-bill-to-address-crack\\/powder-sentencing-disparity\\" target=\\"_blank\\">Co-sponsored<\\/a>&nbsp;legislation in the Senate in 2010 to end harsher sentences for crack cocaine posession.<\\/p>",\
+      "category": "5678e282ec700f3b3843cbc9",\
+      "hillaryClintonPosition": 1,\
+      "hillaryClintonPositionText": "<p>Clinton <a href=\\"https:\\/\\/www.hillaryclinton.com\\/issues\\/criminal-justice-reform\\/\\" target=\\"_blank\\">stated<\\/a> that as President she would \\"reduce mandatory minimum sentences for nonviolent drug offenses by cutting them in half.\\"<\\/p>",\
+      "hillaryClintonRecord": 1,\
+      "hillaryClintonRecordText": "<p><a href=\\"https:\\/\\/www.congress.gov\\/bill\\/110th-congress\\/senate-bill\\/1711\\/cosponsors\\" target=\\"_blank\\">Co-sponsored<\\/a>&nbsp;the Fair Sentencing Act in 2007, which reduced the sentencing disparity between crack and powder cocaine offenses.<\\/p>",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "56844f168a277a03004d5a2b",\
+      "sortOrder": 24,\
+      "question": "Do you support raising income taxes on the wealthiest Americans? ",\
+      "__v": 0,\
+      "bernieSandersPosition": 1,\
+      "bernieSandersPositionText": "<p>Sanders&nbsp;<a href=\\"http:\\/\\/time.com\\/4113434\\/transcript-read-the-full-text-of-the-second-democratic-debate\\/\\" target=\\"_blank\\">said<\\/a> in the second Democratic debate: \\"We are going to end the absurdity, as Warren Buffet often reminds us, that billionaires pay an effective tax rate lower than nurses or truck drivers. That makes no sense at all. There has to be real tax reform, and the wealthiest and large corporations will pay when I'm president.\\"<\\/p>",\
+      "bernieSandersRecord": 1,\
+      "bernieSandersRecordText": "<p>Sanders&nbsp;<a href=\\"http:\\/\\/www.ontheissues.org\\/2016\\/Bernie_Sanders_Tax_Reform.htm\\" target=\\"_blank\\">opposed<\\/a> the Bush tax cuts in 2001 and 2003, and sponsored a 2008 bill to increase the tax rate for individuals earning over $1 million.<\\/p>",\
+      "category": "5678e233ec700f3b3843cbc7",\
+      "hillaryClintonPosition": 1,\
+      "hillaryClintonPositionText": "<p>Clinton&nbsp;<a href=\\"http:\\/\\/cnnpressroom.blogs.cnn.com\\/2015\\/10\\/13\\/cnn-democratic-debate-full-transcript\\/\\" target=\\"_blank\\">said<\\/a>&nbsp;in the first Democratic debate: \\"Right now, the wealthy pay too little and the middle class pays too much... the wealthy will have to pay their fair share.\\"<\\/p>",\
+      "hillaryClintonRecord": 1,\
+      "hillaryClintonRecordText": "<p>Clinton&nbsp;<a href=\\"http:\\/\\/www.taxjusticeblog.org\\/archive\\/2015\\/04\\/what_we_know_about_hillary_cli.php#.Vn8DBDamIqY\\" target=\\"_blank\\">opposed<\\/a> the Bush tax cuts in 2001 and 2003, and voted to raise taxes on individuals earning more than $1 million.<\\/p>",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \},\
+    \{\
+      "_id": "5684460d8a277a03004d5a1e",\
+      "sortOrder": 25,\
+      "question": "Do you believe that a significant portion of our prison system should be run by privately owned companies?",\
+      "__v": 0,\
+      "bernieSandersPosition": 0,\
+      "bernieSandersPositionText": "<p><a href=\\"https:\\/\\/www.washingtonpost.com\\/news\\/post-politics\\/wp\\/2015\\/09\\/17\\/sanders-to-push-a-plan-to-ban-private-companies-from-running-prisons\\/\\" target=\\"_blank\\">Introduced<\\/a>&nbsp;a bill to ban private prisons, <a href=\\"http:\\/\\/www.sanders.senate.gov\\/download\\/prepared-remarks_--justice-is-not-for-sale?inline=file\\" target=\\"_blank\\">saying<\\/a>: \\"We need to start treating prisoners like human beings. Private companies should not be profiting from their incarceration.\\"<\\/p>",\
+      "bernieSandersRecord": -1,\
+      "bernieSandersRecordText": "<p>Neither candidate has a substantial record on this issue.<\\/p>",\
+      "hillaryClintonPosition": 0,\
+      "hillaryClintonPositionText": "<p><a href=\\"http:\\/\\/www.huffingtonpost.com\\/entry\\/hillary-clinton-private-prisons_562a3e3ee4b0ec0a389418ec\\" target=\\"_blank\\">Called<\\/a>&nbsp;for a ban on private prisons and returned money that had been donated to her campaign by these groups in October of 2015.<\\/p>",\
+      "hillaryClintonRecord": -1,\
+      "hillaryClintonRecordText": "<p>Neither candidate has a substantial record on this issue.<\\/p>",\
+      "category": "5678e2b4ec700f3b3843cbcb",\
+      "responseBLabel": "No",\
+      "responseALabel": "Yes"\
+    \}\
+  ]\
+\}}
