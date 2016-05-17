@@ -19,6 +19,7 @@
 		6A4B26241CEAC79E00503212 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B26221CEAC79E00503212 /* Question.m */; };
 		6A4B26271CEAC90900503212 /* IssuePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B26261CEAC90900503212 /* IssuePosition.m */; };
 		6A4B26281CEAC90900503212 /* IssuePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B26261CEAC90900503212 /* IssuePosition.m */; };
+		6A6583941CEB6F9200DAC92F /* UIColor+BernieVSHillary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6583931CEB6F9200DAC92F /* UIColor+BernieVSHillary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		6A4B26221CEAC79E00503212 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 		6A4B26251CEAC90900503212 /* IssuePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssuePosition.h; sourceTree = "<group>"; };
 		6A4B26261CEAC90900503212 /* IssuePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssuePosition.m; sourceTree = "<group>"; };
+		6A6583921CEB6F9200DAC92F /* UIColor+BernieVSHillary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BernieVSHillary.h"; sourceTree = "<group>"; };
+		6A6583931CEB6F9200DAC92F /* UIColor+BernieVSHillary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BernieVSHillary.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,7 @@
 		6A10A2EB1CE9A04500449CCC /* bernievshillary */ = {
 			isa = PBXGroup;
 			children = (
+				6A6583911CEB6F4D00DAC92F /* AppKit */,
 				6A4B26201CEAC77400503212 /* Models */,
 				6A10A2EF1CE9A04500449CCC /* AppDelegate.h */,
 				6A10A2F01CE9A04500449CCC /* AppDelegate.m */,
@@ -158,6 +162,15 @@
 				6A4B26261CEAC90900503212 /* IssuePosition.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		6A6583911CEB6F4D00DAC92F /* AppKit */ = {
+			isa = PBXGroup;
+			children = (
+				6A6583921CEB6F9200DAC92F /* UIColor+BernieVSHillary.h */,
+				6A6583931CEB6F9200DAC92F /* UIColor+BernieVSHillary.m */,
+			);
+			name = AppKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +305,7 @@
 				6A10A2F41CE9A04500449CCC /* ViewController.m in Sources */,
 				6A4B26231CEAC79E00503212 /* Question.m in Sources */,
 				6A10A2F11CE9A04500449CCC /* AppDelegate.m in Sources */,
+				6A6583941CEB6F9200DAC92F /* UIColor+BernieVSHillary.m in Sources */,
 				6A10A2EE1CE9A04500449CCC /* main.m in Sources */,
 				6A4B26271CEAC90900503212 /* IssuePosition.m in Sources */,
 			);
