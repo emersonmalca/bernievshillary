@@ -12,6 +12,8 @@
 
 @implementation UIView (Utilities)
 
+#pragma mark - Animation
+
 + (void)scaleViewToIdentityScale:(UIView *)view finalAlpha:(CGFloat)finalAlpha completion:(void(^)(BOOL))completion {
     [self scaleViewToIdentityScale:view finalAlpha:finalAlpha delay:0.0 completion:completion];
 }
@@ -22,6 +24,12 @@
         [view setAlpha:1.0];
     } completion:completion];
 }
+
++ (void)animateWithSoftPhysicsDuration:(NSTimeInterval)duration delay:(NSTimeInterval)delay options:(UIViewAnimationOptions)options animations:(void (^)(void))animations completion:(void (^ __nullable)(BOOL finished))completion {
+    [UIView animateWithDuration:duration delay:delay usingSpringWithDamping:0.75 initialSpringVelocity:0.25 options:options animations:animations completion:completion];
+}
+
+#pragma mark - others
 
 - (void)setScale:(CGFloat)scale {
     self.transform = CGAffineTransformScale(CGAffineTransformIdentity, scale, scale);

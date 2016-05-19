@@ -21,6 +21,9 @@
 @property (strong, nonatomic) CAShapeLayer *topMask;
 @property (strong, nonatomic) CAShapeLayer *bottomMask;
 
+@property (strong, nonatomic) IBOutlet UIView *getStartedView;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *getStartedViewBottomConstraint;
+
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *mainContainerBottomConstraint;
 
 @end
@@ -45,14 +48,15 @@
     // Hide stuff for presentation
     self.bernie.alpha = 0.0;
     self.hillary.alpha = 0.0;
-    //[self.bernie setAnchorPointAdjustingPosition:CGPointMake(0.5, 1.0)];
-    //[self.hillary setAnchorPointAdjustingPosition:CGPointMake(0.5, 1.0)];
     [self.bernie setScale:0.75];
     [self.hillary setScale:0.75];
     for (UIView *sv in self.titleContainer.subviews) {
         sv.alpha = 0.0;
         [sv setScale:0.75];
     }
+    
+    // Hide get started view
+    self.getStartedViewBottomConstraint.constant = -self.getStartedView.bounds.size.height;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -66,6 +70,15 @@
         [UIView scaleViewToIdentityScale:sv finalAlpha:1.0 delay:delay completion:NULL];
         delay += 0.3;
     }
+    
+    // Animate in the get started view after a bit
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [UIView animateWithSoftPhysicsDuration:0.6 delay:0.0 options:0 animations:^{
+            self.getStartedViewBottomConstraint.constant = 0.0;
+            [self.view layoutIfNeeded];
+        } completion:NULL];
+    });
+     
 }
 
 - (void)viewDidLayoutSubviews {
