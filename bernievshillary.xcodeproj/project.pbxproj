@@ -20,6 +20,9 @@
 		6A4B26271CEAC90900503212 /* IssuePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B26261CEAC90900503212 /* IssuePosition.m */; };
 		6A4B26281CEAC90900503212 /* IssuePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B26261CEAC90900503212 /* IssuePosition.m */; };
 		6A6583941CEB6F9200DAC92F /* UIColor+BernieVSHillary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6583931CEB6F9200DAC92F /* UIColor+BernieVSHillary.m */; };
+		6A6583991CEB719100DAC92F /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6583971CEB719100DAC92F /* IntroViewController.m */; };
+		6A65839A1CEB719100DAC92F /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6583981CEB719100DAC92F /* IntroViewController.xib */; };
+		6A65839F1CECAAD200DAC92F /* UIView+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A65839E1CECAAD200DAC92F /* UIView+Utilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,13 @@
 		6A4B26261CEAC90900503212 /* IssuePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssuePosition.m; sourceTree = "<group>"; };
 		6A6583921CEB6F9200DAC92F /* UIColor+BernieVSHillary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BernieVSHillary.h"; sourceTree = "<group>"; };
 		6A6583931CEB6F9200DAC92F /* UIColor+BernieVSHillary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BernieVSHillary.m"; sourceTree = "<group>"; };
+		6A6583961CEB719100DAC92F /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
+		6A6583971CEB719100DAC92F /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
+		6A6583981CEB719100DAC92F /* IntroViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
+		6A65839B1CEC38B800DAC92F /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		6A65839C1CEC38B800DAC92F /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		6A65839D1CECAAD200DAC92F /* UIView+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utilities.h"; sourceTree = "<group>"; };
+		6A65839E1CECAAD200DAC92F /* UIView+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utilities.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +122,11 @@
 		6A10A2EB1CE9A04500449CCC /* bernievshillary */ = {
 			isa = PBXGroup;
 			children = (
+				6A6583951CEB713200DAC92F /* Interface */,
 				6A6583911CEB6F4D00DAC92F /* AppKit */,
 				6A4B26201CEAC77400503212 /* Models */,
 				6A10A2EF1CE9A04500449CCC /* AppDelegate.h */,
 				6A10A2F01CE9A04500449CCC /* AppDelegate.m */,
-				6A10A2F21CE9A04500449CCC /* ViewController.h */,
-				6A10A2F31CE9A04500449CCC /* ViewController.m */,
 				6A10A2F51CE9A04500449CCC /* Main.storyboard */,
 				6A10A2F81CE9A04500449CCC /* Assets.xcassets */,
 				6A10A2FA1CE9A04500449CCC /* LaunchScreen.storyboard */,
@@ -130,6 +139,8 @@
 		6A10A2EC1CE9A04500449CCC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6A65839B1CEC38B800DAC92F /* Lato-Bold.ttf */,
+				6A65839C1CEC38B800DAC92F /* Lato-Regular.ttf */,
 				6A10A2ED1CE9A04500449CCC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -169,8 +180,22 @@
 			children = (
 				6A6583921CEB6F9200DAC92F /* UIColor+BernieVSHillary.h */,
 				6A6583931CEB6F9200DAC92F /* UIColor+BernieVSHillary.m */,
+				6A65839D1CECAAD200DAC92F /* UIView+Utilities.h */,
+				6A65839E1CECAAD200DAC92F /* UIView+Utilities.m */,
 			);
 			name = AppKit;
+			sourceTree = "<group>";
+		};
+		6A6583951CEB713200DAC92F /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				6A10A2F21CE9A04500449CCC /* ViewController.h */,
+				6A10A2F31CE9A04500449CCC /* ViewController.m */,
+				6A6583961CEB719100DAC92F /* IntroViewController.h */,
+				6A6583971CEB719100DAC92F /* IntroViewController.m */,
+				6A6583981CEB719100DAC92F /* IntroViewController.xib */,
+			);
+			name = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +303,7 @@
 				6A10A2FC1CE9A04500449CCC /* LaunchScreen.storyboard in Resources */,
 				6A10A2F91CE9A04500449CCC /* Assets.xcassets in Resources */,
 				6A10A2F71CE9A04500449CCC /* Main.storyboard in Resources */,
+				6A65839A1CEB719100DAC92F /* IntroViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +333,9 @@
 				6A10A2F11CE9A04500449CCC /* AppDelegate.m in Sources */,
 				6A6583941CEB6F9200DAC92F /* UIColor+BernieVSHillary.m in Sources */,
 				6A10A2EE1CE9A04500449CCC /* main.m in Sources */,
+				6A65839F1CECAAD200DAC92F /* UIView+Utilities.m in Sources */,
 				6A4B26271CEAC90900503212 /* IssuePosition.m in Sources */,
+				6A6583991CEB719100DAC92F /* IntroViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

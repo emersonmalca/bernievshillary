@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "IntroViewController.h"
 
 @interface ViewController ()
+
+@property (strong, nonatomic) IntroViewController *introController;
 
 @end
 
@@ -16,12 +19,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    // Show the intro
+    self.introController = [[IntroViewController alloc] initWithNibName:@"IntroViewController" bundle:nil];
+    [self addChildViewController:self.introController];
+    self.introController.view.frame = self.view.frame;
+    [self.view addSubview:self.introController.view];
+    [self.introController didMoveToParentViewController:self];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 @end

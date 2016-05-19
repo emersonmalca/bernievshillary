@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroViewController">
+            <connections>
+                <outlet property="bottomContainer" destination="cis-VO-VhC" id="RZk-VC-cYd"/>
+                <outlet property="bottomContainerTopConstraint" destination="YT2-OT-i4v" id="Vdh-FO-I5b"/>
+                <outlet property="mainContainerBottomConstraint" destination="ib2-Kq-V8T" id="BRE-qV-g9A"/>
+                <outlet property="topContainer" destination="GUx-CF-kvn" id="JcY-Qq-O2D"/>
+                <outlet property="topContainerBottomConstraint" destination="lgf-4f-hLh" id="RN8-ln-TAI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4I-9B-Fku" userLabel="Main container">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cis-VO-VhC" userLabel="Bottom container">
+                            <rect key="frame" x="0.0" y="200" width="600" height="400"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hillary-big" translatesAutoresizingMaskIntoConstraints="NO" id="XJN-3R-5uu">
+                                    <rect key="frame" x="418" y="159" width="290" height="276"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="276" id="51D-Jg-oHj"/>
+                                        <constraint firstAttribute="width" constant="290" id="U3e-fy-E4g"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.2698008120059967" green="0.62911498546600342" blue="0.58942759037017822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="XJN-3R-5uu" secondAttribute="trailing" constant="-108" id="aFS-w8-glv"/>
+                                <constraint firstAttribute="bottom" secondItem="XJN-3R-5uu" secondAttribute="bottom" constant="-35" id="atK-HM-qgJ"/>
+                            </constraints>
+                        </view>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUx-CF-kvn" userLabel="Top container">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bernie-big" translatesAutoresizingMaskIntoConstraints="NO" id="rOb-be-x0Z">
+                                    <rect key="frame" x="-163" y="140" width="350" height="270"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="350" id="cEC-7w-8of"/>
+                                        <constraint firstAttribute="height" constant="270" id="lvt-cu-e8u"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.1572277843952179" green="0.43913120031356812" blue="0.77128159999847412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="rOb-be-x0Z" secondAttribute="bottom" constant="-10" id="4n6-hA-Zej"/>
+                                <constraint firstItem="rOb-be-x0Z" firstAttribute="leading" secondItem="GUx-CF-kvn" secondAttribute="leading" constant="-163" id="lNw-hz-YwC"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUX-km-XX1" userLabel="Logo">
+                            <rect key="frame" x="212" y="200" width="175" height="201"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bernie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLu-vr-wA5">
+                                    <rect key="frame" x="31" y="0.0" width="113" height="49"/>
+                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="36"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="OR" translatesAutoresizingMaskIntoConstraints="NO" id="tf6-zo-vuy">
+                                    <rect key="frame" x="36" y="52" width="103" height="97"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hillary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxl-Tm-vTj">
+                                    <rect key="frame" x="31" y="152" width="113" height="49"/>
+                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="36"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="201" id="KYs-YM-Y8S"/>
+                                <constraint firstAttribute="width" constant="175" id="mmR-tv-HFP"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="cis-VO-VhC" secondAttribute="bottom" id="2J3-vr-ZWo"/>
+                        <constraint firstItem="DUX-km-XX1" firstAttribute="centerY" secondItem="T4I-9B-Fku" secondAttribute="centerY" id="Chg-Gg-ZGD"/>
+                        <constraint firstAttribute="trailing" secondItem="GUx-CF-kvn" secondAttribute="trailing" id="KcX-GS-jEk"/>
+                        <constraint firstItem="DUX-km-XX1" firstAttribute="centerX" secondItem="T4I-9B-Fku" secondAttribute="centerX" id="NUm-ng-W52"/>
+                        <constraint firstItem="GUx-CF-kvn" firstAttribute="leading" secondItem="T4I-9B-Fku" secondAttribute="leading" id="PWf-cX-WeT"/>
+                        <constraint firstItem="cis-VO-VhC" firstAttribute="top" secondItem="T4I-9B-Fku" secondAttribute="top" constant="200" id="YT2-OT-i4v"/>
+                        <constraint firstItem="cis-VO-VhC" firstAttribute="leading" secondItem="T4I-9B-Fku" secondAttribute="leading" id="ZQ6-0S-rTE"/>
+                        <constraint firstAttribute="trailing" secondItem="cis-VO-VhC" secondAttribute="trailing" id="e53-ZS-zL7"/>
+                        <constraint firstAttribute="bottom" secondItem="GUx-CF-kvn" secondAttribute="bottom" constant="200" id="lgf-4f-hLh"/>
+                        <constraint firstItem="GUx-CF-kvn" firstAttribute="top" secondItem="T4I-9B-Fku" secondAttribute="top" id="zpN-EG-lVT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="T4I-9B-Fku" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="J8T-ww-9Ec"/>
+                <constraint firstAttribute="trailing" secondItem="T4I-9B-Fku" secondAttribute="trailing" id="KRX-py-Vae"/>
+                <constraint firstItem="T4I-9B-Fku" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Lax-rL-FNt"/>
+                <constraint firstAttribute="bottom" secondItem="T4I-9B-Fku" secondAttribute="bottom" id="ib2-Kq-V8T"/>
+            </constraints>
+            <point key="canvasLocation" x="135" y="506"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="OR" width="103" height="97"/>
+        <image name="bernie-big" width="524" height="404"/>
+        <image name="hillary-big" width="429" height="409"/>
+    </resources>
+</document>
