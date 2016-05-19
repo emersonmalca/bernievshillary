@@ -72,6 +72,7 @@
 		6A65839C1CEC38B800DAC92F /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		6A65839D1CECAAD200DAC92F /* UIView+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utilities.h"; sourceTree = "<group>"; };
 		6A65839E1CECAAD200DAC92F /* UIView+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utilities.m"; sourceTree = "<group>"; };
+		6A6583A01CEE1DA600DAC92F /* BHKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +183,7 @@
 				6A6583931CEB6F9200DAC92F /* UIColor+BernieVSHillary.m */,
 				6A65839D1CECAAD200DAC92F /* UIView+Utilities.h */,
 				6A65839E1CECAAD200DAC92F /* UIView+Utilities.m */,
+				6A6583A01CEE1DA600DAC92F /* BHKit.h */,
 			);
 			name = AppKit;
 			sourceTree = "<group>";

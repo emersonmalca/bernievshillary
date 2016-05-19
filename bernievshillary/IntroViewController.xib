@@ -13,9 +13,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroViewController">
             <connections>
+                <outlet property="bernie" destination="rOb-be-x0Z" id="Zjp-7S-72A"/>
                 <outlet property="bottomContainer" destination="cis-VO-VhC" id="RZk-VC-cYd"/>
                 <outlet property="bottomContainerTopConstraint" destination="YT2-OT-i4v" id="Vdh-FO-I5b"/>
+                <outlet property="hillary" destination="XJN-3R-5uu" id="qvF-WR-GM2"/>
                 <outlet property="mainContainerBottomConstraint" destination="ib2-Kq-V8T" id="BRE-qV-g9A"/>
+                <outlet property="titleContainer" destination="DUX-km-XX1" id="lm9-wI-Zen"/>
                 <outlet property="topContainer" destination="GUx-CF-kvn" id="JcY-Qq-O2D"/>
                 <outlet property="topContainerBottomConstraint" destination="lgf-4f-hLh" id="RN8-ln-TAI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

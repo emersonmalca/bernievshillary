@@ -7,6 +7,7 @@
 //
 
 #import "IntroViewController.h"
+#import "BHKit.h"
 
 @interface IntroViewController ()
 
@@ -14,6 +15,9 @@
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *bottomContainerTopConstraint;
 @property (strong, nonatomic) IBOutlet UIView *topContainer;
 @property (strong, nonatomic) IBOutlet UIView *bottomContainer;
+@property (strong, nonatomic) IBOutlet UIView *titleContainer;
+@property (strong, nonatomic) IBOutlet UIImageView *bernie;
+@property (strong, nonatomic) IBOutlet UIImageView *hillary;
 @property (strong, nonatomic) CAShapeLayer *topMask;
 @property (strong, nonatomic) CAShapeLayer *bottomMask;
 
@@ -37,6 +41,31 @@
     self.topContainer.layer.mask = mask;
     self.topContainer.layer.masksToBounds = YES;
     self.topMask = mask;
+    
+    // Hide stuff for presentation
+    self.bernie.alpha = 0.0;
+    self.hillary.alpha = 0.0;
+    //[self.bernie setAnchorPointAdjustingPosition:CGPointMake(0.5, 1.0)];
+    //[self.hillary setAnchorPointAdjustingPosition:CGPointMake(0.5, 1.0)];
+    [self.bernie setScale:0.75];
+    [self.hillary setScale:0.75];
+    for (UIView *sv in self.titleContainer.subviews) {
+        sv.alpha = 0.0;
+        [sv setScale:0.75];
+    }
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    // Show everything
+    [UIView scaleViewToIdentityScale:self.bernie finalAlpha:1.0 completion:NULL];
+    [UIView scaleViewToIdentityScale:self.hillary finalAlpha:1.0 delay:0.1 completion:NULL];
+    CGFloat delay = 0.4;
+    for (UIView *sv in self.titleContainer.subviews) {
+        [UIView scaleViewToIdentityScale:sv finalAlpha:1.0 delay:delay completion:NULL];
+        delay += 0.3;
+    }
 }
 
 - (void)viewDidLayoutSubviews {
