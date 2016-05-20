@@ -90,8 +90,19 @@
     self.topMask.path = [self pathForTopContainerMask];
 }
 
-- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
-    
+- (void)runPreDismissalAnimationWithCompletion:(void(^)(BOOL finished))completion {
+    // Animate stuff out
+    self.getStartedViewBottomConstraint.constant = self.view.bounds.size.height;
+    [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        [self.view layoutIfNeeded];
+        self.getStartedView.alpha = 0.0;
+    } completion:completion];
+}
+
+#pragma mark - Action methods
+
+- (IBAction)btnGetStartedPressed:(UIButton *)sender {
+    [self.delegate introViewControllerDidSelectToGetStarted:self];
 }
 
 #pragma mark - Custom methods

@@ -122,6 +122,7 @@
                                 <constraint firstAttribute="height" constant="100" id="oYM-6n-HeJ"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="22"/>
+                            <color key="textColor" red="0.0073851291090250015" green="0.19377842545509338" blue="0.3101123571395874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLK-Tn-jhQ">
@@ -139,6 +140,9 @@
                                     <integer key="value" value="5"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnGetStartedPressed:" destination="-1" eventType="touchUpInside" id="ZEE-Bh-eRU"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.94536477327346802" green="0.93370336294174194" blue="0.91265279054641724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
