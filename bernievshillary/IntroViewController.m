@@ -16,6 +16,7 @@
 @property (strong, nonatomic) IBOutlet UIView *topContainer;
 @property (strong, nonatomic) IBOutlet UIView *bottomContainer;
 @property (strong, nonatomic) IBOutlet UIView *titleContainer;
+@property (strong, nonatomic) IBOutlet UIView *mainContainer;
 @property (strong, nonatomic) IBOutlet UIImageView *bernie;
 @property (strong, nonatomic) IBOutlet UIImageView *hillary;
 @property (strong, nonatomic) CAShapeLayer *topMask;
@@ -24,11 +25,13 @@
 @property (strong, nonatomic) IBOutlet UIView *getStartedView;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *getStartedViewBottomConstraint;
 
-@property (strong, nonatomic) IBOutlet NSLayoutConstraint *mainContainerBottomConstraint;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *mainContainerTopConstraint;
 
 @end
 
-@implementation IntroViewController
+@implementation IntroViewController {
+    BOOL _isDissappearing;
+}
 
 #define OverlapRatio    0.35
 
@@ -84,6 +87,10 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
+    if (_isDissappearing) {
+        return;
+    }
+    
     [self updateMargins];
     
     // Adjust the mask
@@ -92,8 +99,10 @@
 
 - (void)runPreDismissalAnimationWithCompletion:(void(^)(BOOL finished))completion {
     // Animate stuff out
+    _isDissappearing = YES;
+    self.mainContainerTopConstraint.constant = -(self.mainContainer.bounds.size.height + self.getStartedView.bounds.size.height);
     self.getStartedViewBottomConstraint.constant = self.view.bounds.size.height;
-    [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+    [UIView animateWithDuration:0.6 delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         [self.view layoutIfNeeded];
         self.getStartedView.alpha = 0.0;
     } completion:completion];

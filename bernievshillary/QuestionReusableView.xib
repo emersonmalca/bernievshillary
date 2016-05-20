@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="QuestionReusableView" id="U6b-Vx-4bR" customClass="QuestionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Znb-3z-aXs">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="1. Do you support marriage equality for gay and lesbian couples?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05O-VE-qJl">
+                            <rect key="frame" x="78" y="52" width="444.5" height="195"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="tLO-mH-fuR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="36"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.15722778439999999" green="0.43913120030000002" blue="0.77128160000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="05O-VE-qJl" firstAttribute="centerX" secondItem="Znb-3z-aXs" secondAttribute="centerX" id="9af-wW-dY8"/>
+                        <constraint firstItem="05O-VE-qJl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Znb-3z-aXs" secondAttribute="leading" constant="20" id="HaR-u7-x63"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="05O-VE-qJl" secondAttribute="trailing" constant="20" id="MVN-fV-TSO"/>
+                        <constraint firstItem="05O-VE-qJl" firstAttribute="top" secondItem="Znb-3z-aXs" secondAttribute="top" constant="52" id="u8b-ta-nc2"/>
+                        <constraint firstAttribute="bottom" secondItem="05O-VE-qJl" secondAttribute="bottom" constant="53" id="xii-eE-kCI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Znb-3z-aXs" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="AW2-Kw-T4C"/>
+                <constraint firstAttribute="bottom" secondItem="Znb-3z-aXs" secondAttribute="bottom" id="JHd-Rg-2gM"/>
+                <constraint firstItem="Znb-3z-aXs" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="SHH-bN-82W"/>
+                <constraint firstAttribute="trailing" secondItem="Znb-3z-aXs" secondAttribute="trailing" id="xir-qs-7F1"/>
+            </constraints>
+            <connections>
+                <outlet property="questionLabel" destination="05O-VE-qJl" id="ezn-V4-9Yz"/>
+            </connections>
+            <point key="canvasLocation" x="468.5" y="466.5"/>
+        </collectionReusableView>
+    </objects>
+</document>

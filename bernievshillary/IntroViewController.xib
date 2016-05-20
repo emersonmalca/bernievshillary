@@ -23,7 +23,8 @@
                 <outlet property="getStartedView" destination="bDQ-1H-kCs" id="h90-1O-Az4"/>
                 <outlet property="getStartedViewBottomConstraint" destination="gT0-HG-TnX" id="d2L-od-j0K"/>
                 <outlet property="hillary" destination="XJN-3R-5uu" id="qvF-WR-GM2"/>
-                <outlet property="mainContainerBottomConstraint" destination="ib2-Kq-V8T" id="BRE-qV-g9A"/>
+                <outlet property="mainContainer" destination="T4I-9B-Fku" id="LP3-cx-tSu"/>
+                <outlet property="mainContainerTopConstraint" destination="J8T-ww-9Ec" id="LyY-xo-Z7G"/>
                 <outlet property="titleContainer" destination="DUX-km-XX1" id="lm9-wI-Zen"/>
                 <outlet property="topContainer" destination="GUx-CF-kvn" id="JcY-Qq-O2D"/>
                 <outlet property="topContainerBottomConstraint" destination="lgf-4f-hLh" id="RN8-ln-TAI"/>
@@ -35,7 +36,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4I-9B-Fku" userLabel="Main container">
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4I-9B-Fku" userLabel="Main container">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="382"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cis-VO-VhC" userLabel="Bottom container">
@@ -145,7 +146,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.94536477327346802" green="0.93370336294174194" blue="0.91265279054641724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.9312509298324585" green="0.91766607761383057" blue="0.89126336574554443" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="eUp-XE-hza" firstAttribute="centerX" secondItem="bDQ-1H-kCs" secondAttribute="centerX" id="1rN-Wa-XOm"/>
                         <constraint firstItem="eUp-XE-hza" firstAttribute="top" secondItem="bDQ-1H-kCs" secondAttribute="top" constant="23" id="JPj-U7-hk7"/>
@@ -155,7 +156,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.9312509298324585" green="0.91766607761383057" blue="0.89126336574554443" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="bDQ-1H-kCs" secondAttribute="trailing" id="Efj-GN-tPb"/>
                 <constraint firstItem="T4I-9B-Fku" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="J8T-ww-9Ec"/>
