@@ -79,7 +79,7 @@
 
 - (void)updateUIForCurrentQuestion {
     Question *question = self.questions[self.currentQuestionIndex];
-    self.header.questionLabel.text = [NSString stringWithFormat:@"%lu. %@", self.currentQuestionIndex+1, question.text];
+    [self.header updateForQuestion:question totalQuestionCount:self.questions.count currentIndex:self.currentQuestionIndex];
 }
 
 - (CGSize)optimalSizeForHeader {

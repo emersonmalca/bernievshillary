@@ -5,6 +5,7 @@
 
 target 'bernievshillary' do
 	pod 'CSStickyHeaderFlowLayout', '~> 0.2'
+	pod 'FXPageControl', '~> 1.4'
 end
 
 target 'bernievshillaryTests' do

@@ -20,7 +20,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="1. Do you support marriage equality for gay and lesbian couples?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05O-VE-qJl">
-                            <rect key="frame" x="78" y="52" width="444.5" height="195"/>
+                            <rect key="frame" x="12.5" y="52" width="575.5" height="165"/>
                             <constraints>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="tLO-mH-fuR"/>
                             </constraints>
@@ -28,14 +28,54 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMv-P0-Hag" customClass="FXPageControl">
+                            <rect key="frame" x="170" y="255" width="260" height="32"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="260" id="KIF-tS-tOC"/>
+                                <constraint firstAttribute="height" constant="32" id="odF-8J-D9f"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="hidesForSinglePage" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="dotSize">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="dotColor">
+                                    <color key="value" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="selectedDotSize">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="selectedDotColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="selectedDotShadowColor">
+                                    <color key="value" red="0.26403874158859253" green="0.67764157056808472" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="selectedDotShadowBlur">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="selectedDotShadowOffset">
+                                    <size key="value" width="0.0" height="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="currentPage">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" red="0.15722778439999999" green="0.43913120030000002" blue="0.77128160000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="05O-VE-qJl" firstAttribute="centerX" secondItem="Znb-3z-aXs" secondAttribute="centerX" id="9af-wW-dY8"/>
-                        <constraint firstItem="05O-VE-qJl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Znb-3z-aXs" secondAttribute="leading" constant="20" id="HaR-u7-x63"/>
-                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="05O-VE-qJl" secondAttribute="trailing" constant="20" id="MVN-fV-TSO"/>
+                        <constraint firstAttribute="bottom" secondItem="YMv-P0-Hag" secondAttribute="bottom" constant="13" id="FBO-pT-wAH"/>
+                        <constraint firstItem="05O-VE-qJl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Znb-3z-aXs" secondAttribute="leading" constant="12" id="HaR-u7-x63"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="05O-VE-qJl" secondAttribute="trailing" constant="12" id="MVN-fV-TSO"/>
+                        <constraint firstItem="YMv-P0-Hag" firstAttribute="centerX" secondItem="Znb-3z-aXs" secondAttribute="centerX" id="tq0-zY-qlH"/>
                         <constraint firstItem="05O-VE-qJl" firstAttribute="top" secondItem="Znb-3z-aXs" secondAttribute="top" constant="52" id="u8b-ta-nc2"/>
-                        <constraint firstAttribute="bottom" secondItem="05O-VE-qJl" secondAttribute="bottom" constant="53" id="xii-eE-kCI"/>
+                        <constraint firstAttribute="bottom" secondItem="05O-VE-qJl" secondAttribute="bottom" constant="83" id="xii-eE-kCI"/>
                     </constraints>
                 </view>
             </subviews>
@@ -46,9 +86,10 @@
                 <constraint firstAttribute="trailing" secondItem="Znb-3z-aXs" secondAttribute="trailing" id="xir-qs-7F1"/>
             </constraints>
             <connections>
+                <outlet property="pageControl" destination="YMv-P0-Hag" id="7CL-YI-xCc"/>
                 <outlet property="questionLabel" destination="05O-VE-qJl" id="ezn-V4-9Yz"/>
             </connections>
-            <point key="canvasLocation" x="468.5" y="466.5"/>
+            <point key="canvasLocation" x="468" y="466"/>
         </collectionReusableView>
     </objects>
 </document>

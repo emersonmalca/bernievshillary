@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Question;
 
 @interface QuestionReusableView : UICollectionReusableView
 
-@property (strong, nonatomic) IBOutlet UILabel *questionLabel;
+- (void)updateForQuestion:(Question *)question totalQuestionCount:(NSUInteger)total currentIndex:(NSUInteger)currentIndex;
 
 @end
