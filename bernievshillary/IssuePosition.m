@@ -11,13 +11,17 @@
 @interface IssuePosition ()
 
 @property (nonatomic, readwrite) IssuePositionType type;
-@property (strong, nonatomic, readwrite, nonnull) NSString *text;
+@property (strong, nonatomic, readwrite, nullable) NSString *text;
 
 @end
 
 @implementation IssuePosition
 
-+ (nonnull IssuePosition *)issuePositionWithType:(IssuePositionType)type text:(nonnull NSString *)text {
++ (nonnull IssuePosition *)issuePositionWithType:(IssuePositionType)type {
+    return [self issuePositionWithType:type text:nil];
+}
+
++ (nonnull IssuePosition *)issuePositionWithType:(IssuePositionType)type text:(nullable NSString *)text {
     IssuePosition *issue = [[IssuePosition alloc] init];
     issue.type = type;
     issue.text = text;

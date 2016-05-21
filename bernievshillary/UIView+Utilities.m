@@ -29,6 +29,12 @@
     [UIView animateWithDuration:duration delay:delay usingSpringWithDamping:0.75 initialSpringVelocity:0.25 options:options animations:animations completion:completion];
 }
 
+- (void)fadeOut {
+    [UIView animateWithDuration:kDefaultAnimationDuration animations:^{
+        self.alpha = 0.0;
+    }];
+}
+
 #pragma mark - others
 
 - (void)setScale:(CGFloat)scale {

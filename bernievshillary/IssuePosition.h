@@ -17,9 +17,10 @@ typedef NS_ENUM(NSUInteger, IssuePositionType) {
 @interface IssuePosition : NSObject
 
 @property (nonatomic, readonly) IssuePositionType type;
-@property (strong, nonatomic, readonly, nonnull) NSString *text;
+@property (strong, nonatomic, readonly, nullable) NSString *text;
 
-+ (nonnull IssuePosition *)issuePositionWithType:(IssuePositionType)type text:(nonnull NSString *)text;
++ (nonnull IssuePosition *)issuePositionWithType:(IssuePositionType)type;
++ (nonnull IssuePosition *)issuePositionWithType:(IssuePositionType)type text:(nullable NSString *)text;
 + (IssuePositionType)typeFromNumber:(nonnull NSNumber *)number;
 
 @end

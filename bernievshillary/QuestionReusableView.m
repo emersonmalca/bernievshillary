@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *questionLabel;
 @property (strong, nonatomic) IBOutlet FXPageControl *pageControl;
+@property (strong, nonatomic, readwrite) IBOutlet UIButton *btnNotSure;
 
 @end
 
@@ -41,7 +42,10 @@
     
     // Update page control
     self.pageControl.numberOfPages = total;
-    self.pageControl.currentPage = currentIndex+1;
+    self.pageControl.currentPage = currentIndex;
+    
+    // Show not sure button
+    self.btnNotSure.alpha = 1.0;
 }
 
 @end

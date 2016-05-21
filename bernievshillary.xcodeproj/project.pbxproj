@@ -20,6 +20,8 @@
 		6A4B26241CEAC79E00503212 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B26221CEAC79E00503212 /* Question.m */; };
 		6A4B26271CEAC90900503212 /* IssuePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B26261CEAC90900503212 /* IssuePosition.m */; };
 		6A4B26281CEAC90900503212 /* IssuePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B26261CEAC90900503212 /* IssuePosition.m */; };
+		6A4F177D1CEFFF6200AF6916 /* CandidateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F177B1CEFFF6200AF6916 /* CandidateCell.m */; };
+		6A4F177E1CEFFF6200AF6916 /* CandidateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A4F177C1CEFFF6200AF6916 /* CandidateCell.xib */; };
 		6A6583941CEB6F9200DAC92F /* UIColor+BernieVSHillary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6583931CEB6F9200DAC92F /* UIColor+BernieVSHillary.m */; };
 		6A6583991CEB719100DAC92F /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6583971CEB719100DAC92F /* IntroViewController.m */; };
 		6A65839A1CEB719100DAC92F /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6583981CEB719100DAC92F /* IntroViewController.xib */; };
@@ -72,6 +74,9 @@
 		6A4B26221CEAC79E00503212 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 		6A4B26251CEAC90900503212 /* IssuePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssuePosition.h; sourceTree = "<group>"; };
 		6A4B26261CEAC90900503212 /* IssuePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssuePosition.m; sourceTree = "<group>"; };
+		6A4F177A1CEFFF6200AF6916 /* CandidateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateCell.h; sourceTree = "<group>"; };
+		6A4F177B1CEFFF6200AF6916 /* CandidateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateCell.m; sourceTree = "<group>"; };
+		6A4F177C1CEFFF6200AF6916 /* CandidateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CandidateCell.xib; sourceTree = "<group>"; };
 		6A6583921CEB6F9200DAC92F /* UIColor+BernieVSHillary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BernieVSHillary.h"; sourceTree = "<group>"; };
 		6A6583931CEB6F9200DAC92F /* UIColor+BernieVSHillary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BernieVSHillary.m"; sourceTree = "<group>"; };
 		6A6583961CEB719100DAC92F /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
@@ -201,6 +206,48 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		6A4F17761CEFFE0A00AF6916 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				6A6583961CEB719100DAC92F /* IntroViewController.h */,
+				6A6583971CEB719100DAC92F /* IntroViewController.m */,
+				6A6583981CEB719100DAC92F /* IntroViewController.xib */,
+			);
+			name = Intro;
+			sourceTree = "<group>";
+		};
+		6A4F17771CEFFE1800AF6916 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				6A4F17791CEFFE3A00AF6916 /* Cells */,
+				6A4F17781CEFFE3300AF6916 /* Header */,
+				6A7C509D1CEEB86D00E08646 /* QuestionsViewController.h */,
+				6A7C509E1CEEB86D00E08646 /* QuestionsViewController.m */,
+				6A7C50A01CEEBA1600E08646 /* QuestionsViewController.xib */,
+			);
+			name = Questions;
+			sourceTree = "<group>";
+		};
+		6A4F17781CEFFE3300AF6916 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				6A7C50A41CEEE24800E08646 /* QuestionReusableView.h */,
+				6A7C50A51CEEE24800E08646 /* QuestionReusableView.m */,
+				6A7C50A61CEEE24800E08646 /* QuestionReusableView.xib */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		6A4F17791CEFFE3A00AF6916 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6A4F177A1CEFFF6200AF6916 /* CandidateCell.h */,
+				6A4F177B1CEFFF6200AF6916 /* CandidateCell.m */,
+				6A4F177C1CEFFF6200AF6916 /* CandidateCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		6A6583911CEB6F4D00DAC92F /* AppKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,17 +265,10 @@
 		6A6583951CEB713200DAC92F /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				6A4F17771CEFFE1800AF6916 /* Questions */,
+				6A4F17761CEFFE0A00AF6916 /* Intro */,
 				6A10A2F21CE9A04500449CCC /* ViewController.h */,
 				6A10A2F31CE9A04500449CCC /* ViewController.m */,
-				6A6583961CEB719100DAC92F /* IntroViewController.h */,
-				6A6583971CEB719100DAC92F /* IntroViewController.m */,
-				6A6583981CEB719100DAC92F /* IntroViewController.xib */,
-				6A7C509D1CEEB86D00E08646 /* QuestionsViewController.h */,
-				6A7C509E1CEEB86D00E08646 /* QuestionsViewController.m */,
-				6A7C50A01CEEBA1600E08646 /* QuestionsViewController.xib */,
-				6A7C50A41CEEE24800E08646 /* QuestionReusableView.h */,
-				6A7C50A51CEEE24800E08646 /* QuestionReusableView.m */,
-				6A7C50A61CEEE24800E08646 /* QuestionReusableView.xib */,
 			);
 			name = Interface;
 			sourceTree = "<group>";
@@ -360,6 +400,7 @@
 				6A10A2FC1CE9A04500449CCC /* LaunchScreen.storyboard in Resources */,
 				6A7C50AA1CEEEAF100E08646 /* questions.json in Resources */,
 				6A10A2F91CE9A04500449CCC /* Assets.xcassets in Resources */,
+				6A4F177E1CEFFF6200AF6916 /* CandidateCell.xib in Resources */,
 				6A7C50A31CEEE19700E08646 /* Lato-Regular.ttf in Resources */,
 				6A10A2F71CE9A04500449CCC /* Main.storyboard in Resources */,
 				6A65839A1CEB719100DAC92F /* IntroViewController.xib in Resources */,
@@ -439,6 +480,7 @@
 				6A10A2F41CE9A04500449CCC /* ViewController.m in Sources */,
 				6A6583A31CEEB39500DAC92F /* UIViewController+Utilities.m in Sources */,
 				6A4B26231CEAC79E00503212 /* Question.m in Sources */,
+				6A4F177D1CEFFF6200AF6916 /* CandidateCell.m in Sources */,
 				6A10A2F11CE9A04500449CCC /* AppDelegate.m in Sources */,
 				6A6583941CEB6F9200DAC92F /* UIColor+BernieVSHillary.m in Sources */,
 				6A10A2EE1CE9A04500449CCC /* main.m in Sources */,
