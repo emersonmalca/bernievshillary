@@ -168,6 +168,8 @@ static CGFloat sectionVerticalSpacing = 30.0;
     if (nextIndex < self.questions.count) {
         self.currentQuestionIndex = nextIndex;
         [self transitionFromResultsToNewCurrentQuestion];
+    } else {
+        [self.delegate questionsViewController:self didFinishWithQuestions:self.questions userResponses:self.userResponses];
     }
 }
 

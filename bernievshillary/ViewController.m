@@ -10,8 +10,10 @@
 #import "IntroViewController.h"
 #import "QuestionsViewController.h"
 #import "BHKit.h"
+@class Question;
+@class IssuePosition;
 
-@interface ViewController () <IntroViewControllerDelegate>
+@interface ViewController () <IntroViewControllerDelegate, QuestionsViewControllerDelegate>
 
 @property (strong, nonatomic) IntroViewController *introController;
 
@@ -42,7 +44,15 @@
     
     // Remove this controller and show the next one
     QuestionsViewController *questionsController = [QuestionsViewController initWithNib];
+    questionsController.delegate = self;
     [self transitionSequentuallyFromChildViewController:controller toViewController:questionsController completion:NULL];
+}
+
+#pragma mark - QuestionsViewController delegate
+
+- (void)questionsViewController:(QuestionsViewController *)controller didFinishWithQuestions:(NSArray<Question*> *)questions userResponses:(NSMutableDictionary<NSString*, IssuePosition*> *)userResponses {
+    
+    // Show the results controller to calculate and display the results
 }
 
 @end
