@@ -1,13 +1,27 @@
 PODS:
   - CSStickyHeaderFlowLayout (0.2.10)
+  - DTCoreText (1.6.17):
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTFoundation/Core (1.7.10)
+  - DTFoundation/DTAnimatedGIF (1.7.10)
+  - DTFoundation/DTHTMLParser (1.7.10):
+    - DTFoundation/Core
+  - DTFoundation/UIKit (1.7.10):
+    - DTFoundation/Core
   - FXPageControl (1.4)
 
 DEPENDENCIES:
   - CSStickyHeaderFlowLayout (~> 0.2)
+  - DTCoreText (~> 1.6)
   - FXPageControl (~> 1.4)
 
 SPEC CHECKSUMS:
   CSStickyHeaderFlowLayout: 5366582779d8b7c9ba9b9cc729c218cc23888776
+  DTCoreText: 3ea8bba23dd2141ba18adb227a7dd33a822df1c4
+  DTFoundation: 3b6b1b817d2a7fb02e7eaf2596c922a68145bd43
   FXPageControl: 5057bf21537579b40ff30e119cd425d16d8ef90a
 
 COCOAPODS: 0.39.0

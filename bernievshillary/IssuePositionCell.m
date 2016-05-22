@@ -8,6 +8,8 @@
 
 #import "IssuePositionCell.h"
 #import "BHKit.h"
+#import <DTCoreText/NSAttributedString+HTML.h>
+#import <DTCoreText/DTCoreTextConstants.h>
 
 @interface IssuePositionCell ()
 
@@ -24,8 +26,11 @@
     // Update title
     self.titleLabel.text = isCurrent?@"CURRENT POSITION":@"PAST RECORD";
     
-    // Update text
-    self.textView.text = candidatePosition.text;
+    // Update text, but keep text style
+    NSMutableAttributedString *attr = [[NSMutableAttributedString alloc] initWithHTMLData:[candidatePosition.text dataUsingEncoding:NSUTF8StringEncoding] options:@{DTUseiOS6Attributes:@YES} documentAttributes:nil];
+    [attr removeTrailingWhitespacesAndNewLineCharacters];
+    [attr setFont:self.textView.font];
+    self.textView.attributedText = attr;
     
     // We need to calculate how we want to display the issue based on the user position
     IssuePositionType visualPositionType = IssuePositionTypeNeutral;

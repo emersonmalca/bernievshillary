@@ -24,6 +24,7 @@
 		6A4F177E1CEFFF6200AF6916 /* CandidateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A4F177C1CEFFF6200AF6916 /* CandidateCell.xib */; };
 		6A4F17821CF0CF1800AF6916 /* IssuePositionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F17801CF0CF1800AF6916 /* IssuePositionCell.m */; };
 		6A4F17831CF0CF1800AF6916 /* IssuePositionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A4F17811CF0CF1800AF6916 /* IssuePositionCell.xib */; };
+		6A4F17861CF1F72000AF6916 /* NSMutableAttributedString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F17851CF1F72000AF6916 /* NSMutableAttributedString+Utilities.m */; };
 		6A6583941CEB6F9200DAC92F /* UIColor+BernieVSHillary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6583931CEB6F9200DAC92F /* UIColor+BernieVSHillary.m */; };
 		6A6583991CEB719100DAC92F /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6583971CEB719100DAC92F /* IntroViewController.m */; };
 		6A65839A1CEB719100DAC92F /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6583981CEB719100DAC92F /* IntroViewController.xib */; };
@@ -82,6 +83,8 @@
 		6A4F177F1CF0CF1800AF6916 /* IssuePositionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssuePositionCell.h; sourceTree = "<group>"; };
 		6A4F17801CF0CF1800AF6916 /* IssuePositionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssuePositionCell.m; sourceTree = "<group>"; };
 		6A4F17811CF0CF1800AF6916 /* IssuePositionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IssuePositionCell.xib; sourceTree = "<group>"; };
+		6A4F17841CF1F72000AF6916 /* NSMutableAttributedString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Utilities.h"; sourceTree = "<group>"; };
+		6A4F17851CF1F72000AF6916 /* NSMutableAttributedString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Utilities.m"; sourceTree = "<group>"; };
 		6A6583921CEB6F9200DAC92F /* UIColor+BernieVSHillary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BernieVSHillary.h"; sourceTree = "<group>"; };
 		6A6583931CEB6F9200DAC92F /* UIColor+BernieVSHillary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BernieVSHillary.m"; sourceTree = "<group>"; };
 		6A6583961CEB719100DAC92F /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
@@ -266,6 +269,8 @@
 				6A6583A01CEE1DA600DAC92F /* BHKit.h */,
 				6A6583A11CEEB39500DAC92F /* UIViewController+Utilities.h */,
 				6A6583A21CEEB39500DAC92F /* UIViewController+Utilities.m */,
+				6A4F17841CF1F72000AF6916 /* NSMutableAttributedString+Utilities.h */,
+				6A4F17851CF1F72000AF6916 /* NSMutableAttributedString+Utilities.m */,
 			);
 			name = AppKit;
 			sourceTree = "<group>";
@@ -491,6 +496,7 @@
 				6A4B26231CEAC79E00503212 /* Question.m in Sources */,
 				6A4F177D1CEFFF6200AF6916 /* CandidateCell.m in Sources */,
 				6A10A2F11CE9A04500449CCC /* AppDelegate.m in Sources */,
+				6A4F17861CF1F72000AF6916 /* NSMutableAttributedString+Utilities.m in Sources */,
 				6A6583941CEB6F9200DAC92F /* UIColor+BernieVSHillary.m in Sources */,
 				6A10A2EE1CE9A04500449CCC /* main.m in Sources */,
 				6A7C509F1CEEB86D00E08646 /* QuestionsViewController.m in Sources */,

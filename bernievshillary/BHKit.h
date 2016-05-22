@@ -12,5 +12,6 @@
 #import "UIView+Utilities.h"
 #import "UIColor+BernieVSHillary.h"
 #import "UIViewController+Utilities.h"
+#import "NSMutableAttributedString+Utilities.h"
 
 #endif /* BHKit_h */
