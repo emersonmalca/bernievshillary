@@ -34,7 +34,7 @@
     
     // We need to calculate how we want to display the issue based on the user position
     IssuePositionType visualPositionType = IssuePositionTypeNeutral;
-    if (userPositionType != IssuePositionTypeNeutral) {
+    if (userPositionType != IssuePositionTypeNeutral && candidatePosition.type != IssuePositionTypeNeutral) {
         if (userPositionType == candidatePosition.type) {
             visualPositionType = IssuePositionTypeFor;
         } else {

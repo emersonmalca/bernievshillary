@@ -14,6 +14,7 @@
 #import "IssuePosition.h"
 #import "CandidateCell.h"
 #import "IssuePositionCell.h"
+#import "NextQuestionCell.h"
 
 typedef NS_ENUM(NSUInteger, Candidate) {
     CandidateBernie,
@@ -52,6 +53,7 @@ typedef NS_ENUM(NSUInteger, Candidate) {
 @property (strong, nonatomic) IBOutlet UIButton *btnOptionA;
 @property (strong, nonatomic) IBOutlet UIButton *btnOptionB;
 @property (strong, nonatomic) QuestionReusableView *header;
+@property (strong, nonatomic) NextQuestionCell *nextQuestionCell;
 
 @property (strong, nonatomic) NSMutableArray<Question*> *questions;
 @property (strong, nonatomic) NSMutableArray<Question*> *extraQuestions;
@@ -69,6 +71,7 @@ static NSString *HeaderIdentifier = @"QuestionReusableView";
 static NSString *CandidateCellIdentifier = @"CandidateCell";
 static NSString *IssuePositionCellIdentifier = @"IssuePositionCell";
 static NSString *FakeHeaderIdentifier = @"FakeHeader";
+static NSString *NextQuestionCellIdentifier = @"NextQuestionCell";
 static CGFloat sectionVerticalSpacing = 30.0;
 
 - (void)viewDidLoad {
@@ -109,12 +112,12 @@ static CGFloat sectionVerticalSpacing = 30.0;
     self.layout.headerReferenceSize = CGSizeZero;
     self.layout.sectionHeadersPinToVisibleBounds = NO;
     self.layout.sectionInset = UIEdgeInsetsMake(sectionVerticalSpacing, 0.0, sectionVerticalSpacing/2.0, 0.0);
-    self.collectionView.contentInset = UIEdgeInsetsMake(0.0, 0.0, self.buttonsContainer.bounds.size.height, 0.0);
     
     // Prepare Section header and Cells
     [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:FakeHeaderIdentifier];
     [self.collectionView registerNib:[UINib nibWithNibName:@"CandidateCell" bundle:nil] forCellWithReuseIdentifier:CandidateCellIdentifier];
     [self.collectionView registerNib:[UINib nibWithNibName:@"IssuePositionCell" bundle:nil] forCellWithReuseIdentifier:IssuePositionCellIdentifier];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"NextQuestionCell" bundle:nil] forCellWithReuseIdentifier:NextQuestionCellIdentifier];
     
 }
 
@@ -159,7 +162,37 @@ static CGFloat sectionVerticalSpacing = 30.0;
     [self showCandidatePositionsAndStoreUserResponseForPositionType:IssuePositionTypeAgainst];
 }
 
+- (IBAction)btnNextQuestionPressed:(UIButton *)sender {
+    // Show the next question or tell our delegate we're done
+    NSUInteger nextIndex = self.currentQuestionIndex+1;
+    if (nextIndex < self.questions.count) {
+        self.currentQuestionIndex = nextIndex;
+        [self transitionFromResultsToNewCurrentQuestion];
+    }
+}
+
 #pragma mark - Custom methods
+
+- (void)transitionFromResultsToNewCurrentQuestion {
+    
+    // Update flag
+    _isShowingCandidatePositions = NO;
+    
+    // Update the UI
+    [self updateUIForCurrentQuestion];
+    
+    // Show voting UI
+    [self.buttonsContainer fadeIn];
+    
+    // Update header dimensions and reload collection view
+    [self.header layoutIfNeeded];
+    self.layout.parallaxHeaderReferenceSize = [self optimalSizeForHeader];
+    self.layout.parallaxHeaderMinimumReferenceSize = self.layout.parallaxHeaderReferenceSize;
+    [self.collectionView reloadData];
+    
+    // Move up
+    [self.collectionView setContentOffset:CGPointZero animated:YES];
+}
 
 - (void)updateUIForCurrentQuestion {
     
@@ -197,14 +230,8 @@ static CGFloat sectionVerticalSpacing = 30.0;
     
     // Set the flag and show positions
     _isShowingCandidatePositions = YES;
-    NSMutableArray<NSIndexPath*> *indexPaths = [NSMutableArray array];
-    for (int section=0; section<2; section++) {
-        for (int i=0; i<3; i++) {
-            [indexPaths addObject:[NSIndexPath indexPathForItem:i inSection:section]];
-        }
-    }
     [self.collectionView performBatchUpdates:^{
-        [self.collectionView insertItemsAtIndexPaths:indexPaths];
+        [self.collectionView insertSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, 3)]];
     } completion:NULL];
     
     // Hide voting UI
@@ -258,33 +285,60 @@ static CGFloat sectionVerticalSpacing = 30.0;
 #pragma mark - Collection view methods
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 2;
+    // Candidates + 1 for the Next Question button
+    return _isShowingCandidatePositions?self.currentQuestionCandidateStands.count + 1 : 0;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    if (!_isShowingCandidatePositions) {
+        return 0;
+    }
+    
     // Show candidate positions, 2 rows per section (record and current)
-    return _isShowingCandidatePositions?3:0;
+    if (section < self.currentQuestionCandidateStands.count) {
+        return 3;
+    } else {
+        // Return 1 for the Next Question section
+        return 1;
+    }
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    CandidateStand *stand = self.currentQuestionCandidateStands[indexPath.section];
-    if (indexPath.item == 0) {
-        CandidateCell *sectionHeader = [collectionView dequeueReusableCellWithReuseIdentifier:CandidateCellIdentifier forIndexPath:indexPath];
-        if (stand.candidate == CandidateBernie) {
-            [sectionHeader updateWithImage:[UIImage imageNamed:@"bernie-circle"] name:@"Bernie"];
-        } else {
-            [sectionHeader updateWithImage:[UIImage imageNamed:@"hillary-circle"] name:@"Hillary"];
-        }
-        return sectionHeader;
+    // Last section is for the Next Question button, other sections are for the candidates, sorted by best match
+    if (indexPath.section < self.currentQuestionCandidateStands.count) {
         
+        CandidateStand *stand = self.currentQuestionCandidateStands[indexPath.section];
+        if (indexPath.item == 0) {
+            CandidateCell *sectionHeader = [collectionView dequeueReusableCellWithReuseIdentifier:CandidateCellIdentifier forIndexPath:indexPath];
+            if (stand.candidate == CandidateBernie) {
+                [sectionHeader updateWithImage:[UIImage imageNamed:@"bernie-circle"] name:@"Bernie"];
+            } else {
+                [sectionHeader updateWithImage:[UIImage imageNamed:@"hillary-circle"] name:@"Hillary"];
+            }
+            return sectionHeader;
+            
+        } else {
+            IssuePositionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:IssuePositionCellIdentifier forIndexPath:indexPath];
+            BOOL isCurrent = indexPath.item == 2;
+            Question *question = self.questions[self.currentQuestionIndex];
+            IssuePosition *userPosition = self.userResponses[question.uid];
+            [cell updateForCandidateIssuePosition:isCurrent?stand.currentPosition:stand.recordPosition isCurrent:isCurrent userPositionType:userPosition.type];
+            return cell;
+        }
+    
     } else {
-        IssuePositionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:IssuePositionCellIdentifier forIndexPath:indexPath];
-        BOOL isCurrent = indexPath.item == 2;
-        Question *question = self.questions[self.currentQuestionIndex];
-        IssuePosition *userPosition = self.userResponses[question.uid];
-        [cell updateForCandidateIssuePosition:isCurrent?stand.currentPosition:stand.recordPosition isCurrent:isCurrent userPositionType:userPosition.type];
-        return cell;
+        if (self.nextQuestionCell == nil) {
+            self.nextQuestionCell = [collectionView dequeueReusableCellWithReuseIdentifier:NextQuestionCellIdentifier forIndexPath:indexPath];
+            [self.nextQuestionCell.btnNextQuestion addTarget:self action:@selector(btnNextQuestionPressed:) forControlEvents:UIControlEventTouchUpInside];
+        }
+        // Update button title
+        if (self.currentQuestionIndex == self.questions.count - 1) {
+            [self.nextQuestionCell.btnNextQuestion setTitle:@"SHOW RESULTS" forState:UIControlStateNormal];
+        } else {
+            [self.nextQuestionCell.btnNextQuestion setTitle:@"NEXT QUESTION" forState:UIControlStateNormal];
+        }
+        return self.nextQuestionCell;
     }
 }
 

@@ -39,7 +39,7 @@
 }
 
 + (UIColor *)mediumLightGray {
-    return [UIColor colorWithHue:0.0000 saturation:0.0000 brightness:0.8471 alpha:1.0];
+    return [UIColor colorWithHue:0.0000 saturation:0.0000 brightness:0.4980 alpha:1.0];
 }
 
 @end
