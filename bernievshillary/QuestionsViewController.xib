@@ -26,7 +26,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="khD-9R-yfN">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="khD-9R-yfN">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <collectionViewLayout key="collectionViewLayout" id="R0G-Bh-Ls2" customClass="CSStickyHeaderFlowLayout"/>
@@ -78,6 +78,10 @@
             </subviews>
             <color key="backgroundColor" red="0.9312509298324585" green="0.91766607761383057" blue="0.89126336574554443" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="khD-9R-yfN" secondAttribute="trailing" id="1z8-EP-Ft6"/>
+                <constraint firstItem="khD-9R-yfN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3XZ-AN-Zyc"/>
+                <constraint firstItem="khD-9R-yfN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4Fc-Yf-CCB"/>
+                <constraint firstAttribute="bottom" secondItem="khD-9R-yfN" secondAttribute="bottom" id="I1L-Ef-mLz"/>
                 <constraint firstItem="gWw-NQ-SJ0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gGp-jo-cpp"/>
                 <constraint firstAttribute="bottom" secondItem="gWw-NQ-SJ0" secondAttribute="bottom" id="xk5-57-lmX"/>
             </constraints>

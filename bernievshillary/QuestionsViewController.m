@@ -13,6 +13,7 @@
 #import "BHKit.h"
 #import "IssuePosition.h"
 #import "CandidateCell.h"
+#import "IssuePositionCell.h"
 
 typedef NS_ENUM(NSUInteger, Candidate) {
     CandidateBernie,
@@ -64,7 +65,10 @@ typedef NS_ENUM(NSUInteger, Candidate) {
     BOOL _isShowingCandidatePositions;
 }
 
+static NSString *HeaderIdentifier = @"QuestionReusableView";
 static NSString *CandidateCellIdentifier = @"CandidateCell";
+static NSString *IssuePositionCellIdentifier = @"IssuePositionCell";
+static NSString *FakeHeaderIdentifier = @"FakeHeader";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -95,15 +99,20 @@ static NSString *CandidateCellIdentifier = @"CandidateCell";
     
     // Prepare collection view
     UINib *headerNib = [UINib nibWithNibName:@"QuestionReusableView" bundle:nil];
-    [self.collectionView registerNib:headerNib forSupplementaryViewOfKind:CSStickyHeaderParallaxHeader withReuseIdentifier:@"QuestionReusableView"];
-    self.layout.parallaxHeaderAlwaysOnTop = YES;
+    [self.collectionView registerNib:headerNib forSupplementaryViewOfKind:CSStickyHeaderParallaxHeader withReuseIdentifier:HeaderIdentifier];
     self.layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    self.layout.estimatedItemSize = CGSizeMake(300.0, 80.0);
     self.layout.parallaxHeaderMinimumReferenceSize = CGSizeMake(320.0, 200.0);
     self.layout.parallaxHeaderReferenceSize = [self optimalSizeForHeader];
     self.collectionView.contentOffset = CGPointMake(0.0, self.view.bounds.size.height);
+    self.layout.headerReferenceSize = CGSizeZero;
+    self.layout.sectionHeadersPinToVisibleBounds = NO;
+    self.layout.sectionInset = UIEdgeInsetsMake(40.0, 0.0, 40.0, 0.0);
     
-    // Prepare cells
+    // Prepare Section header and Cells
+    [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:FakeHeaderIdentifier];
     [self.collectionView registerNib:[UINib nibWithNibName:@"CandidateCell" bundle:nil] forCellWithReuseIdentifier:CandidateCellIdentifier];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"IssuePositionCell" bundle:nil] forCellWithReuseIdentifier:IssuePositionCellIdentifier];
     
 }
 
@@ -112,6 +121,7 @@ static NSString *CandidateCellIdentifier = @"CandidateCell";
     
     [self.header layoutIfNeeded];
     self.layout.parallaxHeaderReferenceSize = [self optimalSizeForHeader];
+    self.layout.parallaxHeaderMinimumReferenceSize = self.layout.parallaxHeaderReferenceSize;
 }
 
 - (void)runPostPresentationAnimationWithCompletion:(void(^)(BOOL finished))completion {
@@ -121,7 +131,7 @@ static NSString *CandidateCellIdentifier = @"CandidateCell";
         
     } completion:^(BOOL finished){
        
-        [UIView animateWithDuration:2.0 delay:1.5 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [UIView animateWithDuration:0.6 delay:1.5 options:UIViewAnimationOptionCurveEaseOut animations:^{
             self.buttonsContainer.alpha = 1.0;
         } completion:completion];
         
@@ -180,7 +190,15 @@ static NSString *CandidateCellIdentifier = @"CandidateCell";
     
     // Set the flag and show positions
     _isShowingCandidatePositions = YES;
-    [self.collectionView reloadData];
+    NSMutableArray<NSIndexPath*> *indexPaths = [NSMutableArray array];
+    for (int section=0; section<2; section++) {
+        for (int i=0; i<3; i++) {
+            [indexPaths addObject:[NSIndexPath indexPathForItem:i inSection:section]];
+        }
+    }
+    [self.collectionView performBatchUpdates:^{
+        [self.collectionView insertItemsAtIndexPaths:indexPaths];
+    } completion:NULL];
     
     // Hide voting UI
     [self.buttonsContainer fadeOut];
@@ -227,36 +245,37 @@ static NSString *CandidateCellIdentifier = @"CandidateCell";
 #pragma mark - Collection view methods
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return _isShowingCandidatePositions?2:0;
+    return 2;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    if (!_isShowingCandidatePositions) {
-        return 0;
-    }
-    
-    // Show candidate positions, 3 rows per section (name, record and current)
-    return 1;
+    // Show candidate positions, 2 rows per section (record and current)
+    return _isShowingCandidatePositions?3:0;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     CandidateStand *stand = self.currentQuestionCandidateStands[indexPath.section];
     if (indexPath.item == 0) {
-        CandidateCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CandidateCellIdentifier forIndexPath:indexPath];
+        CandidateCell *sectionHeader = [collectionView dequeueReusableCellWithReuseIdentifier:CandidateCellIdentifier forIndexPath:indexPath];
         if (stand.candidate == CandidateBernie) {
-            [cell updateWithImage:[UIImage imageNamed:@"bernie-circle"] name:@"Bernie"];
+            [sectionHeader updateWithImage:[UIImage imageNamed:@"bernie-circle"] name:@"Bernie"];
         } else {
-            [cell updateWithImage:[UIImage imageNamed:@"hillary-circle"] name:@"Hillary"];
+            [sectionHeader updateWithImage:[UIImage imageNamed:@"hillary-circle"] name:@"Hillary"];
         }
+        return sectionHeader;
+        
+    } else {
+        IssuePositionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:IssuePositionCellIdentifier forIndexPath:indexPath];
+        BOOL isCurrent = indexPath.item == 2;
+        Question *question = self.questions[self.currentQuestionIndex];
+        IssuePosition *userPosition = self.userResponses[question.uid];
+        [cell updateForCandidateIssuePosition:isCurrent?stand.currentPosition:stand.recordPosition isCurrent:isCurrent userPositionType:userPosition.type];
         return cell;
     }
-    return nil;
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
-    
-    static NSString *HeaderIdentifier = @"QuestionReusableView";
     
     if ([kind isEqualToString:CSStickyHeaderParallaxHeader]) {
         if (self.header == nil) {
@@ -265,8 +284,16 @@ static NSString *CandidateCellIdentifier = @"CandidateCell";
             [self updateUIForCurrentQuestion];
         }
         return self.header;
+        
+    } else {
+        UICollectionReusableView *fakeHader = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:FakeHeaderIdentifier forIndexPath:indexPath];
+        fakeHader.backgroundColor = [UIColor clearColor];
+        return fakeHader;
     }
-    return nil;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    return CGSizeZero;
 }
 
 @end
