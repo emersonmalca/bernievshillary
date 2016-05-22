@@ -209,6 +209,12 @@ static CGFloat sectionVerticalSpacing = 30.0;
     
     // Hide voting UI
     [self.buttonsContainer fadeOut];
+    
+    // Show the matching legend
+    [self.header showLegend];
+    
+    // Scroll down
+    [self.collectionView setContentOffset:CGPointMake(0.0, self.header.bounds.size.height - 88.0) animated:YES];
 }
 
 - (nonnull NSArray<CandidateStand*> *)sortedCandidateStandsForQuestion:(Question *)question userPositionType:(IssuePositionType)type {

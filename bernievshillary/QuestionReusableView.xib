@@ -9,6 +9,11 @@
             <string>Lato-Bold</string>
             <string>Lato-Bold</string>
         </mutableArray>
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
+        </mutableArray>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -18,10 +23,10 @@
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Znb-3z-aXs">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="306"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" text="1. Do you support marriage equality for gay and lesbian couples?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05O-VE-qJl">
-                            <rect key="frame" x="12.5" y="52" width="575.5" height="165"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="1. Do you support marriage equality for gay and lesbian couples?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05O-VE-qJl">
+                            <rect key="frame" x="12.5" y="52" width="575.5" height="171"/>
                             <constraints>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="tLO-mH-fuR"/>
                             </constraints>
@@ -30,11 +35,11 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMv-P0-Hag" customClass="FXPageControl">
-                            <rect key="frame" x="170" y="255" width="260" height="32"/>
+                            <rect key="frame" x="170" y="262" width="260" height="44"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="260" id="KIF-tS-tOC"/>
-                                <constraint firstAttribute="height" constant="32" id="odF-8J-D9f"/>
+                                <constraint firstAttribute="height" constant="44" id="odF-8J-D9f"/>
                             </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="hidesForSinglePage" value="YES"/>
@@ -71,7 +76,7 @@
                     <color key="backgroundColor" red="0.15722778439999999" green="0.43913120030000002" blue="0.77128160000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="05O-VE-qJl" firstAttribute="centerX" secondItem="Znb-3z-aXs" secondAttribute="centerX" id="9af-wW-dY8"/>
-                        <constraint firstAttribute="bottom" secondItem="YMv-P0-Hag" secondAttribute="bottom" constant="13" id="FBO-pT-wAH"/>
+                        <constraint firstAttribute="bottom" secondItem="YMv-P0-Hag" secondAttribute="bottom" id="FBO-pT-wAH"/>
                         <constraint firstItem="05O-VE-qJl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Znb-3z-aXs" secondAttribute="leading" constant="12" id="HaR-u7-x63"/>
                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="05O-VE-qJl" secondAttribute="trailing" constant="12" id="MVN-fV-TSO"/>
                         <constraint firstItem="YMv-P0-Hag" firstAttribute="centerX" secondItem="Znb-3z-aXs" secondAttribute="centerX" id="tq0-zY-qlH"/>
@@ -90,22 +95,67 @@
                         <color key="titleColor" red="0.4979824423789978" green="0.49807190895080566" blue="0.49797677993774414" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aic-09-z2X">
+                    <rect key="frame" x="140" y="306" width="320" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agrees with you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBa-9F-ZSH">
+                            <rect key="frame" x="23" y="11" width="84" height="21"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
+                            <color key="textColor" red="0.26403874160000002" green="0.67764157059999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-agree" translatesAutoresizingMaskIntoConstraints="NO" id="wMO-Yp-8KD">
+                            <rect key="frame" x="8" y="16" width="12" height="12"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disagrees with you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikv-AU-5P1">
+                            <rect key="frame" x="141" y="11" width="96" height="21"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
+                            <color key="textColor" red="0.82515770196914673" green="0.0" blue="0.050240688025951385" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-disagree" translatesAutoresizingMaskIntoConstraints="NO" id="6Pu-XC-WxB">
+                            <rect key="frame" x="126" y="16" width="12" height="12"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neutral" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nlh-bf-tDw">
+                            <rect key="frame" x="271" y="11" width="41" height="21"/>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
+                            <color key="textColor" red="0.4979824423789978" green="0.49807190895080566" blue="0.49797677993774414" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-neutral" translatesAutoresizingMaskIntoConstraints="NO" id="m8K-Hr-Yts">
+                            <rect key="frame" x="256" y="16" width="12" height="12"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.9312509298324585" green="0.91766607761383057" blue="0.89126336574554443" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="6JP-e0-f0G"/>
+                        <constraint firstAttribute="height" constant="44" id="hIS-bZ-mKU"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="4R1-Pz-OVD" secondAttribute="bottom" constant="8" id="0NZ-ya-Yq7"/>
                 <constraint firstItem="Znb-3z-aXs" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="AW2-Kw-T4C"/>
-                <constraint firstAttribute="bottom" secondItem="Znb-3z-aXs" secondAttribute="bottom" constant="50" id="JHd-Rg-2gM"/>
+                <constraint firstAttribute="bottom" secondItem="Znb-3z-aXs" secondAttribute="bottom" constant="44" id="JHd-Rg-2gM"/>
                 <constraint firstItem="Znb-3z-aXs" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="SHH-bN-82W"/>
+                <constraint firstItem="aic-09-z2X" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="nmh-Ph-Feq"/>
+                <constraint firstAttribute="bottom" secondItem="aic-09-z2X" secondAttribute="bottom" id="oEM-NA-LiN"/>
                 <constraint firstAttribute="trailing" secondItem="Znb-3z-aXs" secondAttribute="trailing" id="xir-qs-7F1"/>
                 <constraint firstItem="4R1-Pz-OVD" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="yls-qG-V5m"/>
             </constraints>
             <connections>
                 <outlet property="btnNotSure" destination="4R1-Pz-OVD" id="PNp-di-jCl"/>
+                <outlet property="legendView" destination="aic-09-z2X" id="Mkh-DO-eNM"/>
                 <outlet property="pageControl" destination="YMv-P0-Hag" id="7CL-YI-xCc"/>
                 <outlet property="questionLabel" destination="05O-VE-qJl" id="ezn-V4-9Yz"/>
             </connections>
             <point key="canvasLocation" x="468" y="491"/>
         </collectionReusableView>
     </objects>
+    <resources>
+        <image name="icon-agree" width="36" height="36"/>
+        <image name="icon-disagree" width="36" height="37"/>
+        <image name="icon-neutral" width="36" height="36"/>
+    </resources>
 </document>
