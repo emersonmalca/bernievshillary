@@ -105,7 +105,7 @@
     {
       "_id": "568450728a277a03004d5a2c",
       "sortOrder": 6,
-      "question": "Do you think that work should be <a href=\"http:\/\/www.nytimes.com\/2011\/08\/20\/business\/questioning-the-dogma-of-lower-taxes-on-capital-gains.html\" target=\"_new\">taxed at a higher rate<\/a> than investment?",
+      "question": "Do you think that work should be taxed at a higher rate than investment?",
       "__v": 0,
       "bernieSandersPositionText": "Sanders' most recent<a href=\"http:\/\/www.sanders.senate.gov\/newsroom\/press-releases\/sanders-details-tax-plan\" target=\"_blank\"> capital gains tax plan<\/a> would \"tax capital gains and dividends the same as work... Taxing capital gains and dividends the same way that we tax work would raise more than $500 billion over the next decade.\"",
       "bernieSandersRecordText": "<a href=\"http:\/\/www.ontheissues.org\/2016\/Bernie_Sanders_Tax_Reform.htm\" target=\"_blank\">Voted<\/a>&nbsp;against upholding reduced taxes on capital gains &amp; dividends in 2005, calling the tax cuts an \"example of President Bush and the Republican leadership leaning over backwards to help people who really don&rsquo;t need any help.\"",
@@ -169,7 +169,7 @@
       "hillaryClintonPositionText": "In a 2015 campaign stop, Clinton <a href=\"http:\/\/www.cnn.com\/2015\/10\/06\/politics\/hillary-clinton-glass-steagall-act-martin-omalley\/\" target=\"_blank\">said<\/a> that she would not reinstate Glass-Steagall as president.",
       "hillaryClintonRecord": -1,
       "hillaryClintonRecordText": "No record of having taken a position on this issue before the 2016 presidential campaign.",
-      "question": "Do you support reinstating the <a href=\"http:\/\/dealbook.nytimes.com\/2013\/07\/11\/senators-introduce-bill-to-separate-trading-activities-from-big-banks\/?ref=topics\" target=\"_new\">Glass-Steagall Act<\/a>, which would prevent high-risk trading with consumer bank deposits?",
+      "question": "Do you support reinstating the Glass-Steagall Act, which would prevent high-risk trading with you deposit in the bank?",
       "sortOrder": 9,
       "responseBLabel": "No",
       "responseALabel": "Yes"
@@ -237,7 +237,7 @@
       "hillaryClintonPositionText": "In an October 2015 <a href=\"http:\/\/www.pbs.org\/newshour\/rundown\/hillary-clinton-says-she-does-not-support-trans-pacific-partnership\/\" target=\"_blank\">interview<\/a>, Clinton said that she no longer supports the Trans-Pacific Partnership.",
       "hillaryClintonRecord": 1,
       "hillaryClintonRecordText": "Clinton has <a href=\"http:\/\/www.cnn.com\/2015\/06\/15\/politics\/45-times-secretary-clinton-pushed-the-trade-bill-she-now-opposes\/\" target=\"_blank\">advocated<\/a> for the Trans-Pacific Partnership on at least forty occasions in the last two years.",
-      "question": "Do you support the <a href=\"http:\/\/www.huffingtonpost.com\/entry\/trade-deal-confirms-advocates-worst-fears_563b9061e4b0411d306ff765\"  target=\"_new\">Trans-Pacific Partnership<\/a>, which lowers trade barriers, but weakens regulation of multi-national corporations?",
+      "question": "Do you support the Trans-Pacific Partnership, which lowers trade barriers, but weakens regulation of multi-national corporations?",
       "sortOrder": 13,
       "responseBLabel": "No",
       "responseALabel": "Yes"
@@ -381,7 +381,7 @@
     {
       "_id": "568455918a277a03004d5a30",
       "sortOrder": 22,
-      "question": "Do you support <a href=\"https:\/\/www.youtube.com\/watch?v=Uti2niW2BRA\" target=\"_new\">fracking<\/a> techniques used to extract natural gas from the earth?",
+      "question": "Do you support fracking techniques used to extract natural gas from the earth?",
       "__v": 0,
       "bernieSandersPosition": 0,
       "bernieSandersPositionText": "Sanders continues to <a href=\"https:\/\/www.youtube.com\/watch?v=2qYzwDbBHZM\" target=\"_blank\">oppose<\/a> fracking. His climate change policy proposal states: \"Fracking threatens our air and water... We have clean energy solutions to climate change, and fracking is not one of them.\"",
