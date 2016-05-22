@@ -69,6 +69,7 @@ static NSString *HeaderIdentifier = @"QuestionReusableView";
 static NSString *CandidateCellIdentifier = @"CandidateCell";
 static NSString *IssuePositionCellIdentifier = @"IssuePositionCell";
 static NSString *FakeHeaderIdentifier = @"FakeHeader";
+static CGFloat sectionVerticalSpacing = 30.0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -107,7 +108,8 @@ static NSString *FakeHeaderIdentifier = @"FakeHeader";
     self.collectionView.contentOffset = CGPointMake(0.0, self.view.bounds.size.height);
     self.layout.headerReferenceSize = CGSizeZero;
     self.layout.sectionHeadersPinToVisibleBounds = NO;
-    self.layout.sectionInset = UIEdgeInsetsMake(40.0, 0.0, 40.0, 0.0);
+    self.layout.sectionInset = UIEdgeInsetsMake(sectionVerticalSpacing, 0.0, sectionVerticalSpacing/2.0, 0.0);
+    self.collectionView.contentInset = UIEdgeInsetsMake(0.0, 0.0, self.buttonsContainer.bounds.size.height, 0.0);
     
     // Prepare Section header and Cells
     [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:FakeHeaderIdentifier];
@@ -119,9 +121,14 @@ static NSString *FakeHeaderIdentifier = @"FakeHeader";
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
+    // Update header dimensions
     [self.header layoutIfNeeded];
     self.layout.parallaxHeaderReferenceSize = [self optimalSizeForHeader];
     self.layout.parallaxHeaderMinimumReferenceSize = self.layout.parallaxHeaderReferenceSize;
+    
+    // Update section margins
+    CGFloat sideMargin = (self.view.bounds.size.width - 320.0)/2.0;
+    self.layout.sectionInset = UIEdgeInsetsMake(sectionVerticalSpacing, sideMargin, sectionVerticalSpacing/2.0, sideMargin);
 }
 
 - (void)runPostPresentationAnimationWithCompletion:(void(^)(BOOL finished))completion {
