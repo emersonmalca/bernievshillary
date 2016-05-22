@@ -105,7 +105,7 @@ static CGFloat sectionVerticalSpacing = 30.0;
     UINib *headerNib = [UINib nibWithNibName:@"QuestionReusableView" bundle:nil];
     [self.collectionView registerNib:headerNib forSupplementaryViewOfKind:CSStickyHeaderParallaxHeader withReuseIdentifier:HeaderIdentifier];
     self.layout.scrollDirection = UICollectionViewScrollDirectionVertical;
-    self.layout.estimatedItemSize = CGSizeMake(300.0, 80.0);
+    self.layout.estimatedItemSize = CGSizeMake(300.0, 200.0);
     self.layout.parallaxHeaderMinimumReferenceSize = CGSizeMake(320.0, 200.0);
     self.layout.parallaxHeaderReferenceSize = [self optimalSizeForHeader];
     self.collectionView.contentOffset = CGPointMake(0.0, self.view.bounds.size.height);
@@ -192,8 +192,10 @@ static CGFloat sectionVerticalSpacing = 30.0;
     self.layout.parallaxHeaderMinimumReferenceSize = self.layout.parallaxHeaderReferenceSize;
     [self.collectionView reloadData];
     
-    // Move up
-    [self.collectionView setContentOffset:CGPointZero animated:YES];
+    // Bounce up
+    [UIView animateWithSoftPhysicsDuration:0.6 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [self.collectionView setContentOffset:CGPointZero animated:YES];
+    } completion:NULL];
 }
 
 - (void)updateUIForCurrentQuestion {
