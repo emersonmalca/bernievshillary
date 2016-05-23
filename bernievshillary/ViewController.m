@@ -12,7 +12,7 @@
 #import "ResultsViewController.h"
 #import "BHKit.h"
 @class Question;
-@class IssuePosition;
+@class UserResponse;
 
 @interface ViewController () <IntroViewControllerDelegate, QuestionsViewControllerDelegate>
 
@@ -51,7 +51,7 @@
 
 #pragma mark - QuestionsViewController delegate
 
-- (void)questionsViewController:(QuestionsViewController *)controller didFinishWithQuestions:(NSArray<Question*> *)questions userResponses:(NSMutableDictionary<NSString*, IssuePosition*> *)userResponses {
+- (void)questionsViewController:(QuestionsViewController *)controller didFinishWithQuestions:(NSArray<Question*> *)questions userResponses:(NSMutableDictionary<NSString*, UserResponse*> *)userResponses {
     
     // Show the results controller to calculate and display the results
     ResultsViewController *resultsController = [ResultsViewController initWithNib];

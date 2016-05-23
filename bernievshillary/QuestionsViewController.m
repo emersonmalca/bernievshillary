@@ -15,35 +15,8 @@
 #import "CandidateCell.h"
 #import "IssuePositionCell.h"
 #import "NextQuestionCell.h"
-
-typedef NS_ENUM(NSUInteger, Candidate) {
-    CandidateBernie,
-    CandidateHillary,
-};
-
-@interface CandidateStand : NSObject
-
-@property (nonatomic) Candidate candidate;
-@property (nonatomic) CGFloat matchScore; //0.0 to 1.0
-@property (strong, nonatomic) IssuePosition *currentPosition;
-@property (strong, nonatomic) IssuePosition *recordPosition;
-
-+ (CandidateStand *)candidateStandForCandidate:(Candidate)candidate currentPosition:(IssuePosition *)currentPosition recordPosition:(IssuePosition *)recordPosition;
-
-@end
-
-@implementation CandidateStand
-
-+ (CandidateStand *)candidateStandForCandidate:(Candidate)candidate currentPosition:(IssuePosition *)currentPosition recordPosition:(IssuePosition *)recordPosition {
-    CandidateStand *stand = [[CandidateStand alloc] init];
-    stand.candidate = candidate;
-    stand.currentPosition = currentPosition;
-    stand.recordPosition = recordPosition;
-    return stand;
-}
-
-@end
-
+#import "CandidateStand.h"
+#import "UserResponse.h"
 
 @interface QuestionsViewController ()
 
@@ -58,7 +31,7 @@ typedef NS_ENUM(NSUInteger, Candidate) {
 @property (strong, nonatomic) NSMutableArray<Question*> *questions;
 @property (strong, nonatomic) NSMutableArray<Question*> *extraQuestions;
 @property (nonatomic) NSUInteger currentQuestionIndex;
-@property (strong, nonatomic) NSMutableDictionary<NSString*, IssuePosition*> *userResponses;
+@property (strong, nonatomic) NSMutableDictionary<NSString*, UserResponse*> *userResponses;
 @property (strong, nonatomic) NSMutableArray<CandidateStand*> *currentQuestionCandidateStands;
 
 @end
@@ -234,13 +207,13 @@ static NSUInteger maxQuestionCount = 2;
     // Get current question
     Question *question = self.questions[self.currentQuestionIndex];
     
-    // Store response
-    self.userResponses[question.uid] = [IssuePosition issuePositionWithType:type];
-    
     // Show candidates positions
     // We want to show first the candidate who the person matches the most in this issue
     NSArray<CandidateStand*> *stands = [self sortedCandidateStandsForQuestion:question userPositionType:type];
     [self.currentQuestionCandidateStands setArray:stands];
+    
+    // Store response
+    self.userResponses[question.uid] = [UserResponse userResponseWithPositionType:type questionID:question.uid candidateStands:stands];
     
     // Set the flag and show positions
     _isShowingCandidatePositions = YES;
@@ -290,7 +263,7 @@ static NSUInteger maxQuestionCount = 2;
     hillaryStand.matchScore = hillaryScore;
     
     if (bernieScore >= hillaryScore) {
-        return  @[bernieStand, hillaryStand];
+        return @[bernieStand, hillaryStand];
     } else {
         return @[hillaryStand, bernieStand];
     }

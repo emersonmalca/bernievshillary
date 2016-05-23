@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @class Question;
-@class IssuePosition;
+@class UserResponse;
 @protocol QuestionsViewControllerDelegate;
 
 @interface QuestionsViewController : UIViewController
@@ -24,6 +24,6 @@
     Returns the array of questions asked and a dictionary with the user reponses. The key in the user responses is the uid of the question.
     This is all the necessary data to then calculate affinity to a candidate
  */
-- (void)questionsViewController:(QuestionsViewController *)controller didFinishWithQuestions:(NSArray<Question*> *)questions userResponses:(NSMutableDictionary<NSString*, IssuePosition*> *)userResponses;
+- (void)questionsViewController:(QuestionsViewController *)controller didFinishWithQuestions:(NSArray<Question*> *)questions userResponses:(NSMutableDictionary<NSString*, UserResponse*> *)userResponses;
 
 @end
