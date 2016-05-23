@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class UserResponse;
 
 @interface ResultsViewController : UIViewController
+
+- (void)showResultsForUserResponses:(nonnull NSArray<UserResponse*> *)responses;
 
 @end

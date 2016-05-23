@@ -23,5 +23,8 @@ typedef NS_ENUM(NSUInteger, Candidate) {
 @property (strong, nonatomic) IssuePosition *recordPosition;
 
 + (CandidateStand *)candidateStandForCandidate:(Candidate)candidate currentPosition:(IssuePosition *)currentPosition recordPosition:(IssuePosition *)recordPosition;
++ (NSString *)fullNameForCandidate:(Candidate)candidate;
++ (UIImage *)fullSizeImageForCandidate:(Candidate)candidate;
++ (UIColor *)colorForCandidate:(Candidate)candidate;
 
 @end

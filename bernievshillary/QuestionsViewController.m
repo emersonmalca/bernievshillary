@@ -231,34 +231,50 @@ static NSUInteger maxQuestionCount = 10;
     [self.collectionView setContentOffset:CGPointMake(0.0, self.header.bounds.size.height - 88.0) animated:YES];
 }
 
-- (nonnull NSArray<CandidateStand*> *)sortedCandidateStandsForQuestion:(Question *)question userPositionType:(IssuePositionType)type {
+- (nonnull NSArray<CandidateStand*> *)sortedCandidateStandsForQuestion:(Question *)question userPositionType:(IssuePositionType)userPositionType {
     
     // Get the stands
     CandidateStand *bernieStand = [CandidateStand candidateStandForCandidate:CandidateBernie currentPosition:question.bernieCurrentPosition recordPosition:question.bernieRecordPosition];
     CandidateStand *hillaryStand = [CandidateStand candidateStandForCandidate:CandidateHillary currentPosition:question.hillaryCurrentPosition recordPosition:question.hillaryRecordPosition];
     
     // If the user voted neutral (aka NOT SURE), we don't need to sort anything
-    if (type == IssuePositionTypeNeutral) {
+    if (userPositionType == IssuePositionTypeNeutral) {
         return @[bernieStand, hillaryStand];
     }
     
     // If the user voted for or against, we sort based on better match
-    // A neutral position of the candidate will also give them positive score since they were not against the user's position
+    // A neutral position of the candidate will also give them positive score iff they were not against the user's position
     CGFloat bernieScore = 0.0;
-    if (bernieStand.currentPosition.type == type || bernieStand.currentPosition.type == IssuePositionTypeNeutral) {
-        bernieScore += 0.5;
-    }
-    if (bernieStand.recordPosition.type == type || bernieStand.recordPosition.type == IssuePositionTypeNeutral) {
-        bernieScore += 0.5;
+    if (bernieStand.recordPosition.type == IssuePositionTypeNeutral || bernieStand.currentPosition.type == IssuePositionTypeNeutral) {
+        if (bernieStand.recordPosition.type == userPositionType || bernieStand.currentPosition.type == userPositionType) {
+            // This means one of them was neutral and they agreed in the other one, so they get full score
+            bernieScore += 1.0;
+        }
+    } else {
+        // Normal match calculation
+        if (bernieStand.currentPosition.type == userPositionType) {
+            bernieScore += 0.5;
+        }
+        if (bernieStand.recordPosition.type == userPositionType) {
+            bernieScore += 0.5;
+        }
     }
     bernieStand.matchScore = bernieScore;
     
     CGFloat hillaryScore = 0.0;
-    if (hillaryStand.currentPosition.type == type || hillaryStand.currentPosition.type == IssuePositionTypeNeutral) {
-        hillaryScore += 0.5;
-    }
-    if (hillaryStand.recordPosition.type == type || hillaryStand.recordPosition.type == IssuePositionTypeNeutral) {
-        hillaryScore += 0.5;
+    if (hillaryStand.recordPosition.type == IssuePositionTypeNeutral || hillaryStand.currentPosition.type == IssuePositionTypeNeutral) {
+        if (hillaryStand.recordPosition.type == userPositionType || hillaryStand.currentPosition.type == userPositionType) {
+            // This means one of them was neutral and they agreed in the other one, so they get half score
+            hillaryScore += 1.0;
+        }
+    } else {
+        // Normal match calculation
+        if (hillaryStand.currentPosition.type == userPositionType) {
+            hillaryScore += 0.5;
+        }
+        if (hillaryStand.recordPosition.type == userPositionType) {
+            hillaryScore += 0.5;
+        }
     }
     hillaryStand.matchScore = hillaryScore;
     
