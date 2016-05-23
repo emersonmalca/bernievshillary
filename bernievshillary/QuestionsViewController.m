@@ -337,9 +337,11 @@ static NSUInteger maxQuestionCount = 10;
         }
         // Update button title
         if (self.currentQuestionIndex == self.questions.count - 1) {
-            [self.nextQuestionCell.btnNextQuestion setTitle:@"SHOW RESULTS" forState:UIControlStateNormal];
+            NSString *showResultsTitleString = NSLocalizedString(@"questionsController.button.showResults", @"Title for the Show Results button");
+            [self.nextQuestionCell.btnNextQuestion setTitle:showResultsTitleString forState:UIControlStateNormal];
         } else {
-            [self.nextQuestionCell.btnNextQuestion setTitle:@"NEXT QUESTION" forState:UIControlStateNormal];
+            NSString *nextQuestionTitleString = NSLocalizedString(@"questionsController.button.nextQuestion", @"Title for Next Question button");
+            [self.nextQuestionCell.btnNextQuestion setTitle:nextQuestionTitleString forState:UIControlStateNormal];
         }
         return self.nextQuestionCell;
     }

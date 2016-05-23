@@ -26,9 +26,7 @@
 		6A4F17831CF0CF1800AF6916 /* IssuePositionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A4F17811CF0CF1800AF6916 /* IssuePositionCell.xib */; };
 		6A4F17861CF1F72000AF6916 /* NSMutableAttributedString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F17851CF1F72000AF6916 /* NSMutableAttributedString+Utilities.m */; };
 		6A4F17891CF209D900AF6916 /* NextQuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F17881CF209D900AF6916 /* NextQuestionCell.m */; };
-		6A4F178B1CF209F000AF6916 /* NextQuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A4F178A1CF209F000AF6916 /* NextQuestionCell.xib */; };
 		6A4F17901CF2756C00AF6916 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F178E1CF2756C00AF6916 /* ResultsViewController.m */; };
-		6A4F17911CF2756C00AF6916 /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A4F178F1CF2756C00AF6916 /* ResultsViewController.xib */; };
 		6A4F17941CF296B600AF6916 /* UserResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F17931CF296B600AF6916 /* UserResponse.m */; };
 		6A4F17971CF2970300AF6916 /* CandidateStand.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F17961CF2970300AF6916 /* CandidateStand.m */; };
 		6A6583941CEB6F9200DAC92F /* UIColor+BernieVSHillary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6583931CEB6F9200DAC92F /* UIColor+BernieVSHillary.m */; };
@@ -40,9 +38,11 @@
 		6A7C50A21CEEE19300E08646 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A65839B1CEC38B800DAC92F /* Lato-Bold.ttf */; };
 		6A7C50A31CEEE19700E08646 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A65839C1CEC38B800DAC92F /* Lato-Regular.ttf */; };
 		6A7C50A71CEEE24800E08646 /* QuestionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7C50A51CEEE24800E08646 /* QuestionReusableView.m */; };
-		6A7C50A81CEEE24800E08646 /* QuestionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A7C50A61CEEE24800E08646 /* QuestionReusableView.xib */; };
 		6AB690761CF34CC700A420D5 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB690781CF34CC700A420D5 /* IntroViewController.xib */; };
 		6AB6907B1CF34E0300A420D5 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AB6907D1CF34E0300A420D5 /* questions.json */; };
+		6AB6907F1CF3701200A420D5 /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB690811CF3701200A420D5 /* ResultsViewController.xib */; };
+		6AB690841CF3715E00A420D5 /* QuestionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB690861CF3715E00A420D5 /* QuestionReusableView.xib */; };
+		6AB690891CF38B0800A420D5 /* NextQuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB6908B1CF38B0800A420D5 /* NextQuestionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,10 +93,8 @@
 		6A4F17851CF1F72000AF6916 /* NSMutableAttributedString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Utilities.m"; sourceTree = "<group>"; };
 		6A4F17871CF209D900AF6916 /* NextQuestionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextQuestionCell.h; sourceTree = "<group>"; };
 		6A4F17881CF209D900AF6916 /* NextQuestionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextQuestionCell.m; sourceTree = "<group>"; };
-		6A4F178A1CF209F000AF6916 /* NextQuestionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextQuestionCell.xib; sourceTree = "<group>"; };
 		6A4F178D1CF2756C00AF6916 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
 		6A4F178E1CF2756C00AF6916 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
-		6A4F178F1CF2756C00AF6916 /* ResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultsViewController.xib; sourceTree = "<group>"; };
 		6A4F17921CF296B600AF6916 /* UserResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserResponse.h; sourceTree = "<group>"; };
 		6A4F17931CF296B600AF6916 /* UserResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserResponse.m; sourceTree = "<group>"; };
 		6A4F17951CF2970300AF6916 /* CandidateStand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateStand.h; sourceTree = "<group>"; };
@@ -117,12 +115,17 @@
 		6A7C50A01CEEBA1600E08646 /* QuestionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionsViewController.xib; sourceTree = "<group>"; };
 		6A7C50A41CEEE24800E08646 /* QuestionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionReusableView.h; sourceTree = "<group>"; };
 		6A7C50A51CEEE24800E08646 /* QuestionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionReusableView.m; sourceTree = "<group>"; };
-		6A7C50A61CEEE24800E08646 /* QuestionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionReusableView.xib; sourceTree = "<group>"; };
 		6AB690751CF34CB400A420D5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		6AB690791CF34D2F00A420D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/IntroViewController.xib; sourceTree = "<group>"; };
 		6AB6907A1CF34D6B00A420D5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/IntroViewController.strings; sourceTree = "<group>"; };
 		6AB6907C1CF34E0300A420D5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/questions.json; sourceTree = "<group>"; };
 		6AB6907E1CF34E0800A420D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/questions.json; sourceTree = "<group>"; };
+		6AB690821CF3701400A420D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ResultsViewController.xib; sourceTree = "<group>"; };
+		6AB690831CF3701D00A420D5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/ResultsViewController.strings; sourceTree = "<group>"; };
+		6AB690871CF3716000A420D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/QuestionReusableView.xib; sourceTree = "<group>"; };
+		6AB690881CF3716400A420D5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/QuestionReusableView.strings; sourceTree = "<group>"; };
+		6AB6908C1CF38B0A00A420D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NextQuestionCell.xib; sourceTree = "<group>"; };
+		6AB6908D1CF38B1000A420D5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/NextQuestionCell.strings; sourceTree = "<group>"; };
 		A26D9B5FFFE218800B73D8D2 /* libPods-bernievshillary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bernievshillary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7C175B09E995BBE689E563 /* Pods-bernievshillary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bernievshillary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bernievshillary/Pods-bernievshillary.debug.xcconfig"; sourceTree = "<group>"; };
 		D7ECCC6280AE2EF15C694692 /* Pods-bernievshillary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bernievshillary.release.xcconfig"; path = "Pods/Target Support Files/Pods-bernievshillary/Pods-bernievshillary.release.xcconfig"; sourceTree = "<group>"; };
@@ -264,7 +267,7 @@
 			children = (
 				6A7C50A41CEEE24800E08646 /* QuestionReusableView.h */,
 				6A7C50A51CEEE24800E08646 /* QuestionReusableView.m */,
-				6A7C50A61CEEE24800E08646 /* QuestionReusableView.xib */,
+				6AB690861CF3715E00A420D5 /* QuestionReusableView.xib */,
 			);
 			name = Header;
 			sourceTree = "<group>";
@@ -280,7 +283,7 @@
 				6A4F17811CF0CF1800AF6916 /* IssuePositionCell.xib */,
 				6A4F17871CF209D900AF6916 /* NextQuestionCell.h */,
 				6A4F17881CF209D900AF6916 /* NextQuestionCell.m */,
-				6A4F178A1CF209F000AF6916 /* NextQuestionCell.xib */,
+				6AB6908B1CF38B0800A420D5 /* NextQuestionCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -290,7 +293,7 @@
 			children = (
 				6A4F178D1CF2756C00AF6916 /* ResultsViewController.h */,
 				6A4F178E1CF2756C00AF6916 /* ResultsViewController.m */,
-				6A4F178F1CF2756C00AF6916 /* ResultsViewController.xib */,
+				6AB690811CF3701200A420D5 /* ResultsViewController.xib */,
 			);
 			name = Results;
 			sourceTree = "<group>";
@@ -450,15 +453,15 @@
 				6A7C50A21CEEE19300E08646 /* Lato-Bold.ttf in Resources */,
 				6A10A2FC1CE9A04500449CCC /* LaunchScreen.storyboard in Resources */,
 				6AB6907B1CF34E0300A420D5 /* questions.json in Resources */,
-				6A4F17911CF2756C00AF6916 /* ResultsViewController.xib in Resources */,
-				6A4F178B1CF209F000AF6916 /* NextQuestionCell.xib in Resources */,
+				6AB6907F1CF3701200A420D5 /* ResultsViewController.xib in Resources */,
+				6AB690891CF38B0800A420D5 /* NextQuestionCell.xib in Resources */,
 				6A10A2F91CE9A04500449CCC /* Assets.xcassets in Resources */,
 				6A4F177E1CEFFF6200AF6916 /* CandidateCell.xib in Resources */,
 				6A4F17831CF0CF1800AF6916 /* IssuePositionCell.xib in Resources */,
 				6A7C50A31CEEE19700E08646 /* Lato-Regular.ttf in Resources */,
 				6A10A2F71CE9A04500449CCC /* Main.storyboard in Resources */,
 				6AB690761CF34CC700A420D5 /* IntroViewController.xib in Resources */,
-				6A7C50A81CEEE24800E08646 /* QuestionReusableView.xib in Resources */,
+				6AB690841CF3715E00A420D5 /* QuestionReusableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +622,33 @@
 				6AB6907E1CF34E0800A420D5 /* Base */,
 			);
 			name = questions.json;
+			sourceTree = "<group>";
+		};
+		6AB690811CF3701200A420D5 /* ResultsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AB690821CF3701400A420D5 /* Base */,
+				6AB690831CF3701D00A420D5 /* es */,
+			);
+			name = ResultsViewController.xib;
+			sourceTree = "<group>";
+		};
+		6AB690861CF3715E00A420D5 /* QuestionReusableView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AB690871CF3716000A420D5 /* Base */,
+				6AB690881CF3716400A420D5 /* es */,
+			);
+			name = QuestionReusableView.xib;
+			sourceTree = "<group>";
+		};
+		6AB6908B1CF38B0800A420D5 /* NextQuestionCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AB6908C1CF38B0A00A420D5 /* Base */,
+				6AB6908D1CF38B1000A420D5 /* es */,
+			);
+			name = NextQuestionCell.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

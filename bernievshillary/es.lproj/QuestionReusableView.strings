@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "1. Do you support marriage equality for gay and lesbian couples?"; ObjectID = "05O-VE-qJl"; */
+"05O-VE-qJl.text" = "1. Do you support marriage equality for gay and lesbian couples?";
+
+/* Class = "UIButton"; normalTitle = "NOT SURE"; ObjectID = "4R1-Pz-OVD"; */
+"4R1-Pz-OVD.normalTitle" = "NO ESTOY SEGURO";
+
+/* Class = "UILabel"; text = "Agrees with you"; ObjectID = "FBa-9F-ZSH"; */
+"FBa-9F-ZSH.text" = "Acuerda contigo";
+
+/* Class = "UILabel"; text = "Neutral"; ObjectID = "Nlh-bf-tDw"; */
+"Nlh-bf-tDw.text" = "Neutral";
+
+/* Class = "UILabel"; text = "Disagrees with you"; ObjectID = "ikv-AU-5P1"; */
+"ikv-AU-5P1.text" = "Desacuerda contigo";

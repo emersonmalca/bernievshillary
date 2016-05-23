@@ -24,7 +24,9 @@
 - (void)updateForCandidateIssuePosition:(IssuePosition *)candidatePosition isCurrent:(BOOL)isCurrent userPositionType:(IssuePositionType)userPositionType {
     
     // Update title
-    self.titleLabel.text = isCurrent?@"CURRENT POSITION":@"PAST RECORD";
+    NSString *currentPositionTitleString = NSLocalizedString(@"issuePositionCell.label.currentPosition", @"Title for a candidate's current position");
+    NSString *pastRecordTItleString = NSLocalizedString(@"issuePositionCell.label.pastRecord", @"Title for a candidate's past record");
+    self.titleLabel.text = isCurrent?currentPositionTitleString:pastRecordTItleString;
     
     // Update text, but keep text style
     NSMutableAttributedString *attr = [[NSMutableAttributedString alloc] initWithHTMLData:[candidatePosition.text dataUsingEncoding:NSUTF8StringEncoding] options:@{DTUseiOS6Attributes:@YES} documentAttributes:nil];
