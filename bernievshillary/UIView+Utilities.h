@@ -18,5 +18,7 @@
 
 - (void)setScale:(CGFloat)scale;
 - (void)setAnchorPointAdjustingPosition:(CGPoint)anchorPoint;
+- (void)spinClockwise:(BOOL)clockwise duration:(CGFloat)duration rotations:(CGFloat)rotations repeat:(float)repeat timingFunction:(nullable CAMediaTimingFunction *)timingFunction;
+- (void)stopSpinning;
 
 @end

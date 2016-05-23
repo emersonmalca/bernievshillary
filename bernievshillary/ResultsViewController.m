@@ -14,6 +14,7 @@
 @property (strong, nonatomic) IBOutlet UIView *mainContainer;
 @property (strong, nonatomic) IBOutlet UIView *topContainer;
 @property (strong, nonatomic) IBOutlet UIView *bottomContainer;
+@property (strong, nonatomic) IBOutlet UIView *rays;
 @property (strong, nonatomic) CAShapeLayer *bottomMask;
 
 @end
@@ -24,6 +25,7 @@
     [super viewDidLoad];
     
     self.mainContainer.alpha = 0.0;
+    self.rays.alpha = 0.0;
     
     // Create the masks
     CAShapeLayer *mask = [CAShapeLayer layer];
@@ -43,9 +45,21 @@
 
 - (void)runPostPresentationAnimationWithCompletion:(void(^)(BOOL finished))completion {
     
+    // Animate in main elements
     [UIView animateWithDuration:0.6 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         self.mainContainer.alpha = 1.0;
-    } completion:completion];
+    } completion:^(BOOL finished){
+        
+        // Asynchronously start showing the rays
+        [UIView animateWithDuration:0.6 animations:^{
+            self.rays.alpha = 1.0;
+        }];
+        [self.rays spinClockwise:YES duration:5.0 rotations:1.0 repeat:CGFLOAT_MAX timingFunction:nil];
+        
+        if (completion) {
+            completion(finished);
+        }
+    }];
 }
 
 #pragma mark - Custom methods

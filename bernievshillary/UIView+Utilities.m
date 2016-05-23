@@ -67,4 +67,24 @@
     }
 }
 
+- (void)spinClockwise:(BOOL)clockwise duration:(CGFloat)duration rotations:(CGFloat)rotations repeat:(float)repeat timingFunction:(CAMediaTimingFunction *)timingFunction
+{
+    CGFloat direction = (clockwise)?1.0:-1.0;
+    CABasicAnimation* rotationAnimation;
+    rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0 /* full rotation*/ * rotations * direction];
+    rotationAnimation.duration = duration;
+    rotationAnimation.cumulative = YES;
+    rotationAnimation.repeatCount = repeat;
+    if (timingFunction) {
+        rotationAnimation.timingFunction = timingFunction;
+    }
+    
+    [self.layer addAnimation:rotationAnimation forKey:@"spinAnimation"];
+}
+
+- (void)stopSpinning {
+    [self.layer removeAnimationForKey:@"spinAnimation"];
+}
+
 @end
