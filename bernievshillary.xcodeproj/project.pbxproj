@@ -33,7 +33,6 @@
 		6A4F17971CF2970300AF6916 /* CandidateStand.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F17961CF2970300AF6916 /* CandidateStand.m */; };
 		6A6583941CEB6F9200DAC92F /* UIColor+BernieVSHillary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6583931CEB6F9200DAC92F /* UIColor+BernieVSHillary.m */; };
 		6A6583991CEB719100DAC92F /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6583971CEB719100DAC92F /* IntroViewController.m */; };
-		6A65839A1CEB719100DAC92F /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6583981CEB719100DAC92F /* IntroViewController.xib */; };
 		6A65839F1CECAAD200DAC92F /* UIView+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A65839E1CECAAD200DAC92F /* UIView+Utilities.m */; };
 		6A6583A31CEEB39500DAC92F /* UIViewController+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6583A21CEEB39500DAC92F /* UIViewController+Utilities.m */; };
 		6A7C509F1CEEB86D00E08646 /* QuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7C509E1CEEB86D00E08646 /* QuestionsViewController.m */; };
@@ -42,7 +41,8 @@
 		6A7C50A31CEEE19700E08646 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A65839C1CEC38B800DAC92F /* Lato-Regular.ttf */; };
 		6A7C50A71CEEE24800E08646 /* QuestionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7C50A51CEEE24800E08646 /* QuestionReusableView.m */; };
 		6A7C50A81CEEE24800E08646 /* QuestionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A7C50A61CEEE24800E08646 /* QuestionReusableView.xib */; };
-		6A7C50AA1CEEEAF100E08646 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A7C50A91CEEEAF100E08646 /* questions.json */; };
+		6AB690761CF34CC700A420D5 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB690781CF34CC700A420D5 /* IntroViewController.xib */; };
+		6AB6907B1CF34E0300A420D5 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AB6907D1CF34E0300A420D5 /* questions.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,7 +105,6 @@
 		6A6583931CEB6F9200DAC92F /* UIColor+BernieVSHillary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BernieVSHillary.m"; sourceTree = "<group>"; };
 		6A6583961CEB719100DAC92F /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
 		6A6583971CEB719100DAC92F /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
-		6A6583981CEB719100DAC92F /* IntroViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
 		6A65839B1CEC38B800DAC92F /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		6A65839C1CEC38B800DAC92F /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		6A65839D1CECAAD200DAC92F /* UIView+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utilities.h"; sourceTree = "<group>"; };
@@ -119,7 +118,11 @@
 		6A7C50A41CEEE24800E08646 /* QuestionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionReusableView.h; sourceTree = "<group>"; };
 		6A7C50A51CEEE24800E08646 /* QuestionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionReusableView.m; sourceTree = "<group>"; };
 		6A7C50A61CEEE24800E08646 /* QuestionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionReusableView.xib; sourceTree = "<group>"; };
-		6A7C50A91CEEEAF100E08646 /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		6AB690751CF34CB400A420D5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		6AB690791CF34D2F00A420D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/IntroViewController.xib; sourceTree = "<group>"; };
+		6AB6907A1CF34D6B00A420D5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/IntroViewController.strings; sourceTree = "<group>"; };
+		6AB6907C1CF34E0300A420D5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/questions.json; sourceTree = "<group>"; };
+		6AB6907E1CF34E0800A420D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Base; path = Base.lproj/questions.json; sourceTree = "<group>"; };
 		A26D9B5FFFE218800B73D8D2 /* libPods-bernievshillary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bernievshillary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7C175B09E995BBE689E563 /* Pods-bernievshillary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bernievshillary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bernievshillary/Pods-bernievshillary.debug.xcconfig"; sourceTree = "<group>"; };
 		D7ECCC6280AE2EF15C694692 /* Pods-bernievshillary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bernievshillary.release.xcconfig"; path = "Pods/Target Support Files/Pods-bernievshillary/Pods-bernievshillary.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,7 +196,7 @@
 		6A10A2EC1CE9A04500449CCC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6A7C50A91CEEEAF100E08646 /* questions.json */,
+				6AB6907D1CF34E0300A420D5 /* questions.json */,
 				6A65839B1CEC38B800DAC92F /* Lato-Bold.ttf */,
 				6A65839C1CEC38B800DAC92F /* Lato-Regular.ttf */,
 				6A10A2ED1CE9A04500449CCC /* main.m */,
@@ -239,7 +242,7 @@
 			children = (
 				6A6583961CEB719100DAC92F /* IntroViewController.h */,
 				6A6583971CEB719100DAC92F /* IntroViewController.m */,
-				6A6583981CEB719100DAC92F /* IntroViewController.xib */,
+				6AB690781CF34CC700A420D5 /* IntroViewController.xib */,
 			);
 			name = Intro;
 			sourceTree = "<group>";
@@ -446,7 +449,7 @@
 				6A7C50A11CEEBA1600E08646 /* QuestionsViewController.xib in Resources */,
 				6A7C50A21CEEE19300E08646 /* Lato-Bold.ttf in Resources */,
 				6A10A2FC1CE9A04500449CCC /* LaunchScreen.storyboard in Resources */,
-				6A7C50AA1CEEEAF100E08646 /* questions.json in Resources */,
+				6AB6907B1CF34E0300A420D5 /* questions.json in Resources */,
 				6A4F17911CF2756C00AF6916 /* ResultsViewController.xib in Resources */,
 				6A4F178B1CF209F000AF6916 /* NextQuestionCell.xib in Resources */,
 				6A10A2F91CE9A04500449CCC /* Assets.xcassets in Resources */,
@@ -454,7 +457,7 @@
 				6A4F17831CF0CF1800AF6916 /* IssuePositionCell.xib in Resources */,
 				6A7C50A31CEEE19700E08646 /* Lato-Regular.ttf in Resources */,
 				6A10A2F71CE9A04500449CCC /* Main.storyboard in Resources */,
-				6A65839A1CEB719100DAC92F /* IntroViewController.xib in Resources */,
+				6AB690761CF34CC700A420D5 /* IntroViewController.xib in Resources */,
 				6A7C50A81CEEE24800E08646 /* QuestionReusableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,6 +590,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6A10A2F61CE9A04500449CCC /* Base */,
+				6AB690751CF34CB400A420D5 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -597,6 +601,24 @@
 				6A10A2FB1CE9A04500449CCC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6AB690781CF34CC700A420D5 /* IntroViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AB690791CF34D2F00A420D5 /* Base */,
+				6AB6907A1CF34D6B00A420D5 /* es */,
+			);
+			name = IntroViewController.xib;
+			sourceTree = "<group>";
+		};
+		6AB6907D1CF34E0300A420D5 /* questions.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AB6907C1CF34E0300A420D5 /* es */,
+				6AB6907E1CF34E0800A420D5 /* Base */,
+			);
+			name = questions.json;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "GET STARTED"; ObjectID = "eLK-Tn-jhQ"; */
+"eLK-Tn-jhQ.normalTitle" = "EMPEZAR";
+
+/* Class = "UILabel"; text = "Bernie"; ObjectID = "eLu-vr-wA5"; */
+"eLu-vr-wA5.text" = "Bernie";
+
+/* Class = "UILabel"; text = "10 quick questions help you decide which candidate shares YOUR values"; ObjectID = "eUp-XE-hza"; */
+"eUp-XE-hza.text" = "10 preguntas rápidas para ver que candidato comparte TUS valores";
+
+/* Class = "UILabel"; text = "Hillary"; ObjectID = "nxl-Tm-vTj"; */
+"nxl-Tm-vTj.text" = "Hillary";
