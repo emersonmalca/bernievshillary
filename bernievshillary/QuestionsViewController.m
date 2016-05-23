@@ -73,6 +73,7 @@ static NSString *IssuePositionCellIdentifier = @"IssuePositionCell";
 static NSString *FakeHeaderIdentifier = @"FakeHeader";
 static NSString *NextQuestionCellIdentifier = @"NextQuestionCell";
 static CGFloat sectionVerticalSpacing = 30.0;
+static NSUInteger maxQuestionCount = 2;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -91,7 +92,7 @@ static CGFloat sectionVerticalSpacing = 30.0;
     // TODO: Make random 10
     for (NSDictionary *dict in rawQuestions) {
         Question *question = [Question questionWithDictionary:dict];
-        if (self.questions.count < 10) {
+        if (self.questions.count < maxQuestionCount) {
             [self.questions addObject:question];
         } else {
             [self.extraQuestions addObject:question];
@@ -146,6 +147,15 @@ static CGFloat sectionVerticalSpacing = 30.0;
         } completion:completion];
         
     }];
+}
+
+- (void)runPreDismissalAnimationWithCompletion:(void(^)(BOOL finished))completion {
+    CGRect frame = self.collectionView.frame;
+    frame.origin.y -= frame.size.height/4.0;
+    [UIView animateWithDuration:0.3 delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        self.collectionView.frame = frame;
+        self.collectionView.alpha = 0.0;
+    } completion:completion];
 }
 
 #pragma mark - Action methods

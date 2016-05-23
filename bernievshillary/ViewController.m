@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "IntroViewController.h"
 #import "QuestionsViewController.h"
+#import "ResultsViewController.h"
 #import "BHKit.h"
 @class Question;
 @class IssuePosition;
@@ -53,6 +54,8 @@
 - (void)questionsViewController:(QuestionsViewController *)controller didFinishWithQuestions:(NSArray<Question*> *)questions userResponses:(NSMutableDictionary<NSString*, IssuePosition*> *)userResponses {
     
     // Show the results controller to calculate and display the results
+    ResultsViewController *resultsController = [ResultsViewController initWithNib];
+    [self transitionSequentuallyFromChildViewController:controller toViewController:resultsController completion:NULL];
 }
 
 @end

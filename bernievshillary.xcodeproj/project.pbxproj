@@ -27,6 +27,8 @@
 		6A4F17861CF1F72000AF6916 /* NSMutableAttributedString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F17851CF1F72000AF6916 /* NSMutableAttributedString+Utilities.m */; };
 		6A4F17891CF209D900AF6916 /* NextQuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F17881CF209D900AF6916 /* NextQuestionCell.m */; };
 		6A4F178B1CF209F000AF6916 /* NextQuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A4F178A1CF209F000AF6916 /* NextQuestionCell.xib */; };
+		6A4F17901CF2756C00AF6916 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F178E1CF2756C00AF6916 /* ResultsViewController.m */; };
+		6A4F17911CF2756C00AF6916 /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A4F178F1CF2756C00AF6916 /* ResultsViewController.xib */; };
 		6A6583941CEB6F9200DAC92F /* UIColor+BernieVSHillary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6583931CEB6F9200DAC92F /* UIColor+BernieVSHillary.m */; };
 		6A6583991CEB719100DAC92F /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6583971CEB719100DAC92F /* IntroViewController.m */; };
 		6A65839A1CEB719100DAC92F /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6583981CEB719100DAC92F /* IntroViewController.xib */; };
@@ -90,6 +92,9 @@
 		6A4F17871CF209D900AF6916 /* NextQuestionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextQuestionCell.h; sourceTree = "<group>"; };
 		6A4F17881CF209D900AF6916 /* NextQuestionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextQuestionCell.m; sourceTree = "<group>"; };
 		6A4F178A1CF209F000AF6916 /* NextQuestionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextQuestionCell.xib; sourceTree = "<group>"; };
+		6A4F178D1CF2756C00AF6916 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		6A4F178E1CF2756C00AF6916 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		6A4F178F1CF2756C00AF6916 /* ResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultsViewController.xib; sourceTree = "<group>"; };
 		6A6583921CEB6F9200DAC92F /* UIColor+BernieVSHillary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BernieVSHillary.h"; sourceTree = "<group>"; };
 		6A6583931CEB6F9200DAC92F /* UIColor+BernieVSHillary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BernieVSHillary.m"; sourceTree = "<group>"; };
 		6A6583961CEB719100DAC92F /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
@@ -267,6 +272,16 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		6A4F178C1CF2753800AF6916 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				6A4F178D1CF2756C00AF6916 /* ResultsViewController.h */,
+				6A4F178E1CF2756C00AF6916 /* ResultsViewController.m */,
+				6A4F178F1CF2756C00AF6916 /* ResultsViewController.xib */,
+			);
+			name = Results;
+			sourceTree = "<group>";
+		};
 		6A6583911CEB6F4D00DAC92F /* AppKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +301,7 @@
 		6A6583951CEB713200DAC92F /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				6A4F178C1CF2753800AF6916 /* Results */,
 				6A4F17771CEFFE1800AF6916 /* Questions */,
 				6A4F17761CEFFE0A00AF6916 /* Intro */,
 				6A10A2F21CE9A04500449CCC /* ViewController.h */,
@@ -421,6 +437,7 @@
 				6A7C50A21CEEE19300E08646 /* Lato-Bold.ttf in Resources */,
 				6A10A2FC1CE9A04500449CCC /* LaunchScreen.storyboard in Resources */,
 				6A7C50AA1CEEEAF100E08646 /* questions.json in Resources */,
+				6A4F17911CF2756C00AF6916 /* ResultsViewController.xib in Resources */,
 				6A4F178B1CF209F000AF6916 /* NextQuestionCell.xib in Resources */,
 				6A10A2F91CE9A04500449CCC /* Assets.xcassets in Resources */,
 				6A4F177E1CEFFF6200AF6916 /* CandidateCell.xib in Resources */,
@@ -504,6 +521,7 @@
 				6A10A2F41CE9A04500449CCC /* ViewController.m in Sources */,
 				6A6583A31CEEB39500DAC92F /* UIViewController+Utilities.m in Sources */,
 				6A4B26231CEAC79E00503212 /* Question.m in Sources */,
+				6A4F17901CF2756C00AF6916 /* ResultsViewController.m in Sources */,
 				6A4F177D1CEFFF6200AF6916 /* CandidateCell.m in Sources */,
 				6A10A2F11CE9A04500449CCC /* AppDelegate.m in Sources */,
 				6A4F17861CF1F72000AF6916 /* NSMutableAttributedString+Utilities.m in Sources */,
