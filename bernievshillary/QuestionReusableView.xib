@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -85,10 +84,10 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4R1-Pz-OVD">
-                    <rect key="frame" x="260" y="312" width="80" height="30"/>
+                    <rect key="frame" x="224" y="312" width="151" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="9Hx-AH-Aym"/>
-                        <constraint firstAttribute="width" constant="80" id="gbZ-Fu-NRI"/>
+                        <constraint firstAttribute="width" constant="151" id="gbZ-Fu-NRI"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="12"/>
                     <state key="normal" title="NOT SURE">
@@ -99,31 +98,31 @@
                     <rect key="frame" x="140" y="306" width="320" height="44"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agrees with you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBa-9F-ZSH">
-                            <rect key="frame" x="23" y="11" width="84" height="21"/>
+                            <rect key="frame" x="-140" y="-306" width="77.5" height="13.5"/>
                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
                             <color key="textColor" red="0.26403874160000002" green="0.67764157059999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-agree" translatesAutoresizingMaskIntoConstraints="NO" id="wMO-Yp-8KD">
-                            <rect key="frame" x="8" y="16" width="12" height="12"/>
+                            <rect key="frame" x="-140" y="-306" width="36" height="36"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disagrees with you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikv-AU-5P1">
-                            <rect key="frame" x="141" y="11" width="96" height="21"/>
+                            <rect key="frame" x="-140" y="-306" width="91.5" height="13.5"/>
                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
                             <color key="textColor" red="0.82515770196914673" green="0.0" blue="0.050240688025951385" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-disagree" translatesAutoresizingMaskIntoConstraints="NO" id="6Pu-XC-WxB">
-                            <rect key="frame" x="126" y="16" width="12" height="12"/>
+                            <rect key="frame" x="-140" y="-306" width="36" height="37"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neutral" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nlh-bf-tDw">
-                            <rect key="frame" x="271" y="11" width="41" height="21"/>
+                            <rect key="frame" x="-140" y="-306" width="37" height="13.5"/>
                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
                             <color key="textColor" red="0.4979824423789978" green="0.49807190895080566" blue="0.49797677993774414" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-neutral" translatesAutoresizingMaskIntoConstraints="NO" id="m8K-Hr-Yts">
-                            <rect key="frame" x="256" y="16" width="12" height="12"/>
+                            <rect key="frame" x="-140" y="-306" width="36" height="36"/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" red="0.9312509298324585" green="0.91766607761383057" blue="0.89126336574554443" alpha="1" colorSpace="calibratedRGB"/>
