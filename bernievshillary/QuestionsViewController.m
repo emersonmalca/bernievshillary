@@ -46,7 +46,7 @@ static NSString *IssuePositionCellIdentifier = @"IssuePositionCell";
 static NSString *FakeHeaderIdentifier = @"FakeHeader";
 static NSString *NextQuestionCellIdentifier = @"NextQuestionCell";
 static CGFloat sectionVerticalSpacing = 30.0;
-static NSUInteger maxQuestionCount = 2;
+static NSUInteger maxQuestionCount = 10;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -309,8 +309,8 @@ static NSUInteger maxQuestionCount = 2;
             IssuePositionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:IssuePositionCellIdentifier forIndexPath:indexPath];
             BOOL isCurrent = indexPath.item == 2;
             Question *question = self.questions[self.currentQuestionIndex];
-            IssuePosition *userPosition = self.userResponses[question.uid];
-            [cell updateForCandidateIssuePosition:isCurrent?stand.currentPosition:stand.recordPosition isCurrent:isCurrent userPositionType:userPosition.type];
+            UserResponse *userResponse = self.userResponses[question.uid];
+            [cell updateForCandidateIssuePosition:isCurrent?stand.currentPosition:stand.recordPosition isCurrent:isCurrent userPositionType:userResponse.userPositionType];
             return cell;
         }
     
