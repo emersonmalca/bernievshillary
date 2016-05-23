@@ -105,7 +105,7 @@
     {
       "_id": "568450728a277a03004d5a2c",
       "sortOrder": 6,
-      "question": "Do you think that work should be taxed at a higher rate than investment?",
+      "question": "Do you think that your salary should be taxed at a higher rate than investments?",
       "__v": 0,
       "bernieSandersPositionText": "Sanders' most recent<a href=\"http:\/\/www.sanders.senate.gov\/newsroom\/press-releases\/sanders-details-tax-plan\" target=\"_blank\"> capital gains tax plan<\/a> would \"tax capital gains and dividends the same as work... Taxing capital gains and dividends the same way that we tax work would raise more than $500 billion over the next decade.\"",
       "bernieSandersRecordText": "<a href=\"http:\/\/www.ontheissues.org\/2016\/Bernie_Sanders_Tax_Reform.htm\" target=\"_blank\">Voted<\/a>&nbsp;against upholding reduced taxes on capital gains &amp; dividends in 2005, calling the tax cuts an \"example of President Bush and the Republican leadership leaning over backwards to help people who really don&rsquo;t need any help.\"",
@@ -135,7 +135,7 @@
       "hillaryClintonRecord": 1,
       "hillaryClintonRecordSupports": 1,
       "hillaryClintonRecordText": "<a href=\"http:\/\/ontheissues.org\/2016\/Hillary_Clinton_War_+_Peace.htm#Iraq_War\" target=\"_blank\">Voted<\/a> to authorize the Iraq War in 2002. Clinton <a href=\"https:\/\/www.youtube.com\/watch?v=Rpm4rjejFgQ\" target=\"_blank\">said<\/a> at the time: \"Any vote that might lead to war should be hard, but I cast it with conviction.&rdquo; Defended her vote when running against Obama in 2008.",
-      "question": "Do you agree with Congress's 2002 decision to authorize the Iraq War?",
+      "question": "Do you agree with Congress' 2002 decision to authorize the Iraq War?",
       "sortOrder": 7,
       "responseBLabel": "No",
       "responseALabel": "Yes"
@@ -169,7 +169,7 @@
       "hillaryClintonPositionText": "In a 2015 campaign stop, Clinton <a href=\"http:\/\/www.cnn.com\/2015\/10\/06\/politics\/hillary-clinton-glass-steagall-act-martin-omalley\/\" target=\"_blank\">said<\/a> that she would not reinstate Glass-Steagall as president.",
       "hillaryClintonRecord": -1,
       "hillaryClintonRecordText": "No record of having taken a position on this issue before the 2016 presidential campaign.",
-      "question": "Do you support reinstating the Glass-Steagall Act, which would prevent high-risk trading with you deposit in the bank?",
+      "question": "Do you support reinstating the Glass-Steagall Act, which would prevent high-risk trading with the money you deposit in the bank?",
       "sortOrder": 9,
       "responseBLabel": "No",
       "responseALabel": "Yes"
