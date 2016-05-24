@@ -58,4 +58,17 @@
     }
 }
 
++ (NSString *)hashtagForCandidate:(Candidate)candidate {
+    switch (candidate) {
+        case CandidateBernie: {
+            return @"#feelthebern";
+            break;
+        }
+        case CandidateHillary: {
+            return @"#imwithher";
+            break;
+        }
+    }
+}
+
 @end

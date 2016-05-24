@@ -86,6 +86,12 @@
 
 - (IBAction)btnShareAppPressed:(UIButton *)sender {
     NSString *link = @"https://itunes.apple.com/app/apple-store/id1116530749?pt=118248079&ct=app-share&mt=8";
+    NSString *message = @"Find which Democratic candidate matches YOUR values! #BernieOrHillary ";
+    NSURL *url = [NSURL URLWithString:link];
+    NSArray *itemsToShare = @[message, url];
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:itemsToShare applicationActivities:nil];
+    activityVC.excludedActivityTypes = @[UIActivityTypePrint, UIActivityTypeAssignToContact, UIActivityTypeSaveToCameraRoll, UIActivityTypePostToFlickr, UIActivityTypePostToVimeo, UIActivityTypeAirDrop];
+    [[UIApplication topMostViewController] presentViewController:activityVC animated:YES completion:nil];
 }
 
 - (IBAction)btnStartOverPressed:(UIButton *)sender {

@@ -142,8 +142,8 @@
     }
     
     // Normalize total match scores
-    bernieTotalStand.matchScore = bernieTotalStand.matchScore/(float)totalNumberOfQuestionsToTakeIntoAccount;
-    hillaryTotalStand.matchScore = hillaryTotalStand.matchScore/(float)totalNumberOfQuestionsToTakeIntoAccount;
+    bernieTotalStand.matchScore = (totalNumberOfQuestionsToTakeIntoAccount>0) ? bernieTotalStand.matchScore/(float)totalNumberOfQuestionsToTakeIntoAccount : 0.0;
+    hillaryTotalStand.matchScore = (totalNumberOfQuestionsToTakeIntoAccount>0) ? hillaryTotalStand.matchScore/(float)totalNumberOfQuestionsToTakeIntoAccount : 0.0;
     
     // Determine which one is the top match
     if (hillaryTotalStand.matchScore > bernieTotalStand.matchScore) {
@@ -194,7 +194,7 @@
 #pragma mark - ShareViewController delegate
 
 - (NSString *)shareViewControllerTextForLatestResults:(ShareViewController *)shareController {
-    NSString *message = [NSString stringWithFormat:@"%@ matches my values by %.0f%%! #BernieOrHillary", [CandidateStand fullNameForCandidate:self.topStand.candidate], self.topStand.matchScore*100.0];
+    NSString *message = [NSString stringWithFormat:@"%@ matches my values by %.0f%%! #BernieOrHillary %@", [CandidateStand fullNameForCandidate:self.topStand.candidate], self.topStand.matchScore*100.0, [CandidateStand hashtagForCandidate:self.topStand.candidate]];
     return message;
 }
 

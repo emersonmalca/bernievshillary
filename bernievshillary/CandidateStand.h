@@ -26,5 +26,6 @@ typedef NS_ENUM(NSUInteger, Candidate) {
 + (NSString *)fullNameForCandidate:(Candidate)candidate;
 + (UIImage *)fullSizeImageForCandidate:(Candidate)candidate;
 + (UIColor *)colorForCandidate:(Candidate)candidate;
++ (NSString *)hashtagForCandidate:(Candidate)candidate;
 
 @end
