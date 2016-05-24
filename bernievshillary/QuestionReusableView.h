@@ -12,6 +12,7 @@
 @interface QuestionReusableView : UICollectionReusableView
 
 @property (strong, nonatomic, readonly) UIButton *btnNotSure;
+@property (strong, nonatomic, readonly) UIButton *btnChangeAnswer;
 
 - (void)updateForQuestion:(Question *)question totalQuestionCount:(NSUInteger)total currentIndex:(NSUInteger)currentIndex;
 - (void)showLegend;

@@ -137,6 +137,16 @@ static NSUInteger maxQuestionCount = 10;
     [self showCandidatePositionsAndStoreUserResponseForPositionType:IssuePositionTypeNeutral];
 }
 
+- (IBAction)btnChangeAnswerPressed:(UIButton *)sender {
+    
+    // Hide answer stuff and show question again
+    _isShowingCandidatePositions = NO;
+    [self updateUIForCurrentQuestion];
+    [self.collectionView deleteSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, self.collectionView.numberOfSections)]];
+    [self.collectionView setContentOffset:CGPointZero animated:YES];
+    [self.buttonsContainer fadeIn];
+}
+
 - (IBAction)btnOptionAPressed:(UIButton *)sender {
     [self showCandidatePositionsAndStoreUserResponseForPositionType:IssuePositionTypeFor];
 }
@@ -353,6 +363,7 @@ static NSUInteger maxQuestionCount = 10;
         if (self.header == nil) {
             self.header = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:HeaderIdentifier forIndexPath:indexPath];
             [self.header.btnNotSure addTarget:self action:@selector(btnNotSurePressed:) forControlEvents:UIControlEventTouchUpInside];
+            [self.header.btnChangeAnswer addTarget:self action:@selector(btnChangeAnswerPressed:) forControlEvents:UIControlEventTouchUpInside];
             [self updateUIForCurrentQuestion];
         }
         return self.header;

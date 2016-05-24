@@ -12,6 +12,7 @@
             <string>Lato-Regular</string>
             <string>Lato-Regular</string>
             <string>Lato-Regular</string>
+            <string>Lato-Regular</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -71,9 +72,21 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUg-7I-vIu">
+                            <rect key="frame" x="200" y="266" width="200" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="TZW-R9-lMR"/>
+                                <constraint firstAttribute="width" constant="200" id="Yqp-UL-Dlv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                            <state key="normal" title="Change your answer">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.15722778439999999" green="0.43913120030000002" blue="0.77128160000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
+                        <constraint firstItem="WUg-7I-vIu" firstAttribute="centerX" secondItem="Znb-3z-aXs" secondAttribute="centerX" id="41a-h1-hgN"/>
                         <constraint firstItem="05O-VE-qJl" firstAttribute="centerX" secondItem="Znb-3z-aXs" secondAttribute="centerX" id="9af-wW-dY8"/>
                         <constraint firstAttribute="bottom" secondItem="YMv-P0-Hag" secondAttribute="bottom" id="FBO-pT-wAH"/>
                         <constraint firstItem="05O-VE-qJl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Znb-3z-aXs" secondAttribute="leading" constant="12" id="HaR-u7-x63"/>
@@ -81,6 +94,7 @@
                         <constraint firstItem="YMv-P0-Hag" firstAttribute="centerX" secondItem="Znb-3z-aXs" secondAttribute="centerX" id="tq0-zY-qlH"/>
                         <constraint firstItem="05O-VE-qJl" firstAttribute="top" secondItem="Znb-3z-aXs" secondAttribute="top" constant="52" id="u8b-ta-nc2"/>
                         <constraint firstAttribute="bottom" secondItem="05O-VE-qJl" secondAttribute="bottom" constant="83" id="xii-eE-kCI"/>
+                        <constraint firstAttribute="bottom" secondItem="WUg-7I-vIu" secondAttribute="bottom" constant="8" id="zLE-pw-01L"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4R1-Pz-OVD">
@@ -144,6 +158,7 @@
                 <constraint firstItem="4R1-Pz-OVD" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="yls-qG-V5m"/>
             </constraints>
             <connections>
+                <outlet property="btnChangeAnswer" destination="WUg-7I-vIu" id="uAJ-nr-B5d"/>
                 <outlet property="btnNotSure" destination="4R1-Pz-OVD" id="PNp-di-jCl"/>
                 <outlet property="legendView" destination="aic-09-z2X" id="Mkh-DO-eNM"/>
                 <outlet property="pageControl" destination="YMv-P0-Hag" id="7CL-YI-xCc"/>

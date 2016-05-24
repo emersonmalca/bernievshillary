@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *questionLabel;
 @property (strong, nonatomic) IBOutlet FXPageControl *pageControl;
 @property (strong, nonatomic, readwrite) IBOutlet UIButton *btnNotSure;
+@property (strong, nonatomic, readwrite) IBOutlet UIButton *btnChangeAnswer;
 @property (strong, nonatomic) IBOutlet UIView *legendView;
 
 @end
@@ -47,18 +48,22 @@
     
     // Show not sure button
     self.btnNotSure.alpha = 1.0;
+    self.pageControl.alpha = 1.0;
     
     // Hide legend
     self.legendView.alpha = 0.0;
+    self.btnChangeAnswer.alpha = 0.0;
 }
 
 - (void)showLegend {
     
     // Hide not sure button
     self.btnNotSure.alpha = 0.0;
+    self.pageControl.alpha = 0.0;
     
     // Show legend
     self.legendView.alpha = 1.0;
+    self.btnChangeAnswer.alpha = 1.0;
 }
 
 @end
