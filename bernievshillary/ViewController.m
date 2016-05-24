@@ -14,7 +14,7 @@
 @class Question;
 @class UserResponse;
 
-@interface ViewController () <IntroViewControllerDelegate, QuestionsViewControllerDelegate>
+@interface ViewController () <IntroViewControllerDelegate, QuestionsViewControllerDelegate, ResultsViewControllerDelegate>
 
 @property (strong, nonatomic) IntroViewController *introController;
 
@@ -49,6 +49,7 @@
 //    [self transitionSequentuallyFromChildViewController:controller toViewController:questionsController completion:NULL];
     
     ResultsViewController *resultsController = [ResultsViewController initWithNib];
+    resultsController.delegate = self;
     [self transitionSequentuallyFromChildViewController:controller toViewController:resultsController completion:NULL];
 }
 
@@ -60,6 +61,16 @@
     ResultsViewController *resultsController = [ResultsViewController initWithNib];
     [resultsController showResultsForUserResponses:[userResponses allValues]];
     [self transitionSequentuallyFromChildViewController:controller toViewController:resultsController completion:NULL];
+}
+
+#pragma mark - ResultsViewControllerDelegate
+
+- (void)resultsViewControllerDidSelectToStartOver:(nonnull ResultsViewController *)controller {
+    
+    // Show questions again
+    QuestionsViewController *questionsController = [QuestionsViewController initWithNib];
+    questionsController.delegate = self;
+    [self transitionSequentuallyFromChildViewController:controller toViewController:questionsController completion:NULL];
 }
 
 @end

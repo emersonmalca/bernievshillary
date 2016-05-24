@@ -27,6 +27,18 @@
     }
 }
 
+- (void)animateInFromViewController:(UIViewController *)fromViewController completion:(void (^)(BOOL finished))completion { //To be used by subclasses
+    if (completion) {
+        completion(YES);
+    }
+}
+
+- (void)animateOutToViewController:(UIViewController *)toViewController completion:(void (^)(BOOL finished))completion { //To be used by subclasses
+    if (completion) {
+        completion(YES);
+    }
+}
+
 - (void)transitionSequentuallyFromChildViewController:(UIViewController *)fromViewController toViewController:(UIViewController *)toViewController completion:(void (^)(BOOL))completion {
     
     // Remove FROM controller from hierarchy and add TO controller

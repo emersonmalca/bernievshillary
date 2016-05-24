@@ -8,8 +8,6 @@
 
 #import "UIView+Utilities.h"
 
-#define kDefaultAnimationDuration  0.3
-
 @implementation UIView (Utilities)
 
 #pragma mark - Animation
@@ -39,6 +37,75 @@
     [UIView animateWithDuration:kDefaultAnimationDuration animations:^{
         self.alpha = 0.0;
     }];
+}
+
+- (void)fadeInFromSide:(UIViewSide)side completion:(void (^)(BOOL finished))completion {
+    [self fadeInFromSide:side withDuration:kDefaultAnimationDuration delay:0.0 offset:0.0 completion:completion];
+}
+
+- (void)fadeInFromSide:(UIViewSide)side withDuration:(CGFloat)duration delay:(CGFloat)delay offset:(CGFloat)offset completion:(void (^)(BOOL finished))completion {
+    CGRect finalFrame = self.frame;
+    CGRect initialFrame = finalFrame;
+    
+    if (side == UIViewSideTop) {
+        initialFrame.origin.y -= (offset != 0.0)?offset:CGRectGetHeight(initialFrame)/2;
+    } else if (side == UIViewSideBottom) {
+        initialFrame.origin.y += (offset != 0.0)?offset:CGRectGetHeight(initialFrame)/2;
+    } else if (side == UIViewSideLeft ) {
+        initialFrame.origin.x -= (offset != 0.0)?offset:CGRectGetWidth(initialFrame)/2;
+    } else if (side == UIViewSideRight) {
+        initialFrame.origin.x += (offset != 0.0)?offset:CGRectGetWidth(initialFrame)/2;
+    }
+    
+    self.frame = initialFrame;
+    self.alpha = 0.0;
+    
+    [UIView animateWithDuration:duration
+                          delay:delay
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                         self.frame = finalFrame;
+                         self.alpha = 1.0;
+                     }
+                     completion:^(BOOL finished){
+                         if (completion != NULL) {
+                             completion(finished);
+                         }
+                     }];
+}
+
+- (void)fadeOutToSide:(UIViewSide)side completion:(void (^)(BOOL finished))completion {
+    [self fadeOutToSide:side withDuration:kDefaultAnimationDuration delay:0.0 offset:0.0 completion:completion];
+}
+
+- (void)fadeOutToSide:(UIViewSide)side withDuration:(CGFloat)duration delay:(CGFloat)delay offset:(CGFloat)offset completion:(void (^)(BOOL finished))completion {
+    
+    CGRect initialFrame = self.frame;
+    CGRect finalFrame = self.frame;
+    
+    if (side == UIViewSideTop) {
+        finalFrame.origin.y -= (offset != 0.0)?offset:CGRectGetHeight(initialFrame)/2;
+    } else if (side == UIViewSideBottom) {
+        finalFrame.origin.y += (offset != 0.0)?offset:CGRectGetHeight(initialFrame)/2;
+    } else if (side == UIViewSideLeft ) {
+        finalFrame.origin.x -= (offset != 0.0)?offset:CGRectGetWidth(initialFrame)/2;
+    } else if (side == UIViewSideRight) {
+        finalFrame.origin.x += (offset != 0.0)?offset:CGRectGetWidth(initialFrame)/2;
+    }
+    
+    [UIView animateWithDuration:duration
+                          delay:delay
+                        options:UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                         self.frame = finalFrame;
+                         self.alpha = 0.0;
+                     }
+                     completion:^(BOOL finished){
+                         self.frame = initialFrame;
+                         if (completion != NULL) {
+                             completion(finished);
+                         }
+                     }];
 }
 
 #pragma mark - others
@@ -85,6 +152,33 @@
 
 - (void)stopSpinning {
     [self.layer removeAnimationForKey:@"spinAnimation"];
+}
+
+- (UIImage *)screenshotOpaque:(BOOL)opaque highQuality:(BOOL)highQuality {
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, opaque, 0.0);
+    
+    if (highQuality) {
+        CGContextSetInterpolationQuality(UIGraphicsGetCurrentContext(), kCGInterpolationHigh);
+    } else {
+        //Lower the quality so that the screen shot is faster
+        CGContextSetInterpolationQuality(UIGraphicsGetCurrentContext(), kCGInterpolationNone);
+    }
+    
+    //[self.layer renderInContext:UIGraphicsGetCurrentContext()]; //Old method
+    
+    // New, faster method
+    // We have to use screenUpdates NO, otherwise iPhone6/6S running iOS8 will have a scale glitch
+    // http://stackoverflow.com/questions/26070420/ios8-scale-glitch-when-calling-drawviewhierarchyinrect-afterscreenupdatesyes
+    [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:NO];
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    return image;
+}
+
+- (UIImage *)screenshot {
+    return [self screenshotOpaque:YES highQuality:NO];
 }
 
 @end

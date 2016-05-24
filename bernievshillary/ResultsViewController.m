@@ -10,8 +10,9 @@
 #import "BHKit.h"
 #import "UserResponse.h"
 #import "CandidateStand.h"
+#import "ShareViewController.h"
 
-@interface ResultsViewController ()
+@interface ResultsViewController () <ShareViewControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UIView *mainContainer;
 @property (strong, nonatomic) IBOutlet UIView *topContainer;
@@ -92,18 +93,10 @@
 
 - (void)showModelForSharing:(UITapGestureRecognizer *)recognizer {
     
-    // Animate in blur - possibly could be done better?
-    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
-    UIVisualEffectView *blurredView = [[UIVisualEffectView alloc] initWithEffect:blur];
-    blurredView.self.frame = self.view.bounds;
-    blurredView.alpha = 0.0f;
-    [self.view addSubview:blurredView];
-    
-    [UIView animateWithDuration:0.5 animations:^{
-        blurredView.alpha = 1.0f;
-    }];
-    
-    // Animate in modal 
+    // Animate in modal
+    ShareViewController *controller = [ShareViewController initWithNib];
+    controller.delegate = self;
+    [self presentViewController:controller animated:YES completion:NULL];
 }
 
 #pragma mark - Custom methods
@@ -196,6 +189,32 @@
     [path addLineToPoint:CGPointMake(CGRectGetMinX(bounds), CGRectGetMaxY(bounds))];
     [path closePath];
     return [path CGPath];
+}
+
+#pragma mark - ShareViewController delegate
+
+- (UIImage *)shareViewControllerImageToShare:(ShareViewController *)shareController {
+    return [self.view screenshotOpaque:YES highQuality:YES];
+}
+
+- (void)shareViewController:(ShareViewController *)shareController didFinishWithDecision:(ShareControllerDecision)decision {
+    switch (decision) {
+        case ShareControllerDecisionCancel: {
+            // Just remove the share controller
+            [shareController dismissViewControllerAnimated:YES completion:NULL];
+            break;
+        }
+        case ShareControllerDecisionStartOver: {
+            __weak ResultsViewController *weakSelf = self;
+            [shareController dismissViewControllerAnimated:YES completion:^{
+                ResultsViewController *strongSelf = weakSelf;
+                if (strongSelf) {
+                    [strongSelf->_delegate resultsViewControllerDidSelectToStartOver:strongSelf];
+                }
+            }];
+            break;
+        }
+    }
 }
 
 @end
