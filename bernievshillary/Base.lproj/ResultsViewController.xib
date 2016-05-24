@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Lato-Bold.ttf">
@@ -24,6 +24,7 @@
                 <outlet property="bottomScoreLabel" destination="WgC-r5-kXQ" id="e35-9o-C3s"/>
                 <outlet property="mainContainer" destination="fFs-rl-eL9" id="IKk-bh-NhI"/>
                 <outlet property="rays" destination="M4L-WZ-S2s" id="DEf-pP-eat"/>
+                <outlet property="tapToContinue" destination="Bu8-3w-GP4" id="zPR-XH-0cM"/>
                 <outlet property="topContainer" destination="jna-xE-jxN" id="fs1-s5-itl"/>
                 <outlet property="topImageView" destination="c3G-xR-EYg" id="fCN-OA-pBN"/>
                 <outlet property="topNameLabel" destination="JZo-HC-UtW" id="I7y-R5-yDm"/>

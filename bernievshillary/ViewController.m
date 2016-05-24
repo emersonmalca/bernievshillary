@@ -44,9 +44,12 @@
 - (void)introViewControllerDidSelectToGetStarted:(IntroViewController *)controller {
     
     // Remove this controller and show the next one
-    QuestionsViewController *questionsController = [QuestionsViewController initWithNib];
-    questionsController.delegate = self;
-    [self transitionSequentuallyFromChildViewController:controller toViewController:questionsController completion:NULL];
+//    QuestionsViewController *questionsController = [QuestionsViewController initWithNib];
+//    questionsController.delegate = self;
+//    [self transitionSequentuallyFromChildViewController:controller toViewController:questionsController completion:NULL];
+    
+    ResultsViewController *resultsController = [ResultsViewController initWithNib];
+    [self transitionSequentuallyFromChildViewController:controller toViewController:resultsController completion:NULL];
 }
 
 #pragma mark - QuestionsViewController delegate

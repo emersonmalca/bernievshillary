@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4378D9A57AEABE2061E71494 /* libPods-bernievshillary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A26D9B5FFFE218800B73D8D2 /* libPods-bernievshillary.a */; };
+		4B17CAAD1CF4556900D36DED /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B17CAAB1CF4556900D36DED /* ShareViewController.m */; };
+		4B17CAAE1CF4556900D36DED /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B17CAAC1CF4556900D36DED /* ShareViewController.xib */; };
 		6A10A2EE1CE9A04500449CCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A10A2ED1CE9A04500449CCC /* main.m */; };
 		6A10A2F11CE9A04500449CCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A10A2F01CE9A04500449CCC /* AppDelegate.m */; };
 		6A10A2F41CE9A04500449CCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A10A2F31CE9A04500449CCC /* ViewController.m */; };
@@ -67,6 +69,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B17CAAA1CF4556900D36DED /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		4B17CAAB1CF4556900D36DED /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		4B17CAAC1CF4556900D36DED /* ShareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareViewController.xib; sourceTree = "<group>"; };
 		6A10A2E91CE9A04500449CCC /* bernievshillary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bernievshillary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A10A2ED1CE9A04500449CCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A10A2EF1CE9A04500449CCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -170,6 +175,9 @@
 		4B17CAA41CF4428C00D36DED /* Share */ = {
 			isa = PBXGroup;
 			children = (
+				4B17CAAA1CF4556900D36DED /* ShareViewController.h */,
+				4B17CAAB1CF4556900D36DED /* ShareViewController.m */,
+				4B17CAAC1CF4556900D36DED /* ShareViewController.xib */,
 			);
 			name = Share;
 			sourceTree = "<group>";
@@ -481,6 +489,7 @@
 				6A10A2F91CE9A04500449CCC /* Assets.xcassets in Resources */,
 				6A4F177E1CEFFF6200AF6916 /* CandidateCell.xib in Resources */,
 				6A4F17831CF0CF1800AF6916 /* IssuePositionCell.xib in Resources */,
+				4B17CAAE1CF4556900D36DED /* ShareViewController.xib in Resources */,
 				6AB690B41CF3ED0800A420D5 /* Localizable.strings in Resources */,
 				6A7C50A31CEEE19700E08646 /* Lato-Regular.ttf in Resources */,
 				6A10A2F71CE9A04500449CCC /* Main.storyboard in Resources */,
@@ -570,6 +579,7 @@
 				6A4F17861CF1F72000AF6916 /* NSMutableAttributedString+Utilities.m in Sources */,
 				6A4F17971CF2970300AF6916 /* CandidateStand.m in Sources */,
 				6A6583941CEB6F9200DAC92F /* UIColor+BernieVSHillary.m in Sources */,
+				4B17CAAD1CF4556900D36DED /* ShareViewController.m in Sources */,
 				6A10A2EE1CE9A04500449CCC /* main.m in Sources */,
 				6A7C509F1CEEB86D00E08646 /* QuestionsViewController.m in Sources */,
 				6A4F17821CF0CF1800AF6916 /* IssuePositionCell.m in Sources */,

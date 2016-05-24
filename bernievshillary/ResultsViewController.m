@@ -25,6 +25,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *bottomImageView;
 
 @property (strong, nonatomic) IBOutlet UIView *rays;
+@property (strong, nonatomic) IBOutlet UILabel *tapToContinue;
 @property (strong, nonatomic) CAShapeLayer *bottomMask;
 
 @property (strong, nonatomic) NSMutableArray<UserResponse*> *userResponses;
@@ -51,6 +52,13 @@
     
     // Update UI
     [self updateUIForCurrentUserReponses];
+    
+    // Set gesture recognizer on Tap to Continue
+    UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showModelForSharing:)];
+    gestureRecognizer.numberOfTapsRequired = 1;
+    gestureRecognizer.numberOfTouchesRequired = 1;
+    gestureRecognizer.cancelsTouchesInView = NO;
+    [self.mainContainer addGestureRecognizer:gestureRecognizer];
 }
 
 - (void)viewDidLayoutSubviews {
@@ -78,6 +86,24 @@
             completion(finished);
         }
     }];
+}
+
+#pragma mark - Tap To Continue
+
+- (void)showModelForSharing:(UITapGestureRecognizer *)recognizer {
+    
+    // Animate in blur - possibly could be done better?
+    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    UIVisualEffectView *blurredView = [[UIVisualEffectView alloc] initWithEffect:blur];
+    blurredView.self.frame = self.view.bounds;
+    blurredView.alpha = 0.0f;
+    [self.view addSubview:blurredView];
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        blurredView.alpha = 1.0f;
+    }];
+    
+    // Animate in modal 
 }
 
 #pragma mark - Custom methods
