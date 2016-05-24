@@ -1,0 +1,12 @@
+/* Title for a candidate's current position */
+"issuePositionCell.label.currentPosition" = "PRESENTE";
+
+/* Title for a candidate's past record */
+"issuePositionCell.label.pastRecord" = "PASADO";
+
+/* Title for Next Question button */
+"questionsController.button.nextQuestion" = "SIGUIENTE PREGUNTA";
+
+/* Title for the Show Results button */
+"questionsController.button.showResults" = "VER RESULTADOS";
+

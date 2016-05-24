@@ -43,6 +43,10 @@
 		6AB6907F1CF3701200A420D5 /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB690811CF3701200A420D5 /* ResultsViewController.xib */; };
 		6AB690841CF3715E00A420D5 /* QuestionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB690861CF3715E00A420D5 /* QuestionReusableView.xib */; };
 		6AB690891CF38B0800A420D5 /* NextQuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AB6908B1CF38B0800A420D5 /* NextQuestionCell.xib */; };
+		6AB690A51CF3ED0700A420D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AB690A71CF3ED0700A420D5 /* InfoPlist.strings */; };
+		6AB690AA1CF3ED0700A420D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AB690AC1CF3ED0700A420D5 /* InfoPlist.strings */; };
+		6AB690AF1CF3ED0700A420D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AB690B11CF3ED0700A420D5 /* InfoPlist.strings */; };
+		6AB690B41CF3ED0800A420D5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AB690B61CF3ED0800A420D5 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +130,12 @@
 		6AB690881CF3716400A420D5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/QuestionReusableView.strings; sourceTree = "<group>"; };
 		6AB6908C1CF38B0A00A420D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NextQuestionCell.xib; sourceTree = "<group>"; };
 		6AB6908D1CF38B1000A420D5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/NextQuestionCell.strings; sourceTree = "<group>"; };
+		6AB6909D1CF3E96800A420D5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		6AB690A61CF3ED0700A420D5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6AB690AB1CF3ED0700A420D5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6AB690B01CF3ED0700A420D5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6AB690B51CF3ED0800A420D5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6AB690B81CF3EE3100A420D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A26D9B5FFFE218800B73D8D2 /* libPods-bernievshillary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bernievshillary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7C175B09E995BBE689E563 /* Pods-bernievshillary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bernievshillary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bernievshillary/Pods-bernievshillary.debug.xcconfig"; sourceTree = "<group>"; };
 		D7ECCC6280AE2EF15C694692 /* Pods-bernievshillary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bernievshillary.release.xcconfig"; path = "Pods/Target Support Files/Pods-bernievshillary/Pods-bernievshillary.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +192,8 @@
 		6A10A2EB1CE9A04500449CCC /* bernievshillary */ = {
 			isa = PBXGroup;
 			children = (
+				6AB690B61CF3ED0800A420D5 /* Localizable.strings */,
+				6AB690B11CF3ED0700A420D5 /* InfoPlist.strings */,
 				6A6583951CEB713200DAC92F /* Interface */,
 				6A6583911CEB6F4D00DAC92F /* AppKit */,
 				6A4B26201CEAC77400503212 /* Models */,
@@ -210,6 +222,7 @@
 		6A10A3051CE9A04500449CCC /* bernievshillaryTests */ = {
 			isa = PBXGroup;
 			children = (
+				6AB690A71CF3ED0700A420D5 /* InfoPlist.strings */,
 				6A10A3061CE9A04500449CCC /* bernievshillaryTests.m */,
 				6A10A3081CE9A04500449CCC /* Info.plist */,
 			);
@@ -219,6 +232,7 @@
 		6A10A3101CE9A04500449CCC /* bernievshillaryUITests */ = {
 			isa = PBXGroup;
 			children = (
+				6AB690AC1CF3ED0700A420D5 /* InfoPlist.strings */,
 				6A10A3111CE9A04500449CCC /* bernievshillaryUITests.m */,
 				6A10A3131CE9A04500449CCC /* Info.plist */,
 			);
@@ -450,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A7C50A11CEEBA1600E08646 /* QuestionsViewController.xib in Resources */,
+				6AB690AF1CF3ED0700A420D5 /* InfoPlist.strings in Resources */,
 				6A7C50A21CEEE19300E08646 /* Lato-Bold.ttf in Resources */,
 				6A10A2FC1CE9A04500449CCC /* LaunchScreen.storyboard in Resources */,
 				6AB6907B1CF34E0300A420D5 /* questions.json in Resources */,
@@ -458,6 +473,7 @@
 				6A10A2F91CE9A04500449CCC /* Assets.xcassets in Resources */,
 				6A4F177E1CEFFF6200AF6916 /* CandidateCell.xib in Resources */,
 				6A4F17831CF0CF1800AF6916 /* IssuePositionCell.xib in Resources */,
+				6AB690B41CF3ED0800A420D5 /* Localizable.strings in Resources */,
 				6A7C50A31CEEE19700E08646 /* Lato-Regular.ttf in Resources */,
 				6A10A2F71CE9A04500449CCC /* Main.storyboard in Resources */,
 				6AB690761CF34CC700A420D5 /* IntroViewController.xib in Resources */,
@@ -469,6 +485,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB690A51CF3ED0700A420D5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +493,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB690AA1CF3ED0700A420D5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +620,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6A10A2FB1CE9A04500449CCC /* Base */,
+				6AB6909D1CF3E96800A420D5 /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -649,6 +668,39 @@
 				6AB6908D1CF38B1000A420D5 /* es */,
 			);
 			name = NextQuestionCell.xib;
+			sourceTree = "<group>";
+		};
+		6AB690A71CF3ED0700A420D5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AB690A61CF3ED0700A420D5 /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6AB690AC1CF3ED0700A420D5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AB690AB1CF3ED0700A420D5 /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6AB690B11CF3ED0700A420D5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AB690B01CF3ED0700A420D5 /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6AB690B61CF3ED0800A420D5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AB690B51CF3ED0800A420D5 /* es */,
+				6AB690B81CF3EE3100A420D5 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
