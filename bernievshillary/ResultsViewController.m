@@ -19,6 +19,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *topScoreLabel;
 @property (strong, nonatomic) IBOutlet UILabel *topNameLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *topImageView;
+@property (strong, nonatomic) IBOutlet UIView *appPromotionView;
 
 @property (strong, nonatomic) IBOutlet UIView *bottomContainer;
 @property (strong, nonatomic) IBOutlet UILabel *bottomScoreLabel;
@@ -43,6 +44,7 @@
     // Initial UI values
     self.mainContainer.alpha = 0.0;
     self.rays.alpha = 0.0;
+    self.appPromotionView.hidden = YES;
     
     // Create the masks
     CAShapeLayer *mask = [CAShapeLayer layer];
@@ -199,7 +201,12 @@
 }
 
 - (UIImage *)shareViewControllerImageToShare:(ShareViewController *)shareController {
-    return [self.view screenshotOpaque:YES highQuality:YES];
+    self.appPromotionView.hidden = NO;
+    self.tapToContinue.hidden = YES;
+    UIImage *image = [self.mainContainer screenshotOpaque:YES highQuality:YES];
+    self.appPromotionView.hidden = YES;
+    self.tapToContinue.hidden = NO;
+    return image;
 }
 
 - (void)shareViewController:(ShareViewController *)shareController didFinishWithDecision:(ShareControllerDecision)decision {

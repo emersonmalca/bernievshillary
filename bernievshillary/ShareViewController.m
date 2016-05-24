@@ -49,19 +49,6 @@
     // Track tap on the background to exit
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapOnBackground:)];
     [self.backgroundView addGestureRecognizer:tap];
-    
-    // Setup our Facebook Share button here
-    FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
-    content.contentTitle = @"Bernie vs. Hillary Results";
-    // TODO : load in results here to content.contentDescription
-    
-    // Set our image to the content
-    FBSDKSharePhoto *sharePhoto = [[FBSDKSharePhoto alloc] init];
-    // TODO : set image from resultsController
-    
-    FBSDKShareDialog *dialog = [[FBSDKShareDialog alloc] init];
-    dialog.fromViewController = self;
-//    dialog.content = content;
 }
 
 #pragma mark - Action methods
@@ -74,13 +61,13 @@
 
 - (IBAction)btnShareResultsPressed:(UIButton *)sender {
     
+    UIImage *image = [self.delegate shareViewControllerImageToShare:self];
     NSString *message = [self.delegate shareViewControllerTextForLatestResults:self];
     NSString *link = @"https://itunes.apple.com/app/apple-store/id1116530749?pt=118248079&ct=results-share&mt=8";
     message = [message stringByAppendingFormat:@" %@", link];
-    UIImage *image = [self.delegate shareViewControllerImageToShare:self];
     NSArray *itemsToShare = @[message, image];
     UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:itemsToShare applicationActivities:nil];
-    activityVC.excludedActivityTypes = @[UIActivityTypePrint, UIActivityTypeAssignToContact, UIActivityTypeSaveToCameraRoll, UIActivityTypePostToFlickr, UIActivityTypePostToVimeo, UIActivityTypeAirDrop];
+    activityVC.excludedActivityTypes = @[UIActivityTypePrint, UIActivityTypeAssignToContact, UIActivityTypePostToFlickr, UIActivityTypePostToVimeo, UIActivityTypeAirDrop];
     [[UIApplication topMostViewController] presentViewController:activityVC animated:YES completion:nil];
 }
 

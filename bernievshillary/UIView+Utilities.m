@@ -7,6 +7,7 @@
 //
 
 #import "UIView+Utilities.h"
+#import "UIApplication+Utilities.h"
 
 @implementation UIView (Utilities)
 
@@ -169,7 +170,7 @@
     // New, faster method
     // We have to use screenUpdates NO, otherwise iPhone6/6S running iOS8 will have a scale glitch
     // http://stackoverflow.com/questions/26070420/ios8-scale-glitch-when-calling-drawviewhierarchyinrect-afterscreenupdatesyes
-    [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:NO];
+    [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"9.0")];
     
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     
