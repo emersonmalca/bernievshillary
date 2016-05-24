@@ -1,4 +1,10 @@
 PODS:
+  - Bolts (1.7.0):
+    - Bolts/AppLinks (= 1.7.0)
+    - Bolts/Tasks (= 1.7.0)
+  - Bolts/AppLinks (1.7.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.7.0)
   - CSStickyHeaderFlowLayout (0.2.10)
   - DTCoreText (1.6.17):
     - DTFoundation/Core (~> 1.7.5)
@@ -11,17 +17,26 @@ PODS:
     - DTFoundation/Core
   - DTFoundation/UIKit (1.7.10):
     - DTFoundation/Core
+  - FBSDKCoreKit (4.12.0):
+    - Bolts (~> 1.7)
+  - FBSDKShareKit (4.12.0):
+    - FBSDKCoreKit
   - FXPageControl (1.4)
 
 DEPENDENCIES:
   - CSStickyHeaderFlowLayout (~> 0.2)
   - DTCoreText (~> 1.6)
+  - FBSDKCoreKit
+  - FBSDKShareKit
   - FXPageControl (~> 1.4)
 
 SPEC CHECKSUMS:
+  Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
   CSStickyHeaderFlowLayout: 5366582779d8b7c9ba9b9cc729c218cc23888776
   DTCoreText: 3ea8bba23dd2141ba18adb227a7dd33a822df1c4
   DTFoundation: 3b6b1b817d2a7fb02e7eaf2596c922a68145bd43
+  FBSDKCoreKit: 6e56d5a2a64a755ad4efb5dbeee8f82fb1b99775
+  FBSDKShareKit: df1491f064cffc8ebcc3fc8b71be94cc190c728e
   FXPageControl: 5057bf21537579b40ff30e119cd425d16d8ef90a
 
 COCOAPODS: 0.39.0

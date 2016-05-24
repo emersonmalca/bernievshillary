@@ -299,7 +299,8 @@ static NSUInteger maxQuestionCount = 10;
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     // Candidates + 1 for the Next Question button
-    return _isShowingCandidatePositions?self.currentQuestionCandidateStands.count + 1 : 0;
+    NSUInteger count = self.currentQuestionCandidateStands.count + 1;
+    return _isShowingCandidatePositions ? count : 0;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
