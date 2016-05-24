@@ -74,10 +74,18 @@
 
 - (IBAction)btnShareResultsPressed:(UIButton *)sender {
     
+    NSString *message = [self.delegate shareViewControllerTextForLatestResults:self];
+    NSString *link = @"https://itunes.apple.com/app/apple-store/id1116530749?pt=118248079&ct=results-share&mt=8";
+    message = [message stringByAppendingFormat:@" %@", link];
+    UIImage *image = [self.delegate shareViewControllerImageToShare:self];
+    NSArray *itemsToShare = @[message, image];
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:itemsToShare applicationActivities:nil];
+    activityVC.excludedActivityTypes = @[UIActivityTypePrint, UIActivityTypeAssignToContact, UIActivityTypeSaveToCameraRoll, UIActivityTypePostToFlickr, UIActivityTypePostToVimeo, UIActivityTypeAirDrop];
+    [[UIApplication topMostViewController] presentViewController:activityVC animated:YES completion:nil];
 }
 
 - (IBAction)btnShareAppPressed:(UIButton *)sender {
-    
+    NSString *link = @"https://itunes.apple.com/app/apple-store/id1116530749?pt=118248079&ct=app-share&mt=8";
 }
 
 - (IBAction)btnStartOverPressed:(UIButton *)sender {

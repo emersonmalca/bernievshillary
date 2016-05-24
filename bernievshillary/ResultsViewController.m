@@ -193,6 +193,11 @@
 
 #pragma mark - ShareViewController delegate
 
+- (NSString *)shareViewControllerTextForLatestResults:(ShareViewController *)shareController {
+    NSString *message = [NSString stringWithFormat:@"%@ matches my values by %.0f%%! #BernieOrHillary", [CandidateStand fullNameForCandidate:self.topStand.candidate], self.topStand.matchScore*100.0];
+    return message;
+}
+
 - (UIImage *)shareViewControllerImageToShare:(ShareViewController *)shareController {
     return [self.view screenshotOpaque:YES highQuality:YES];
 }

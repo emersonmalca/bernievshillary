@@ -24,6 +24,7 @@ typedef NS_ENUM(NSUInteger, ShareControllerDecision) {
 
 @protocol ShareViewControllerDelegate <NSObject>
 
+- (NSString *)shareViewControllerTextForLatestResults:(ShareViewController *)shareController;
 - (UIImage *)shareViewControllerImageToShare:(ShareViewController *)shareController;
 - (void)shareViewController:(ShareViewController *)shareController didFinishWithDecision:(ShareControllerDecision)decision;
 

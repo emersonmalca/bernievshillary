@@ -50,6 +50,7 @@
 		6AB690AF1CF3ED0700A420D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AB690B11CF3ED0700A420D5 /* InfoPlist.strings */; };
 		6AB690B41CF3ED0800A420D5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AB690B61CF3ED0800A420D5 /* Localizable.strings */; };
 		6AB690BC1CF494D800A420D5 /* CustomAnimatedTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB690BB1CF494D800A420D5 /* CustomAnimatedTransitionDelegate.m */; };
+		6AB690BF1CF4A54100A420D5 /* UIApplication+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB690BE1CF4A54100A420D5 /* UIApplication+Utilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +145,8 @@
 		6AB690B81CF3EE3100A420D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6AB690BA1CF494D800A420D5 /* CustomAnimatedTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnimatedTransitionDelegate.h; sourceTree = "<group>"; };
 		6AB690BB1CF494D800A420D5 /* CustomAnimatedTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnimatedTransitionDelegate.m; sourceTree = "<group>"; };
+		6AB690BD1CF4A54100A420D5 /* UIApplication+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Utilities.h"; sourceTree = "<group>"; };
+		6AB690BE1CF4A54100A420D5 /* UIApplication+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Utilities.m"; sourceTree = "<group>"; };
 		A26D9B5FFFE218800B73D8D2 /* libPods-bernievshillary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bernievshillary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7C175B09E995BBE689E563 /* Pods-bernievshillary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bernievshillary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bernievshillary/Pods-bernievshillary.debug.xcconfig"; sourceTree = "<group>"; };
 		D7ECCC6280AE2EF15C694692 /* Pods-bernievshillary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bernievshillary.release.xcconfig"; path = "Pods/Target Support Files/Pods-bernievshillary/Pods-bernievshillary.release.xcconfig"; sourceTree = "<group>"; };
@@ -344,6 +347,8 @@
 				6A4F17851CF1F72000AF6916 /* NSMutableAttributedString+Utilities.m */,
 				6AB690BA1CF494D800A420D5 /* CustomAnimatedTransitionDelegate.h */,
 				6AB690BB1CF494D800A420D5 /* CustomAnimatedTransitionDelegate.m */,
+				6AB690BD1CF4A54100A420D5 /* UIApplication+Utilities.h */,
+				6AB690BE1CF4A54100A420D5 /* UIApplication+Utilities.m */,
 			);
 			name = AppKit;
 			sourceTree = "<group>";
@@ -574,6 +579,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A4F17941CF296B600AF6916 /* UserResponse.m in Sources */,
+				6AB690BF1CF4A54100A420D5 /* UIApplication+Utilities.m in Sources */,
 				6A10A2F41CE9A04500449CCC /* ViewController.m in Sources */,
 				6A6583A31CEEB39500DAC92F /* UIViewController+Utilities.m in Sources */,
 				6A4B26231CEAC79E00503212 /* Question.m in Sources */,
