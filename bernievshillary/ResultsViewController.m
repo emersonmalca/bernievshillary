@@ -11,6 +11,7 @@
 #import "UserResponse.h"
 #import "CandidateStand.h"
 #import "ShareViewController.h"
+#import "Amplitude.h"
 
 @interface ResultsViewController () <ShareViewControllerDelegate>
 
@@ -172,6 +173,10 @@
         self.topImageView.transform = CGAffineTransformMakeScale(-1, 1); //Flipped
         self.bottomImageView.transform = CGAffineTransformMakeScale(-1, 1); //Flipped
     }
+    
+    // Track
+    NSString *eventName = [NSString stringWithFormat:@"Top %@", [CandidateStand fullNameForCandidate:self.topStand.candidate]];
+    [[Amplitude instance] logEvent:eventName withEventProperties:@{@"score":@(self.topStand.matchScore * 100.0)}];
 }
 
 - (nonnull NSMutableArray<UserResponse*> *)userResponses {

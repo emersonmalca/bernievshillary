@@ -8,6 +8,7 @@
 
 #import "ShareViewController.h"
 #import "BHKit.h"
+#import "Amplitude.h"
 
 @interface ShareViewController ()
 
@@ -69,6 +70,9 @@
     UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:itemsToShare applicationActivities:nil];
     activityVC.excludedActivityTypes = @[UIActivityTypePrint, UIActivityTypeAssignToContact, UIActivityTypePostToFlickr, UIActivityTypePostToVimeo, UIActivityTypeAirDrop];
     [[UIApplication topMostViewController] presentViewController:activityVC animated:YES completion:nil];
+    
+    //Track
+    [[Amplitude instance] logEvent:@"Share" withEventProperties:@{@"type":@"results"}];
 }
 
 - (IBAction)btnShareAppPressed:(UIButton *)sender {
@@ -79,6 +83,9 @@
     UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:itemsToShare applicationActivities:nil];
     activityVC.excludedActivityTypes = @[UIActivityTypePrint, UIActivityTypeAssignToContact, UIActivityTypeSaveToCameraRoll, UIActivityTypePostToFlickr, UIActivityTypePostToVimeo, UIActivityTypeAirDrop];
     [[UIApplication topMostViewController] presentViewController:activityVC animated:YES completion:nil];
+    
+    //Track
+    [[Amplitude instance] logEvent:@"Share" withEventProperties:@{@"type":@"app"}];
 }
 
 - (IBAction)btnStartOverPressed:(UIButton *)sender {
