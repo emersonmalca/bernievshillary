@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import <FBSDKShareKit/FBSDKShareKit.h>
 @protocol ShareViewControllerDelegate;
 
 typedef NS_ENUM(NSUInteger, ShareControllerDecision) {
