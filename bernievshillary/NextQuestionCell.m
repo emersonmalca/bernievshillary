@@ -14,6 +14,25 @@
 
 @end
 
-@implementation NextQuestionCell
+@implementation NextQuestionCell {
+    BOOL _isHeightCalculated;
+    CGSize _cachedSize;
+}
+
+- (UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
+    if (!_isHeightCalculated) {
+        [self setNeedsLayout];
+        [self layoutIfNeeded];
+        CGSize size = [self.contentView systemLayoutSizeFittingSize:layoutAttributes.size];
+        _cachedSize = size;
+        CGRect newFrame = layoutAttributes.frame;
+        newFrame.size.width = ceilf(size.width);
+        newFrame.size.height = ceilf(size.height);
+        layoutAttributes.frame = newFrame;
+        _isHeightCalculated = YES;
+    }
+    layoutAttributes.size = _cachedSize;
+    return layoutAttributes;
+}
 
 @end

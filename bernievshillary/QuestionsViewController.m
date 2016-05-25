@@ -79,7 +79,7 @@ static NSUInteger maxQuestionCount = 10;
     UINib *headerNib = [UINib nibWithNibName:@"QuestionReusableView" bundle:nil];
     [self.collectionView registerNib:headerNib forSupplementaryViewOfKind:CSStickyHeaderParallaxHeader withReuseIdentifier:HeaderIdentifier];
     self.layout.scrollDirection = UICollectionViewScrollDirectionVertical;
-    self.layout.estimatedItemSize = CGSizeMake(300.0, 200.0);
+    self.layout.estimatedItemSize = CGSizeMake(320.0, 100.0);
     self.layout.parallaxHeaderMinimumReferenceSize = CGSizeMake(320.0, 200.0);
     self.layout.parallaxHeaderReferenceSize = [self optimalSizeForHeader];
     self.collectionView.contentOffset = CGPointMake(0.0, self.view.bounds.size.height);
@@ -97,6 +97,10 @@ static NSUInteger maxQuestionCount = 10;
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
+    
+    if (self.layout.parallaxHeaderReferenceSize.width == self.view.bounds.size.width) {
+        return;
+    }
     
     // Update header dimensions
     [self.header layoutIfNeeded];
@@ -373,6 +377,11 @@ static NSUInteger maxQuestionCount = 10;
             [self.header.btnNotSure addTarget:self action:@selector(btnNotSurePressed:) forControlEvents:UIControlEventTouchUpInside];
             [self.header.btnChangeAnswer addTarget:self action:@selector(btnChangeAnswerPressed:) forControlEvents:UIControlEventTouchUpInside];
             [self updateUIForCurrentQuestion];
+            
+            // Update header dimensions
+            [self.header layoutIfNeeded];
+            self.layout.parallaxHeaderReferenceSize = [self optimalSizeForHeader];
+            self.layout.parallaxHeaderMinimumReferenceSize = self.layout.parallaxHeaderReferenceSize;
         }
         return self.header;
         

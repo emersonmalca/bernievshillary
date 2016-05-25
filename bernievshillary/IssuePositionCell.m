@@ -19,9 +19,29 @@
 
 @end
 
-@implementation IssuePositionCell
+@implementation IssuePositionCell {
+    BOOL _isHeightCalculated;
+    CGSize _cachedSize;
+}
+
+- (UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
+    if (!_isHeightCalculated) {
+        [self setNeedsLayout];
+        [self layoutIfNeeded];
+        CGSize size = [self.contentView systemLayoutSizeFittingSize:layoutAttributes.size];
+        _cachedSize = size;
+        CGRect newFrame = layoutAttributes.frame;
+        newFrame.size.width = ceilf(size.width);
+        layoutAttributes.frame = newFrame;
+        _isHeightCalculated = YES;
+    }
+    layoutAttributes.size = _cachedSize;
+    return layoutAttributes;
+}
 
 - (void)updateForCandidateIssuePosition:(IssuePosition *)candidatePosition isCurrent:(BOOL)isCurrent userPositionType:(IssuePositionType)userPositionType {
+    
+    _isHeightCalculated = NO;
     
     // Update title
     NSString *currentPositionTitleString = NSLocalizedString(@"issuePositionCell.label.currentPosition", @"Title for a candidate's current position");
