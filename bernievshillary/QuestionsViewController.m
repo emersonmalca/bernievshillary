@@ -288,10 +288,17 @@ static NSUInteger maxQuestionCount = 10;
     }
     hillaryStand.matchScore = hillaryScore;
     
-    if (bernieScore >= hillaryScore) {
+    if (bernieScore > hillaryScore) {
         return @[bernieStand, hillaryStand];
-    } else {
+    } else if (bernieScore < hillaryScore) {
         return @[hillaryStand, bernieStand];
+    } else {
+        // Tie, so we randomize which one is presented on top
+        if (arc4random() % 2 == 0) {
+            return @[bernieStand, hillaryStand];
+        } else {
+            return @[hillaryStand, bernieStand];
+        }
     }
 }
 
