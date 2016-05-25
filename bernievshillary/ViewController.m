@@ -55,6 +55,7 @@
     
     // Show the results controller to calculate and display the results
     ResultsViewController *resultsController = [ResultsViewController initWithNib];
+    resultsController.delegate = self;
     [resultsController showResultsForUserResponses:[userResponses allValues]];
     [self transitionSequentuallyFromChildViewController:controller toViewController:resultsController completion:NULL];
 }
