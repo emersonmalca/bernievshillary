@@ -24,7 +24,11 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    
+    // Reduce font for smaller screens
+    if ([[UIScreen mainScreen] bounds].size.height <= 568.0) {
+        self.questionLabel.font = [UIFont fontWithName:self.questionLabel.font.fontName size:30.0];
+    }
     
 }
 
