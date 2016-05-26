@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4378D9A57AEABE2061E71494 /* libPods-bernievshillary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A26D9B5FFFE218800B73D8D2 /* libPods-bernievshillary.a */; };
 		4B17CAAD1CF4556900D36DED /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B17CAAB1CF4556900D36DED /* ShareViewController.m */; };
-		4B17CAAE1CF4556900D36DED /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B17CAAC1CF4556900D36DED /* ShareViewController.xib */; };
 		6A10A2EE1CE9A04500449CCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A10A2ED1CE9A04500449CCC /* main.m */; };
 		6A10A2F11CE9A04500449CCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A10A2F01CE9A04500449CCC /* AppDelegate.m */; };
 		6A10A2F41CE9A04500449CCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A10A2F31CE9A04500449CCC /* ViewController.m */; };
@@ -51,6 +50,7 @@
 		6AB690B41CF3ED0800A420D5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AB690B61CF3ED0800A420D5 /* Localizable.strings */; };
 		6AB690BC1CF494D800A420D5 /* CustomAnimatedTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB690BB1CF494D800A420D5 /* CustomAnimatedTransitionDelegate.m */; };
 		6AB690BF1CF4A54100A420D5 /* UIApplication+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB690BE1CF4A54100A420D5 /* UIApplication+Utilities.m */; };
+		6AE8BB561CF6E93A00528DA7 /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8BB581CF6E93A00528DA7 /* ShareViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +73,6 @@
 /* Begin PBXFileReference section */
 		4B17CAAA1CF4556900D36DED /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
 		4B17CAAB1CF4556900D36DED /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
-		4B17CAAC1CF4556900D36DED /* ShareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareViewController.xib; sourceTree = "<group>"; };
 		6A10A2E91CE9A04500449CCC /* bernievshillary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bernievshillary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A10A2ED1CE9A04500449CCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A10A2EF1CE9A04500449CCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -147,6 +146,8 @@
 		6AB690BB1CF494D800A420D5 /* CustomAnimatedTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnimatedTransitionDelegate.m; sourceTree = "<group>"; };
 		6AB690BD1CF4A54100A420D5 /* UIApplication+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Utilities.h"; sourceTree = "<group>"; };
 		6AB690BE1CF4A54100A420D5 /* UIApplication+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Utilities.m"; sourceTree = "<group>"; };
+		6AE8BB591CF6E93B00528DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
+		6AE8BB5A1CF6E94000528DA7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/ShareViewController.strings; sourceTree = "<group>"; };
 		A26D9B5FFFE218800B73D8D2 /* libPods-bernievshillary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bernievshillary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7C175B09E995BBE689E563 /* Pods-bernievshillary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bernievshillary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bernievshillary/Pods-bernievshillary.debug.xcconfig"; sourceTree = "<group>"; };
 		D7ECCC6280AE2EF15C694692 /* Pods-bernievshillary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bernievshillary.release.xcconfig"; path = "Pods/Target Support Files/Pods-bernievshillary/Pods-bernievshillary.release.xcconfig"; sourceTree = "<group>"; };
@@ -183,7 +184,7 @@
 			children = (
 				4B17CAAA1CF4556900D36DED /* ShareViewController.h */,
 				4B17CAAB1CF4556900D36DED /* ShareViewController.m */,
-				4B17CAAC1CF4556900D36DED /* ShareViewController.xib */,
+				6AE8BB581CF6E93A00528DA7 /* ShareViewController.xib */,
 			);
 			name = Share;
 			sourceTree = "<group>";
@@ -499,7 +500,7 @@
 				6A10A2F91CE9A04500449CCC /* Assets.xcassets in Resources */,
 				6A4F177E1CEFFF6200AF6916 /* CandidateCell.xib in Resources */,
 				6A4F17831CF0CF1800AF6916 /* IssuePositionCell.xib in Resources */,
-				4B17CAAE1CF4556900D36DED /* ShareViewController.xib in Resources */,
+				6AE8BB561CF6E93A00528DA7 /* ShareViewController.xib in Resources */,
 				6AB690B41CF3ED0800A420D5 /* Localizable.strings in Resources */,
 				6A7C50A31CEEE19700E08646 /* Lato-Regular.ttf in Resources */,
 				6A10A2F71CE9A04500449CCC /* Main.storyboard in Resources */,
@@ -731,6 +732,15 @@
 				6AB690B81CF3EE3100A420D5 /* Base */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		6AE8BB581CF6E93A00528DA7 /* ShareViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AE8BB591CF6E93B00528DA7 /* Base */,
+				6AE8BB5A1CF6E94000528DA7 /* es */,
+			);
+			name = ShareViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
