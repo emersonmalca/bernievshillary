@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *topContainerBottomConstraint;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *bottomContainerTopConstraint;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *bernieBottomConstraint;
 @property (strong, nonatomic) IBOutlet UIView *topContainer;
 @property (strong, nonatomic) IBOutlet UIView *bottomContainer;
 @property (strong, nonatomic) IBOutlet UIView *titleContainer;
@@ -78,6 +79,10 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [UIView animateWithSoftPhysicsDuration:0.6 delay:0.0 options:0 animations:^{
             self.getStartedViewBottomConstraint.constant = 0.0;
+            // Move Bernie down a bit for smaller screens
+            if ([[UIScreen mainScreen] bounds].size.height <= 568.0) {
+                self.bernieBottomConstraint.constant -= 80.0;
+            }
             [self.view layoutIfNeeded];
         } completion:NULL];
     });
@@ -105,6 +110,7 @@
     [UIView animateWithDuration:0.6 delay:0.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         [self.view layoutIfNeeded];
         self.getStartedView.alpha = 0.0;
+        
     } completion:completion];
 }
 
