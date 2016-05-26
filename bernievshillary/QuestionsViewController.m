@@ -231,10 +231,12 @@ static NSUInteger maxQuestionCount = 10;
     
     // Set the flag and show positions
     _isShowingCandidatePositions = YES;
+    [self.collectionView reloadData];
+    /*
     [self.collectionView performBatchUpdates:^{
         [self.collectionView insertSections:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, 3)]];
     } completion:NULL];
-    
+    */
     // Hide voting UI
     [self.buttonsContainer fadeOut];
     
@@ -394,6 +396,12 @@ static NSUInteger maxQuestionCount = 10;
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
     return CGSizeZero;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    if (cell.contentView.alpha == 0.0) {
+        [cell.contentView fadeIn];
+    }
 }
 
 @end

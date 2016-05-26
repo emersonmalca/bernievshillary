@@ -38,6 +38,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    self.contentView.alpha = 0.0;
 }
 
 - (void)updateWithImage:(UIImage *)image name:(NSString *)name {

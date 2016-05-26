@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
@@ -60,26 +60,6 @@
                                         <constraint firstAttribute="height" constant="329" id="nb4-gV-dXb"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTf-Ct-9tR">
-                                    <rect key="frame" x="321" y="77" width="250" height="110"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="250" id="4pe-Fe-BRL"/>
-                                        <constraint firstAttribute="height" constant="110" id="HSm-XN-uLV"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="96"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bernie Sanders" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZo-HC-UtW">
-                                    <rect key="frame" x="311" y="181" width="260" height="44"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="260" id="09D-la-DQI"/>
-                                        <constraint firstAttribute="height" constant="44" id="Dh4-d7-xwL"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="36"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bu8-3w-GP4">
                                     <rect key="frame" x="205" y="52" width="190" height="16"/>
                                     <constraints>
@@ -99,23 +79,67 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTf-Ct-9tR">
+                                    <rect key="frame" x="321" y="77" width="250" height="110"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="250" id="4pe-Fe-BRL"/>
+                                        <constraint firstAttribute="height" constant="110" id="HSm-XN-uLV"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="96"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                    <color key="shadowColor" white="0.0" alpha="0.74643244219653182" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <size key="shadowOffset" width="-2" height="2"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bernie Sanders" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZo-HC-UtW">
+                                    <rect key="frame" x="311" y="181" width="260" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="260" id="09D-la-DQI"/>
+                                        <constraint firstAttribute="height" constant="44" id="Dh4-d7-xwL"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="36"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                    <color key="shadowColor" white="0.0" alpha="0.74753883670520227" colorSpace="calibratedWhite"/>
+                                    <size key="shadowOffset" width="-2" height="2"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" red="0.15722778439999999" green="0.43913120030000002" blue="0.77128160000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstItem="Bu8-3w-GP4" firstAttribute="centerX" secondItem="jna-xE-jxN" secondAttribute="centerX" id="79t-29-W7i"/>
                                 <constraint firstItem="xTf-Ct-9tR" firstAttribute="top" secondItem="jna-xE-jxN" secondAttribute="top" constant="77" id="8NB-0R-j7g"/>
                                 <constraint firstAttribute="bottom" secondItem="M4L-WZ-S2s" secondAttribute="bottom" constant="-390" id="GcF-1I-RXj"/>
-                                <constraint firstAttribute="trailing" secondItem="xTf-Ct-9tR" secondAttribute="trailing" constant="29" id="KSt-N7-pNx"/>
+                                <constraint firstAttribute="trailing" secondItem="xTf-Ct-9tR" secondAttribute="trailing" constant="29" id="KSt-N7-pNx">
+                                    <variation key="widthClass=compact" constant="8"/>
+                                </constraint>
                                 <constraint firstAttribute="bottom" secondItem="c3G-xR-EYg" secondAttribute="bottom" id="dXi-9b-Jtk"/>
+                                <constraint firstAttribute="bottom" secondItem="JZo-HC-UtW" secondAttribute="bottom" constant="58" id="dbB-jd-2OE"/>
                                 <constraint firstItem="YKb-C3-7QT" firstAttribute="top" secondItem="jna-xE-jxN" secondAttribute="top" constant="8" id="fw8-T3-8Ih"/>
                                 <constraint firstItem="JZo-HC-UtW" firstAttribute="top" secondItem="jna-xE-jxN" secondAttribute="top" constant="181" id="gIw-my-efO"/>
+                                <constraint firstAttribute="bottom" secondItem="xTf-Ct-9tR" secondAttribute="bottom" constant="96" id="jQR-hc-hQl"/>
                                 <constraint firstItem="M4L-WZ-S2s" firstAttribute="leading" secondItem="jna-xE-jxN" secondAttribute="leading" constant="-327" id="jip-3f-ma0"/>
                                 <constraint firstItem="Bu8-3w-GP4" firstAttribute="top" secondItem="YKb-C3-7QT" secondAttribute="bottom" id="vuR-7y-rhd"/>
                                 <constraint firstItem="c3G-xR-EYg" firstAttribute="leading" secondItem="jna-xE-jxN" secondAttribute="leading" constant="-154" id="wWz-3p-TCf"/>
                                 <constraint firstAttribute="trailing" secondItem="YKb-C3-7QT" secondAttribute="trailing" constant="20" id="x5H-YQ-AMP"/>
-                                <constraint firstAttribute="trailing" secondItem="JZo-HC-UtW" secondAttribute="trailing" constant="29" id="xeK-zN-m1c"/>
+                                <constraint firstAttribute="trailing" secondItem="JZo-HC-UtW" secondAttribute="trailing" constant="29" id="xeK-zN-m1c">
+                                    <variation key="widthClass=compact" constant="10"/>
+                                </constraint>
                                 <constraint firstItem="YKb-C3-7QT" firstAttribute="leading" secondItem="jna-xE-jxN" secondAttribute="leading" constant="20" id="yhR-Ub-Lik"/>
                             </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="jQR-hc-hQl"/>
+                                    <exclude reference="dbB-jd-2OE"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=compact">
+                                <mask key="constraints">
+                                    <exclude reference="8NB-0R-j7g"/>
+                                    <include reference="jQR-hc-hQl"/>
+                                    <include reference="dbB-jd-2OE"/>
+                                    <exclude reference="gIw-my-efO"/>
+                                </mask>
+                            </variation>
                         </view>
                         <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34b-6p-DnD" userLabel="Bottom container">
                             <rect key="frame" x="0.0" y="400" width="600" height="200"/>

@@ -24,6 +24,12 @@
     CGSize _cachedSize;
 }
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    // Initialization code
+    self.contentView.alpha = 0.0;
+}
+
 - (UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
     if (!_isHeightCalculated) {
         [self setNeedsLayout];
