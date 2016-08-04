@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IssuePosition.h"
+#import "bernievshillary-Swift.h"
 
 @interface IssuePositionCell : UICollectionViewCell
 

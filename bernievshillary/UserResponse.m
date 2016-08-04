@@ -7,6 +7,8 @@
 //
 
 #import "UserResponse.h"
+#import "bernievshillary-Swift.h"
+
 @class Question;
 @class CandidateStand;
 

@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "IssuePosition.h"
+#import "bernievshillary-Swift.h"
+
 @class CandidateStand;
 
 @interface UserResponse : NSObject

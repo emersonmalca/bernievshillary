@@ -16,7 +16,7 @@
 
 @interface ViewController () <IntroViewControllerDelegate, QuestionsViewControllerDelegate, ResultsViewControllerDelegate>
 
-@property (strong, nonatomic) IntroViewController *introController;
+//@property (strong, nonatomic) IntroViewController *introController;
 
 @end
 

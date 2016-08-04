@@ -11,7 +11,7 @@
 #import <CSStickyHeaderFlowLayout/CSStickyHeaderFlowLayout.h>
 #import "Question.h"
 #import "BHKit.h"
-#import "IssuePosition.h"
+#import "bernievshillary-Swift.h"
 #import "CandidateCell.h"
 #import "IssuePositionCell.h"
 #import "NextQuestionCell.h"

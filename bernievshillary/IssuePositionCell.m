@@ -7,6 +7,7 @@
 //
 
 #import "IssuePositionCell.h"
+#import "bernievshillary-Swift.h"
 #import "BHKit.h"
 #import <DTCoreText/NSAttributedString+HTML.h>
 #import <DTCoreText/DTCoreTextConstants.h>

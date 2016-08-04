@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4378D9A57AEABE2061E71494 /* libPods-bernievshillary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A26D9B5FFFE218800B73D8D2 /* libPods-bernievshillary.a */; };
+		053C9BA5B6A623C62EDB96E7 /* libPods-bernievshillary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BE29313EC60E5B7B11A63D /* libPods-bernievshillary.a */; };
 		4B17CAAD1CF4556900D36DED /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B17CAAB1CF4556900D36DED /* ShareViewController.m */; };
+		6690F91B1D52A57300CB1DE3 /* IssuePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6690F91A1D52A57300CB1DE3 /* IssuePosition.swift */; };
 		6A10A2EE1CE9A04500449CCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A10A2ED1CE9A04500449CCC /* main.m */; };
 		6A10A2F11CE9A04500449CCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A10A2F01CE9A04500449CCC /* AppDelegate.m */; };
 		6A10A2F41CE9A04500449CCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A10A2F31CE9A04500449CCC /* ViewController.m */; };
@@ -19,8 +20,6 @@
 		6A10A3121CE9A04500449CCC /* bernievshillaryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A10A3111CE9A04500449CCC /* bernievshillaryUITests.m */; };
 		6A4B26231CEAC79E00503212 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B26221CEAC79E00503212 /* Question.m */; };
 		6A4B26241CEAC79E00503212 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B26221CEAC79E00503212 /* Question.m */; };
-		6A4B26271CEAC90900503212 /* IssuePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B26261CEAC90900503212 /* IssuePosition.m */; };
-		6A4B26281CEAC90900503212 /* IssuePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4B26261CEAC90900503212 /* IssuePosition.m */; };
 		6A4F177D1CEFFF6200AF6916 /* CandidateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F177B1CEFFF6200AF6916 /* CandidateCell.m */; };
 		6A4F177E1CEFFF6200AF6916 /* CandidateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A4F177C1CEFFF6200AF6916 /* CandidateCell.xib */; };
 		6A4F17821CF0CF1800AF6916 /* IssuePositionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F17801CF0CF1800AF6916 /* IssuePositionCell.m */; };
@@ -51,6 +50,8 @@
 		6AB690BC1CF494D800A420D5 /* CustomAnimatedTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB690BB1CF494D800A420D5 /* CustomAnimatedTransitionDelegate.m */; };
 		6AB690BF1CF4A54100A420D5 /* UIApplication+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB690BE1CF4A54100A420D5 /* UIApplication+Utilities.m */; };
 		6AE8BB561CF6E93A00528DA7 /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE8BB581CF6E93A00528DA7 /* ShareViewController.xib */; };
+		85F19F8FD07F0161FCB9AE31 /* libPods-bernievshillaryTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D126C8FFBB2BAA4DEF7201BA /* libPods-bernievshillaryTests.a */; };
+		A20E80A5D708C7914766DBC7 /* libPods-bernievshillaryUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F70FCBF49A54421568DD7D8 /* libPods-bernievshillaryUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +72,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D98E17E1AD689B3538BEC61 /* Pods-bernievshillaryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bernievshillaryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bernievshillaryUITests/Pods-bernievshillaryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F70FCBF49A54421568DD7D8 /* libPods-bernievshillaryUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bernievshillaryUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AC5557AEFBA3C1288E3235A /* Pods-bernievshillary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bernievshillary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bernievshillary/Pods-bernievshillary.debug.xcconfig"; sourceTree = "<group>"; };
 		4B17CAAA1CF4556900D36DED /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
 		4B17CAAB1CF4556900D36DED /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		6690F9171D529D1300CB1DE3 /* bernievshillary-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bernievshillary-bridging-header.h"; sourceTree = "<group>"; };
+		6690F91A1D52A57300CB1DE3 /* IssuePosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuePosition.swift; sourceTree = "<group>"; };
 		6A10A2E91CE9A04500449CCC /* bernievshillary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bernievshillary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A10A2ED1CE9A04500449CCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A10A2EF1CE9A04500449CCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,8 +97,6 @@
 		6A10A3131CE9A04500449CCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A4B26211CEAC79E00503212 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
 		6A4B26221CEAC79E00503212 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
-		6A4B26251CEAC90900503212 /* IssuePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssuePosition.h; sourceTree = "<group>"; };
-		6A4B26261CEAC90900503212 /* IssuePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssuePosition.m; sourceTree = "<group>"; };
 		6A4F177A1CEFFF6200AF6916 /* CandidateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateCell.h; sourceTree = "<group>"; };
 		6A4F177B1CEFFF6200AF6916 /* CandidateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateCell.m; sourceTree = "<group>"; };
 		6A4F177C1CEFFF6200AF6916 /* CandidateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CandidateCell.xib; sourceTree = "<group>"; };
@@ -148,9 +152,12 @@
 		6AB690BE1CF4A54100A420D5 /* UIApplication+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Utilities.m"; sourceTree = "<group>"; };
 		6AE8BB591CF6E93B00528DA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
 		6AE8BB5A1CF6E94000528DA7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/ShareViewController.strings; sourceTree = "<group>"; };
-		A26D9B5FFFE218800B73D8D2 /* libPods-bernievshillary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bernievshillary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE7C175B09E995BBE689E563 /* Pods-bernievshillary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bernievshillary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bernievshillary/Pods-bernievshillary.debug.xcconfig"; sourceTree = "<group>"; };
-		D7ECCC6280AE2EF15C694692 /* Pods-bernievshillary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bernievshillary.release.xcconfig"; path = "Pods/Target Support Files/Pods-bernievshillary/Pods-bernievshillary.release.xcconfig"; sourceTree = "<group>"; };
+		9164F22A79252B599734C0B6 /* Pods-bernievshillaryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bernievshillaryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-bernievshillaryUITests/Pods-bernievshillaryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C6BE29313EC60E5B7B11A63D /* libPods-bernievshillary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bernievshillary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6F7111C43E2B80C1552CE02 /* Pods-bernievshillary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bernievshillary.release.xcconfig"; path = "Pods/Target Support Files/Pods-bernievshillary/Pods-bernievshillary.release.xcconfig"; sourceTree = "<group>"; };
+		D126C8FFBB2BAA4DEF7201BA /* libPods-bernievshillaryTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bernievshillaryTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B9B5B790DD8D54A98BF726 /* Pods-bernievshillaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bernievshillaryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-bernievshillaryTests/Pods-bernievshillaryTests.release.xcconfig"; sourceTree = "<group>"; };
+		FBDC2E902C0C2BD6AB1912FC /* Pods-bernievshillaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bernievshillaryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bernievshillaryTests/Pods-bernievshillaryTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4378D9A57AEABE2061E71494 /* libPods-bernievshillary.a in Frameworks */,
+				053C9BA5B6A623C62EDB96E7 /* libPods-bernievshillary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85F19F8FD07F0161FCB9AE31 /* libPods-bernievshillaryTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A20E80A5D708C7914766DBC7 /* libPods-bernievshillaryUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +205,8 @@
 				6A10A3051CE9A04500449CCC /* bernievshillaryTests */,
 				6A10A3101CE9A04500449CCC /* bernievshillaryUITests */,
 				6A10A2EA1CE9A04500449CCC /* Products */,
-				994A9A5BAADC3513E2C38DC5 /* Pods */,
-				9F409C30D10A54240094D339 /* Frameworks */,
+				953933E17768E6ABCEAB7889 /* Pods */,
+				9E480FDA4DF5CC44E5268E64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -266,8 +275,8 @@
 			children = (
 				6A4B26211CEAC79E00503212 /* Question.h */,
 				6A4B26221CEAC79E00503212 /* Question.m */,
-				6A4B26251CEAC90900503212 /* IssuePosition.h */,
-				6A4B26261CEAC90900503212 /* IssuePosition.m */,
+				6690F9171D529D1300CB1DE3 /* bernievshillary-bridging-header.h */,
+				6690F91A1D52A57300CB1DE3 /* IssuePosition.swift */,
 				6A4F17921CF296B600AF6916 /* UserResponse.h */,
 				6A4F17931CF296B600AF6916 /* UserResponse.m */,
 				6A4F17951CF2970300AF6916 /* CandidateStand.h */,
@@ -367,19 +376,25 @@
 			name = Interface;
 			sourceTree = "<group>";
 		};
-		994A9A5BAADC3513E2C38DC5 /* Pods */ = {
+		953933E17768E6ABCEAB7889 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CE7C175B09E995BBE689E563 /* Pods-bernievshillary.debug.xcconfig */,
-				D7ECCC6280AE2EF15C694692 /* Pods-bernievshillary.release.xcconfig */,
+				4AC5557AEFBA3C1288E3235A /* Pods-bernievshillary.debug.xcconfig */,
+				C6F7111C43E2B80C1552CE02 /* Pods-bernievshillary.release.xcconfig */,
+				FBDC2E902C0C2BD6AB1912FC /* Pods-bernievshillaryTests.debug.xcconfig */,
+				D5B9B5B790DD8D54A98BF726 /* Pods-bernievshillaryTests.release.xcconfig */,
+				3D98E17E1AD689B3538BEC61 /* Pods-bernievshillaryUITests.debug.xcconfig */,
+				9164F22A79252B599734C0B6 /* Pods-bernievshillaryUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		9F409C30D10A54240094D339 /* Frameworks */ = {
+		9E480FDA4DF5CC44E5268E64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A26D9B5FFFE218800B73D8D2 /* libPods-bernievshillary.a */,
+				C6BE29313EC60E5B7B11A63D /* libPods-bernievshillary.a */,
+				D126C8FFBB2BAA4DEF7201BA /* libPods-bernievshillaryTests.a */,
+				3F70FCBF49A54421568DD7D8 /* libPods-bernievshillaryUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -391,12 +406,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A10A3161CE9A04500449CCC /* Build configuration list for PBXNativeTarget "bernievshillary" */;
 			buildPhases = (
-				0F0E27E7C9EA260E76233474 /* Check Pods Manifest.lock */,
+				8A26873B76EEBCD1E81C7602 /* [CP] Check Pods Manifest.lock */,
 				6A10A2E51CE9A04500449CCC /* Sources */,
 				6A10A2E61CE9A04500449CCC /* Frameworks */,
 				6A10A2E71CE9A04500449CCC /* Resources */,
-				258E7B878DC2E16E21141EC6 /* Embed Pods Frameworks */,
-				4DCEEB686AC7F08C0944C7C9 /* Copy Pods Resources */,
+				E7D79A677D7C4502971D1C22 /* [CP] Embed Pods Frameworks */,
+				A25486DCE5B109102BE33598 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -411,9 +426,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A10A3191CE9A04500449CCC /* Build configuration list for PBXNativeTarget "bernievshillaryTests" */;
 			buildPhases = (
+				D596B4783D288E0545FE613A /* [CP] Check Pods Manifest.lock */,
 				6A10A2FE1CE9A04500449CCC /* Sources */,
 				6A10A2FF1CE9A04500449CCC /* Frameworks */,
 				6A10A3001CE9A04500449CCC /* Resources */,
+				53AC44C976746BB1902DAB56 /* [CP] Embed Pods Frameworks */,
+				0D8F741CEBCAE477C9A69635 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -429,9 +447,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A10A31C1CE9A04500449CCC /* Build configuration list for PBXNativeTarget "bernievshillaryUITests" */;
 			buildPhases = (
+				176CFBB7491BFBA6ADC3B20C /* [CP] Check Pods Manifest.lock */,
 				6A10A3091CE9A04500449CCC /* Sources */,
 				6A10A30A1CE9A04500449CCC /* Frameworks */,
 				6A10A30B1CE9A04500449CCC /* Resources */,
+				35F918050ECA0650A108A977 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -453,7 +473,7 @@
 				TargetAttributes = {
 					6A10A2E81CE9A04500449CCC = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = UZE89F2B2G;
+						DevelopmentTeam = NY33462794;
 					};
 					6A10A3011CE9A04500449CCC = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -528,14 +548,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F0E27E7C9EA260E76233474 /* Check Pods Manifest.lock */ = {
+		0D8F741CEBCAE477C9A69635 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bernievshillaryTests/Pods-bernievshillaryTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		176CFBB7491BFBA6ADC3B20C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,34 +578,94 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		258E7B878DC2E16E21141EC6 /* Embed Pods Frameworks */ = {
+		35F918050ECA0650A108A977 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bernievshillary/Pods-bernievshillary-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bernievshillaryUITests/Pods-bernievshillaryUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4DCEEB686AC7F08C0944C7C9 /* Copy Pods Resources */ = {
+		53AC44C976746BB1902DAB56 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bernievshillaryTests/Pods-bernievshillaryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A26873B76EEBCD1E81C7602 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A25486DCE5B109102BE33598 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bernievshillary/Pods-bernievshillary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D596B4783D288E0545FE613A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7D79A677D7C4502971D1C22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bernievshillary/Pods-bernievshillary-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -599,7 +694,7 @@
 				6A65839F1CECAAD200DAC92F /* UIView+Utilities.m in Sources */,
 				6A4F17891CF209D900AF6916 /* NextQuestionCell.m in Sources */,
 				6A7C50A71CEEE24800E08646 /* QuestionReusableView.m in Sources */,
-				6A4B26271CEAC90900503212 /* IssuePosition.m in Sources */,
+				6690F91B1D52A57300CB1DE3 /* IssuePosition.swift in Sources */,
 				6A6583991CEB719100DAC92F /* IntroViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -610,7 +705,6 @@
 			files = (
 				6A10A3071CE9A04500449CCC /* bernievshillaryTests.m in Sources */,
 				6A4B26241CEAC79E00503212 /* Question.m in Sources */,
-				6A4B26281CEAC90900503212 /* IssuePosition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -830,9 +924,10 @@
 		};
 		6A10A3171CE9A04500449CCC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE7C175B09E995BBE689E563 /* Pods-bernievshillary.debug.xcconfig */;
+			baseConfigurationReference = 4AC5557AEFBA3C1288E3235A /* Pods-bernievshillary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = bernievshillary/Info.plist;
@@ -841,14 +936,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.emersonmalca.bernievshillary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "bernievshillary/bernievshillary-bridging-header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		6A10A3181CE9A04500449CCC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7ECCC6280AE2EF15C694692 /* Pods-bernievshillary.release.xcconfig */;
+			baseConfigurationReference = C6F7111C43E2B80C1552CE02 /* Pods-bernievshillary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = bernievshillary/Info.plist;
@@ -857,11 +955,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.emersonmalca.bernievshillary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "bernievshillary/bernievshillary-bridging-header.h";
 			};
 			name = Release;
 		};
 		6A10A31A1CE9A04500449CCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBDC2E902C0C2BD6AB1912FC /* Pods-bernievshillaryTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = bernievshillaryTests/Info.plist;
@@ -874,6 +974,7 @@
 		};
 		6A10A31B1CE9A04500449CCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B9B5B790DD8D54A98BF726 /* Pods-bernievshillaryTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = bernievshillaryTests/Info.plist;
@@ -886,6 +987,7 @@
 		};
 		6A10A31D1CE9A04500449CCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D98E17E1AD689B3538BEC61 /* Pods-bernievshillaryUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = bernievshillaryUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -897,6 +999,7 @@
 		};
 		6A10A31E1CE9A04500449CCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9164F22A79252B599734C0B6 /* Pods-bernievshillaryUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = bernievshillaryUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

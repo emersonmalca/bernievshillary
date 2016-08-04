@@ -7,7 +7,9 @@
 //
 
 #import "Question.h"
-#import "IssuePosition.h"
+//#import "IssuePosition.h"
+#import "bernievshillary-Swift.h"
+
 
 @implementation Question
 
@@ -18,7 +20,7 @@
 
 - (id)initWithDictionary:(NSDictionary *)dict {
     self = [self init];
-    if (self) {
+if (self) {
         // Process question info
         self.uid = dict[@"_id"];
         self.text = dict[@"question"];
